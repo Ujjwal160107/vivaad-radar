@@ -3,48 +3,49 @@ from backend.db import get_conn
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
-PARCEL_STATUS_SQL = """
-SELECT p.id, p.village, p.district,
-       COALESCE(MIN(CASE l.status WHEN 'RED' THEN 0 WHEN 'AMBER' THEN 1 ELSE 2 END), 2) AS rank
-FROM parcel p LEFT JOIN parcel_case_link l ON l.parcel_id = p.id
-GROUP BY p.id
-"""
-STATUS = {0: "red", 1: "amber", 2: "green"}
+STATUSES = ("RED", "AMBER", "GREEN")
+
+
+def _bucket(status):
+    """Foreign-DB defense: NULL -> GREEN, unrecognized -> AMBER (never RED)."""
+    if status is None:
+        return "GREEN"
+    return status if status in STATUSES else "AMBER"
 
 
 @router.get("/overview")
 def overview():
     conn = get_conn()
-    rows = conn.execute(PARCEL_STATUS_SQL).fetchall()
-    counts = {"red": 0, "amber": 0, "green": 0}
-    for r in rows:
-        counts[STATUS.get(r["rank"], "green")] += 1
-    active = conn.execute(
-        "SELECT COUNT(DISTINCT c.id) c FROM court_case c "
-        "JOIN parcel_case_link l ON l.case_id = c.id WHERE c.status='active'"
-    ).fetchone()["c"]
-    district = rows[0]["district"] if rows else None
-    return {"district": district, "total_parcels": len(rows),
-            **counts, "active_cases": active}
+    parcels = conn.execute("SELECT district, status FROM Parcel").fetchall()
+    counts = {s: 0 for s in STATUSES}
+    for p in parcels:
+        counts[_bucket(p["status"])] += 1
+    one = lambda sql: conn.execute(sql).fetchone()["n"]
+    return {
+        "district": parcels[0]["district"] if parcels else None,
+        "parcels": len(parcels),
+        "cases": one("SELECT COUNT(*) n FROM CourtCase"),
+        "status_counts": counts,
+        "active_cases": one("SELECT COUNT(*) n FROM CourtCase WHERE status='active'"),
+        "high_confidence_links": one(
+            "SELECT COUNT(*) n FROM ParcelCaseLink WHERE confidence_band='HIGH'"),
+        "possible_matches": one(
+            "SELECT COUNT(*) n FROM ParcelCaseLink WHERE confidence_band='MEDIUM'"),
+    }
 
 
 @router.get("/heatmap")
 def heatmap():
     conn = get_conn()
-    rows = conn.execute(PARCEL_STATUS_SQL).fetchall()
-    villages: dict[str, dict] = {}
+    rows = conn.execute(
+        "SELECT village, village_canon, status FROM Parcel").fetchall()
+    agg: dict[str, dict] = {}
     for r in rows:
-        v = villages.setdefault(
-            r["village"],
-            {"village": r["village"], "red": 0, "amber": 0, "green": 0, "total_links": 0},
-        )
-        v[STATUS.get(r["rank"], "green")] += 1
-    for r in conn.execute(
-        "SELECT p.village, COUNT(*) n FROM parcel_case_link l "
-        "JOIN parcel p ON p.id = l.parcel_id GROUP BY p.village"
-    ):
-        # A foreign-built DB may contain link rows whose village never made it
-        # into the parcel scan above; skip rather than KeyError.
-        if r["village"] in villages:
-            villages[r["village"]]["total_links"] = r["n"]
-    return {"villages": list(villages.values())}
+        v = r["village_canon"] or "unknown"
+        a = agg.setdefault(v, {"village": r["village"], "village_canon": v,
+                               "parcels": 0, "RED": 0, "AMBER": 0, "GREEN": 0})
+        a["parcels"] += 1
+        a[_bucket(r["status"])] += 1
+    for a in agg.values():
+        a["density"] = round((a["RED"] * 2 + a["AMBER"]) / (a["parcels"] * 2), 3)
+    return {"villages": sorted(agg.values(), key=lambda x: -x["density"])}
