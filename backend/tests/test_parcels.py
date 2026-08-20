@@ -23,4 +23,4 @@ def test_parcel_detail(client):
 def test_parcel_not_found_shape(client):
     r = client.get("/parcels/P-999")
     assert r.status_code == 404
-    assert r.json()["detail"]["error"] == "not_found"
+    assert r.json() == {"error": "not_found", "hint": "check spelling/format"}

@@ -2,8 +2,10 @@ import logging
 import sqlite3
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.exceptions import HTTPException as FastAPIHTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.responses import JSONResponse
 
 from backend import fallback
 from backend.db import db_path
@@ -42,6 +44,14 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Vivaad Radar API", lifespan=lifespan)
+
+
+@app.exception_handler(FastAPIHTTPException)
+async def structured_http_exception(request: Request, exc: FastAPIHTTPException):
+    body = exc.detail if isinstance(exc.detail, dict) else {"error": str(exc.detail)}
+    return JSONResponse(body, status_code=exc.status_code)
+
+
 app.include_router(parcels.router)
 app.include_router(cases.router)
 app.include_router(dashboard.router)
