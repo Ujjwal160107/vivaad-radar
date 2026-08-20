@@ -13,11 +13,11 @@ class Subscribe(BaseModel):
 @router.post("", status_code=201)
 def subscribe(body: Subscribe):
     conn = get_conn()
-    if conn.execute("SELECT 1 FROM parcel WHERE id=?", (body.parcel_id,)).fetchone() is None:
+    if conn.execute("SELECT 1 FROM Parcel WHERE id=?", (body.parcel_id,)).fetchone() is None:
         raise HTTPException(400, {"error": "unknown_parcel"})
     today = date.today().isoformat()
     cur = conn.execute(
-        "INSERT INTO watchlist (parcel_id, subscribed_at) VALUES (?, ?)",
+        "INSERT INTO Watchlist (user_ref, parcel_id, subscribed_at) VALUES ('demo-user', ?, ?)",
         (body.parcel_id, today),
     )
     conn.commit()
@@ -30,7 +30,7 @@ def list_watchlist():
     rows = conn.execute(
         """SELECT w.id, w.parcel_id, w.subscribed_at, w.has_update,
                   p.survey_no, p.village
-           FROM watchlist w JOIN parcel p ON p.id = w.parcel_id
+           FROM Watchlist w JOIN Parcel p ON p.id = w.parcel_id
            ORDER BY w.id"""
     ).fetchall()
     return {"items": [

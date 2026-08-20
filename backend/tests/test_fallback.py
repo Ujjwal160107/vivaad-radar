@@ -56,15 +56,15 @@ def test_fallback_rejects_path_traversal(client, tmp_path, monkeypatch):
 
 def test_all_endpoints_smoke(client):
     checks = [
-        ("/parcels/search?survey_no=153&village=Madanpur Paniyar", 200),
-        ("/parcels/P-002", 200),
-        ("/parcels/P-002/litigation", 200),
-        ("/cases/C-001", 200),
+        ("/parcels/search?survey_no=1365/1&village=Madanpur Paniyar", 200),
+        ("/parcels/P-B01", 200),
+        ("/parcels/P-B01/litigation", 200),
+        ("/cases/UPHC020611812025", 200),
         ("/dashboard/overview", 200),
         ("/dashboard/heatmap", 200),
         ("/watchlist", 200),
     ]
     for path, expected in checks:
         assert client.get(path).status_code == expected, path
-    r = client.post("/watchlist", json={"parcel_id": "P-001"})
+    r = client.post("/watchlist", json={"parcel_id": "P-A01"})
     assert r.status_code == 201, "POST /watchlist"
