@@ -6,3 +6,6 @@ app.include_router(parcels.router)
 app.include_router(cases.router)
 app.include_router(dashboard.router)
 app.include_router(watchlist.router)
+
+from backend import fallback
+fallback.install(app)
