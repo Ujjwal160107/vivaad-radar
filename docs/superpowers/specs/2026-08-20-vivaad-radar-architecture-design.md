@@ -121,6 +121,7 @@ Each stage reads the previous stage's output, writes its own inspectable artifac
 
 | Stage | Responsibility | Output |
 |---|---|---|
+| **s0_handoff** | Generate the synthetic land side (`parcels.parquet`) seeded from the real extracted survey numbers, including the §22 decoy set and the flagship pair `P-A01`/`P-B01` | `data/input/parcels.parquet` |
 | **s1_ingest** | Read both parquets; validate contract (required columns present, flagship case AND flagship parcel present — fail loudly at build time, never at demo time); tag every row with a §21 provenance label (real / synthetic / derived) | `cases.json`, `parcels.json` |
 | **s2_normalize** | Survey-number normalization (`142/3` ≡ `142-3` ≡ `142 / 3`); name normalization (lowercase, strip honorifics, standardize `S/o`/`D/o`); build village gazetteer from the parcel file | `normalized.json` |
 | **s3_candidates** | Blocking: pair case × parcel only when village matches; case with null village → district-wide candidates, flagged `location_unconfirmed` | `candidates.json` |
@@ -130,6 +131,29 @@ Each stage reads the previous stage's output, writes its own inspectable artifac
 | **s7_export_fallback** | Render every §37 endpoint response for every parcel to `data/output/fallback/` (tier 2), plus hardcoded flagship payloads (tier 3) | `fallback/*.json` |
 
 **ML boundary (§40):** RapidFuzz fuzzy similarity inside s4 is the shipping baseline. Any future NER/embedding enhancement is a drop-in replacement for a single feature function in s4 — no other stage changes. ML is never load-bearing for the demo (§42).
+
+## 5b. Serving-layer contract — the `vivaad.db` schema (AUTHORITATIVE)
+
+This is the interface between pipeline and backend. The pipeline owns it; the backend reads it and must not expect any other shape. Table names are the PRD §19 entity names in PascalCase.
+
+| Table | Columns |
+|---|---|
+| `Parcel` | `id, survey_no, khasra_no, khata_no, village, village_canon, taluk, district, area, geometry, land_events, owner_ref, status, confidence, note, closed_history, source_label` |
+| `Person` | `id, name, name_normalized, father_name, address, source_label` |
+| `CourtCase` | `id` (**the CNR — there is no separate `cnr` column**)`, case_no, court, case_type, filing_date, order_date, status, next_hearing_date, raw_text_ref, source_label` |
+| `CaseParty` | `case_id, person_id, role, name_as_written` |
+| `CourtEvent` | `id, case_id, event_type, date, note` — `event_type ∈ {filed, interim_order, judgment, next_hearing}` |
+| `ParcelCaseLink` | `id, parcel_id, case_id, confidence_score, confidence_band, identifier_match, evidence, status, reason, created_at` |
+| `Watchlist` | `id, user_ref, parcel_id, subscribed_at, last_notified_at, has_update` |
+| `SourceRecord` | `id, source_type, origin, ingested_at, raw_ref` |
+
+Three consequences the backend must honour:
+
+1. **Parcel status is precomputed.** `Parcel.status` and `Parcel.confidence` already hold the §30 worst-case-wins result. `/parcels/{id}/litigation` reads those columns; it must not recompute a worst-case across links at query time (§36, §48).
+2. **Eight tables, not nine.** `land_events` is a JSON text column on `Parcel`, so §19's table count holds. There is no `land_event` table.
+3. **Lookup keys.** Parcel search filters on `survey_no` + `village_canon` (there is no `survey_no_norm` column); the caller's survey number must be normalized the same way s2 normalizes (`1365-1` → `1365/1`) before comparison, and the village compared against `village_canon`.
+
+Flagship identifiers are `P-A01` (clean, GREEN) and `P-B01` (flagship, RED) — matching §50's "Parcel A / Parcel B".
 
 ## 6. Backend (FastAPI, read-only)
 
@@ -152,6 +176,7 @@ Rules:
 - `GET /parcels/{id}/litigation` returns the exact response shape written in §37 so the linkage output drops in unmodified.
 - Watchlist is the single write path: one INSERT; the "new update" badge is a scripted flag column, not a real notification (§34).
 - Failed lookup → structured "not found — check spelling/format" payload (§16). Internal failure → fallback middleware serves cached JSON silently. A judge never sees a stack trace.
+- **Fallback file resolution.** s7 writes two naming conventions, so the middleware must try both, in order: nested (`/parcels/P-B01/litigation` → `parcels/P-B01/litigation.json`, `/cases/{cnr}` → `cases/{cnr}.json`) then flat-underscore (`/dashboard/overview` → `dashboard_overview.json`, `/parcels/search` → `parcels_search.json`, `/watchlist` → `watchlist.json`). Resolving only one convention silently 503s half the routes.
 
 ## 7. Frontend (React + Vite + Tailwind + Leaflet)
 
@@ -191,7 +216,8 @@ No tier touches the internet at demo time. Map tiles: schematic base or pre-down
 
 ## 9. Testing & evaluation
 
-- **Golden-case test (automates §62's acceptance criterion):** after `run_all.py`, assert Parcel B is RED with confidence ≥ 0.85 and Parcel A is GREEN. Run on every data drop.
+- **Golden-case test (automates §62's acceptance criterion):** `tests/test_golden.py` (pipeline-side, 9 tests) asserts `P-B01` is RED at ≥ 0.85, `P-A01` is GREEN, the flagship link survives the deliberate `1365-1`/`1365/1` and `Panyar`/`Paniyar` divergence, no RED rests on a disposed case or an unconfirmed location, all eight tables exist, provenance is non-null, and the tier-2/3 fallback files render. Run on every data drop.
+- **Backend integration test (the gap that let both halves diverge):** one test that points `VIVAAD_DB` at the real `data/output/vivaad.db` and asserts every §37 endpoint returns 200 with the flagship RED intact. Stub-only tests pass while the real DB 500s, so this test is the one that matters.
 - **Matching metrics (§43/§44):** hand-label ~30 candidate pairs from `candidates.json` (true links, §22 decoys, hard negatives); report precision/recall honestly on the slide; report high-confidence precision specifically.
 - **API smoke test:** hit all 8 endpoints against the built DB.
 - **Frontend:** manual walkthrough of the §51 demo script; verify Result renders for all three statuses.
@@ -214,6 +240,35 @@ Steps 1–7 of §62 (schema → data → extraction → matching → backend →
 ## 12. Guardrails (§72)
 
 If anyone starts building auth, a chatbot, blockchain, OCR, generic complaint systems, full land-record CRUD, payments, or cloud infra — stop them. Nothing in this architecture requires or permits any of these.
+
+## 12b. Integration review — 2026-08-20, pipeline `6bcbb4a` vs backend `2d851e9`
+
+Pipeline s0–s7 landed on `main` (135 parcels, 38 cases, 84 links, 12 RED / 62 AMBER / 61 GREEN; 9 golden tests pass). Backend reached task 7 on `feature/backend-stub-api` (18 tests pass against its own stub). Probing the backend against the real DB returned **500 on all eight endpoints**.
+
+**Resolved in this document:** the schema-dialect split. The spec originally implied snake_case tables, a `survey_no_norm` column, a ninth `land_event` table, a separate `cnr` column, and query-time worst-case status. The pipeline's dialect (§5b above) is now authoritative on all five points, because it already produces verified data, and because precomputed `Parcel.status` honours §36/§48 better than computing worst-case per request.
+
+**Verified sound in the pipeline:**
+
+- RED precision (§17, §28, §46): all 12 RED parcels rest on an `exact` identifier match; zero rest on the weaker `subdivision` inference.
+- The flagship link is earned, not assumed: land record says `1365-1` / "Madanpur Panyar", court says `1365/1` / "Madanpur Paniyar", and normalization plus the gazetteer reconcile both (score 0.9105, father-name similarity 1.0).
+- Missing-feature weight redistribution in s4 is the right call — only 6 of 38 cases state a patronymic, so scoring an absent `s/o` as zero would punish a data artefact.
+- AMBER is meaningful, not noise: 36 links are "high confidence but case is disposed" and 30 "possible connection", both §30 outcomes rather than threshold slop.
+
+**Corpus limitations to design around (not defects):**
+
+- `next_hearing_date` is NULL for **all 38 cases** — High Court judgment data does not carry future hearing dates. §37's `next_hearing`, §16 screen 5, and §50 all assume it. The timeline's right anchor must therefore be "still pending as of <today>", and the UI must render a null next hearing honestly rather than leaving a blank field.
+- Filing dates span 2024-01-17 to 2025-12-10, so the longest pendency is ~2.5 years. The pitch cannot claim the PRD's illustrative "pending 6 years"; the honest maximum is "pending 2.5 years".
+- `P-B01` is the only parcel whose synthetic sale (2025-12-13) falls *after* its case filing (2025-08-11) — i.e. the only true *lis pendens* instance in the dataset. Every other RED parcel's sale predates its litigation, which tells the opposite story. The §51 step-4 beat therefore rests on a single row and a four-month window.
+
+**Decisions taken (2026-08-20):**
+
+1. **Derived next-hearing dates.** The pipeline derives a plausible `next_hearing_date` from the last order date, for **active cases only** (a disposed case must never carry a future hearing). Because this value is fabricated where the source is silent, two things are mandatory, not optional:
+   - The row carries a `next_hearing_source` of `derived`, distinct from the `real` court metadata around it (§21).
+   - Every UI surface renders it as visibly derived — "estimated next hearing" with the derived marker — never as a court-published date (§46's no-conclusion-as-fact rule).
+
+   The reason is defensive: "the court side is real public data" is this project's strongest answer to §56's "is this real data?" question, and an unlabelled fabricated court date is the easiest thing for a judge to catch and the most expensive thing to lose.
+
+2. **Broaden the *lis pendens* evidence.** Synthetic land events are ours to place; real court dates are not. The pipeline places synthetic sales inside the pendency window for several RED parcels — including `CLRE/6/2024` / `P-037` (filed 2024-02-12, ~2.5 years pending, confidence 0.967) — so the pattern reads as systemic rather than as one lucky row. `P-B01` remains the flagship; the others give the officer view and the Q&A real depth.
 
 ## 13. Out of scope for this design
 
