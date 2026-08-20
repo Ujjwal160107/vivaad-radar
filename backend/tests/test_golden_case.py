@@ -1,22 +1,19 @@
-import json
-import os
-import sqlite3
-
-
 def test_parcel_b_is_red_high_confidence(client):
-    r = client.get("/parcels/P-002/litigation")
+    r = client.get("/parcels/P-B01/litigation")
     assert r.status_code == 200
     body = r.json()
     assert body["status"] == "RED"
     assert body["confidence"] >= 0.85
+    assert body["closed_history"] is False
     link = next(l for l in body["links"] if l["case_no"] == "WRIB/784/2025")
     assert link["case_status"] == "active"
+    assert link["band"] == "HIGH"
     assert link["evidence"]["survey_match"] == "exact"
     assert link["next_hearing"] == "2026-09-12"
 
 
 def test_parcel_a_is_green(client):
-    r = client.get("/parcels/P-001/litigation")
+    r = client.get("/parcels/P-A01/litigation")
     assert r.status_code == 200
     body = r.json()
     assert body["status"] == "GREEN"
@@ -24,25 +21,13 @@ def test_parcel_a_is_green(client):
 
 
 def test_amber_decoy(client):
-    r = client.get("/parcels/P-003/litigation")
-    assert r.json()["status"] == "AMBER"
+    assert client.get("/parcels/P-C01/litigation").json()["status"] == "AMBER"
 
 
-def test_mixed_status_links_worst_case_wins(client):
-    # Seed an extra AMBER link onto P-002 (which already has a RED link):
-    # the parcel-level status must still be RED, and links must be ordered
-    # worst-first deterministically.
-    conn = sqlite3.connect(os.environ["VIVAAD_DB"])
-    conn.execute(
-        "INSERT INTO parcel_case_link VALUES (?,?,?,?,?,?,?,?)",
-        ("L-EXTRA", "P-002", "C-002", 0.50, "MEDIUM",
-         json.dumps({"survey_match": "fuzzy"}), "AMBER", "2026-08-20"),
-    )
-    conn.commit()
-    conn.close()
-    r = client.get("/parcels/P-002/litigation")
-    assert r.status_code == 200
-    body = r.json()
-    assert body["status"] == "RED"
-    assert body["confidence"] == 0.94
-    assert [l["case_no"] for l in body["links"]] == ["WRIB/784/2025", "WRIB/312/2024"]
+def test_link_fields_match_s7_contract(client):
+    link = client.get("/parcels/P-B01/litigation").json()["links"][0]
+    assert set(link) == {
+        "case_id", "case_no", "court", "case_type", "case_status",
+        "confidence", "band", "link_status", "reason", "evidence",
+        "filing_date", "order_date", "next_hearing", "raw_text_ref",
+    }

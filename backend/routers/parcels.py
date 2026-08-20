@@ -53,47 +53,39 @@ def detail(parcel_id: str):
     return body
 
 
-# Unknown statuses from a foreign-built DB rank as AMBER-equivalent (1), never RED.
-_RANK = {"RED": 0, "AMBER": 1, "GREEN": 2}
-_UNKNOWN_RANK = 1
-
-
-def _parse_evidence(raw):
-    if raw is None:
-        return None
-    try:
-        return json.loads(raw)
-    except (ValueError, TypeError):
-        return raw
-
-
 @router.get("/{parcel_id}/litigation")
 def litigation(parcel_id: str):
     conn = get_conn()
-    if conn.execute("SELECT 1 FROM parcel WHERE id=?", (parcel_id,)).fetchone() is None:
+    p = conn.execute(
+        "SELECT id, status, confidence, note, closed_history FROM Parcel WHERE id=?",
+        (parcel_id,)).fetchone()
+    if p is None:
         raise HTTPException(404, NOT_FOUND)
     rows = conn.execute(
-        """SELECT l.*, c.case_no, c.court, c.status AS case_status,
-                  c.next_hearing_date
-           FROM parcel_case_link l JOIN court_case c ON c.id = l.case_id
-           WHERE l.parcel_id = ?
-           ORDER BY CASE l.status
-                        WHEN 'RED' THEN 0 WHEN 'AMBER' THEN 1 WHEN 'GREEN' THEN 2
-                        ELSE 1 END,
-                    l.confidence_score DESC, l.case_id""",
-        (parcel_id,),
-    ).fetchall()
-    if not rows:
-        return {"parcel_id": parcel_id, "status": "GREEN", "confidence": None, "links": []}
-    worst = min(rows, key=lambda r: _RANK.get(r["status"], _UNKNOWN_RANK))
+        """SELECT l.case_id, l.confidence_score, l.confidence_band,
+                  l.identifier_match, l.evidence, l.status AS link_status, l.reason,
+                  c.case_no, c.court, c.status AS case_status, c.filing_date,
+                  c.order_date, c.next_hearing_date, c.case_type, c.raw_text_ref
+           FROM ParcelCaseLink l JOIN CourtCase c ON c.id = l.case_id
+           WHERE l.parcel_id = ? ORDER BY l.confidence_score DESC""",
+        (parcel_id,)).fetchall()
+    links = []
+    for r in rows:
+        try:
+            evidence = json.loads(r["evidence"])
+        except (TypeError, ValueError):
+            evidence = r["evidence"]
+        links.append({
+            "case_id": r["case_id"], "case_no": r["case_no"], "court": r["court"],
+            "case_type": r["case_type"], "case_status": r["case_status"],
+            "confidence": r["confidence_score"], "band": r["confidence_band"],
+            "link_status": r["link_status"], "reason": r["reason"],
+            "evidence": evidence, "filing_date": r["filing_date"],
+            "order_date": r["order_date"], "next_hearing": r["next_hearing_date"],
+            "raw_text_ref": r["raw_text_ref"],
+        })
     return {
-        "parcel_id": parcel_id,
-        "status": worst["status"],
-        "confidence": worst["confidence_score"],
-        "links": [
-            {"case_id": r["case_id"], "case_no": r["case_no"], "court": r["court"],
-             "case_status": r["case_status"], "evidence": _parse_evidence(r["evidence"]),
-             "next_hearing": r["next_hearing_date"]}
-            for r in rows
-        ],
+        "parcel_id": p["id"], "status": p["status"] or "GREEN",
+        "confidence": p["confidence"], "note": p["note"],
+        "closed_history": bool(p["closed_history"]), "links": links,
     }
