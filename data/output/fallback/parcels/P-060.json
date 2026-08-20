@@ -1,0 +1,58 @@
+{
+ "id": "P-060",
+ "survey_no": "2829/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Panchayat",
+ "village_canon": "panchayat",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "1.51",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05726837101078,
+     26.199997743958626
+    ],
+    [
+     82.06019235985839,
+     26.199997743958626
+    ],
+    [
+     82.06033855930077,
+     26.202395414813672
+    ],
+    [
+     82.05726837101078,
+     26.202629333921482
+    ],
+    [
+     82.05726837101078,
+     26.199997743958626
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-02-10",
+   "type": "sale"
+  },
+  {
+   "date": "2016-07-27",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0002",
+ "status": "AMBER",
+ "confidence": 0.7882,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Abdul Kalaam",
+  "father_name": "Bansraj"
+ }
+}

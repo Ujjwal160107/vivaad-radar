@@ -1,0 +1,54 @@
+{
+ "id": "P-055",
+ "survey_no": "357M",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "4.52",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.08372326438356,
+     26.259625080078308
+    ],
+    [
+     82.08830726369594,
+     26.259625080078308
+    ],
+    [
+     82.08853646366155,
+     26.263383959514456
+    ],
+    [
+     82.08372326438356,
+     26.26375067945945
+    ],
+    [
+     82.08372326438356,
+     26.259625080078308
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-04-17",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0028",
+ "status": "AMBER",
+ "confidence": 1.0,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Shafqatullah  Khan",
+  "father_name": "Bhola"
+ }
+}

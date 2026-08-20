@@ -1,0 +1,81 @@
+{
+ "id": "UPHC010239492025",
+ "case_no": "WRIB/222/2025",
+ "court": "Allahabad High Court",
+ "case_type": "consolidation_chak",
+ "filing_date": "2025-01-17",
+ "order_date": "2025-05-02",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cisdb_16012018/orders_2025_202100002222025_4.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "ABDUL KALAAM"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "STATE OF U.P. AND 35 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-01-17",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-05-02",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-002",
+   "confidence_score": 0.9765,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-003",
+   "confidence_score": 0.9765,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-004",
+   "confidence_score": 0.9345,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-060",
+   "confidence_score": 0.7882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-061",
+   "confidence_score": 0.7882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-063",
+   "confidence_score": 0.7882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-065",
+   "confidence_score": 0.7882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-062",
+   "confidence_score": 0.7462,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-064",
+   "confidence_score": 0.7462,
+   "status": "AMBER"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "id": "P-026",
+ "survey_no": "1130",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kisni",
+ "village_canon": "kisni",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "1.05",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.02220740554357,
+     26.270129945520456
+    ],
+    [
+     82.02581109755371,
+     26.270129945520456
+    ],
+    [
+     82.02599128215422,
+     26.27308497296878
+    ],
+    [
+     82.02220740554357,
+     26.273373268329593
+    ],
+    [
+     82.02220740554357,
+     26.270129945520456
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2021-02-24",
+   "type": "mutation"
+  },
+  {
+   "date": "2023-03-07",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0008",
+ "status": "AMBER",
+ "confidence": 0.8569,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Saiyed Mohammad Rehaan",
+  "father_name": "Jagdish"
+ }
+}

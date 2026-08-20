@@ -1,0 +1,49 @@
+{
+ "id": "P-118",
+ "survey_no": "2048/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "4.64",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05950616616433,
+     26.193184969940887
+    ],
+    [
+     82.06228044172387,
+     26.193184969940887
+    ],
+    [
+     82.06241915550184,
+     26.19545987589971
+    ],
+    [
+     82.05950616616433,
+     26.19568181794447
+    ],
+    [
+     82.05950616616433,
+     26.193184969940887
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0036",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Phoolchand",
+  "father_name": "Bhola"
+ }
+}

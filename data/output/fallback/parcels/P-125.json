@@ -1,0 +1,54 @@
+{
+ "id": "P-125",
+ "survey_no": "1417",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "4.83",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.98365007923316,
+     26.22293732142232
+    ],
+    [
+     81.98872982273306,
+     26.22293732142232
+    ],
+    [
+     81.98898380990805,
+     26.22710271109224
+    ],
+    [
+     81.98365007923316,
+     26.22750909057223
+    ],
+    [
+     81.98365007923316,
+     26.22293732142232
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-03-16",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0035",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Sarita Devi",
+  "father_name": "Dukhi"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "id": "P-078",
+ "survey_no": "3560",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Malapur Jagdishpur",
+ "village_canon": "malapur jagdishpur",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "3.78",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.13189034326525,
+     26.25490099030251
+    ],
+    [
+     82.13521034677348,
+     26.25490099030251
+    ],
+    [
+     82.13537634694889,
+     26.257623393179248
+    ],
+    [
+     82.13189034326525,
+     26.257888993459904
+    ],
+    [
+     82.13189034326525,
+     26.25490099030251
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0004",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Doman",
+  "father_name": "Hari Prasad"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "id": "P-068",
+ "survey_no": "3561/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Tato Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Lambhua",
+ "district": "Sultanpur",
+ "area": "0.6",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05899032214852,
+     26.333427570127935
+    ],
+    [
+     82.06246256558751,
+     26.333427570127935
+    ],
+    [
+     82.06263617775946,
+     26.33627480974791
+    ],
+    [
+     82.05899032214852,
+     26.33655258922303
+    ],
+    [
+     82.05899032214852,
+     26.333427570127935
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0004",
+ "status": "AMBER",
+ "confidence": 0.7647,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Doman",
+  "father_name": "Hari Prasad"
+ }
+}

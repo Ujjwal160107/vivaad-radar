@@ -1,0 +1,58 @@
+{
+ "id": "P-044",
+ "survey_no": "306",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "2.33",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.98618824089004,
+     26.24021117994792
+    ],
+    [
+     81.99011539712444,
+     26.24021117994792
+    ],
+    [
+     81.99031175493616,
+     26.243431448060125
+    ],
+    [
+     81.98618824089004,
+     26.243745620558876
+    ],
+    [
+     81.98618824089004,
+     26.24021117994792
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2015-12-13",
+   "type": "sale"
+  },
+  {
+   "date": "2017-11-04",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0019",
+ "status": "AMBER",
+ "confidence": 0.9647,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Sumitra Devi",
+  "father_name": "Hari Prasad"
+ }
+}

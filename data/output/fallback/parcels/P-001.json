@@ -1,0 +1,58 @@
+{
+ "id": "P-001",
+ "survey_no": "211",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lohramau",
+ "village_canon": "lohramau",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "3.45",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.09282525483228,
+     26.25210691591299
+    ],
+    [
+     82.09610477503911,
+     26.25210691591299
+    ],
+    [
+     82.09626875104945,
+     26.25479612248259
+    ],
+    [
+     82.09282525483228,
+     26.255058484099134
+    ],
+    [
+     82.09282525483228,
+     26.25210691591299
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2018-07-24",
+   "type": "sale"
+  },
+  {
+   "date": "2022-07-19",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0001",
+ "status": "AMBER",
+ "confidence": 1.0,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Riyazuddin",
+  "father_name": "Dukhi"
+ }
+}

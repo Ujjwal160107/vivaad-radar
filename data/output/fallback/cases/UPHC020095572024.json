@@ -1,0 +1,41 @@
+{
+ "id": "UPHC020095572024",
+ "case_no": "WRIB/160/2024",
+ "court": "Allahabad High Court",
+ "case_type": "sale_deed_transfer",
+ "filing_date": "2024-02-10",
+ "order_date": "2024-02-23",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100001602024_2.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "KAMLESH KUMAR AND ANOTHER"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION LAKHIMPUR KHERI AND 3 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2024-02-10",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2024-02-23",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-033",
+   "confidence_score": 0.8629,
+   "status": "AMBER"
+  }
+ ]
+}

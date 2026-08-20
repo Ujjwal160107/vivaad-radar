@@ -1,0 +1,54 @@
+{
+ "id": "P-011",
+ "survey_no": "101",
+ "khasra_no": null,
+ "khata_no": "101",
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "4.96",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.15459334524418,
+     26.324418553348917
+    ],
+    [
+     82.15739652456311,
+     26.324418553348917
+    ],
+    [
+     82.15753668352906,
+     26.32671716039044
+    ],
+    [
+     82.15459334524418,
+     26.326941414735956
+    ],
+    [
+     82.15459334524418,
+     26.324418553348917
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2017-01-22",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0006",
+ "status": "AMBER",
+ "confidence": 0.8525,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampa Ti",
+  "father_name": "Ram Autar"
+ }
+}

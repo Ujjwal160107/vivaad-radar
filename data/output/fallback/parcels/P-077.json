@@ -1,0 +1,58 @@
+{
+ "id": "P-077",
+ "survey_no": "2283A",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "3.35",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.15476407967492,
+     26.23745363831065
+    ],
+    [
+     82.15888818730583,
+     26.23745363831065
+    ],
+    [
+     82.1590943926874,
+     26.240835406568007
+    ],
+    [
+     82.15476407967492,
+     26.24116533517848
+    ],
+    [
+     82.15476407967492,
+     26.23745363831065
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2017-10-03",
+   "type": "mutation"
+  },
+  {
+   "date": "2021-01-26",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0003",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "A. Kalaam",
+  "father_name": "Bhola"
+ }
+}

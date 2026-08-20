@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-052",
+ "status": "RED",
+ "confidence": 0.9529,
+ "note": "High-confidence litigation connection found",
+ "closed_history": false,
+ "links": [
+  {
+   "case_id": "UPHC020196752024",
+   "case_no": "WRIB/326/2024",
+   "court": "Allahabad High Court",
+   "case_type": "tenancy",
+   "case_status": "active",
+   "confidence": 0.9529,
+   "band": "HIGH",
+   "link_status": "RED",
+   "reason": "high confidence, identifier match, active case",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.6,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2024-03-20",
+   "order_date": "2024-03-22",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100003262024_1.pdf"
+  }
+ ]
+}

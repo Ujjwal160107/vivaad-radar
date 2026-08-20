@@ -1,0 +1,58 @@
+{
+ "id": "P-045",
+ "survey_no": "110-0",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Mungar",
+ "village_canon": "mungar",
+ "taluk": "Barausa",
+ "district": "Sultanpur",
+ "area": "1.88",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.09996181211284,
+     26.35286942709992
+    ],
+    [
+     82.10317519415513,
+     26.35286942709992
+    ],
+    [
+     82.10333586325724,
+     26.355504400374606
+    ],
+    [
+     82.09996181211284,
+     26.35576147093799
+    ],
+    [
+     82.09996181211284,
+     26.35286942709992
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-05-07",
+   "type": "sale"
+  },
+  {
+   "date": "2021-04-04",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0021",
+ "status": "AMBER",
+ "confidence": 0.8673,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kamrun Nisha Ansari",
+  "father_name": "Dukhi"
+ }
+}

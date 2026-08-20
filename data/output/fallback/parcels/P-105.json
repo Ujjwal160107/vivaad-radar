@@ -1,0 +1,54 @@
+{
+ "id": "P-105",
+ "survey_no": "1793/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "4.55",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.03610640996673,
+     26.28939487161615
+    ],
+    [
+     82.03981224661207,
+     26.28939487161615
+    ],
+    [
+     82.03999753844434,
+     26.292433657665327
+    ],
+    [
+     82.03610640996673,
+     26.292730124596954
+    ],
+    [
+     82.03610640996673,
+     26.28939487161615
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-11-22",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0044",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Phool Chand",
+  "father_name": "Chhotey Lal"
+ }
+}

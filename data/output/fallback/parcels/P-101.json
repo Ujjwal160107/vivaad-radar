@@ -1,0 +1,58 @@
+{
+ "id": "P-101",
+ "survey_no": "119",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Madanpur Paniyar",
+ "village_canon": "madanpur paniyar",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "4.7",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.07259737159042,
+     26.212692059768376
+    ],
+    [
+     82.07542922002733,
+     26.212692059768376
+    ],
+    [
+     82.07557081244917,
+     26.21501417548664
+    ],
+    [
+     82.07259737159042,
+     26.215240723361593
+    ],
+    [
+     82.07259737159042,
+     26.212692059768376
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2018-09-22",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-10-09",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0033",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Santu  Prasad",
+  "father_name": "Sita Ram"
+ }
+}

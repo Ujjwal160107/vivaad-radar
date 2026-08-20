@@ -1,0 +1,49 @@
+{
+ "id": "P-014",
+ "survey_no": "981",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "5.67",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.12803565164936,
+     26.238239328356148
+    ],
+    [
+     82.13128998632573,
+     26.238239328356148
+    ],
+    [
+     82.13145270305955,
+     26.240907882790772
+    ],
+    [
+     82.12803565164936,
+     26.24116822956488
+    ],
+    [
+     82.12803565164936,
+     26.238239328356148
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0007",
+ "status": "AMBER",
+ "confidence": 0.9515,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "D. Nayak",
+  "father_name": "Neemar"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "id": "P-119",
+ "survey_no": "65",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "2.23",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.12674591037907,
+     26.33276294114985
+    ],
+    [
+     82.1312630385941,
+     26.33276294114985
+    ],
+    [
+     82.13148889500485,
+     26.336466986286172
+    ],
+    [
+     82.12674591037907,
+     26.336828356543375
+    ],
+    [
+     82.12674591037907,
+     26.33276294114985
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-08-24",
+   "type": "sale"
+  },
+  {
+   "date": "2019-11-02",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0048",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "M. Srivastava",
+  "father_name": "Shyam Lal"
+ }
+}

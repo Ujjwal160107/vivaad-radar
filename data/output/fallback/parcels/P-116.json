@@ -1,0 +1,49 @@
+{
+ "id": "P-116",
+ "survey_no": "133",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "1.55",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.14656752023005,
+     26.19503159419122
+    ],
+    [
+     82.15182273094821,
+     26.19503159419122
+    ],
+    [
+     82.15208549148412,
+     26.199340866980112
+    ],
+    [
+     82.14656752023005,
+     26.199761283837564
+    ],
+    [
+     82.14656752023005,
+     26.19503159419122
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0047",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kamrun  Nisha",
+  "father_name": "Ram Autar"
+ }
+}

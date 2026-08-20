@@ -1,0 +1,58 @@
+{
+ "id": "P-053",
+ "survey_no": "92",
+ "khasra_no": null,
+ "khata_no": "92",
+ "village": "Sekhauli",
+ "village_canon": "sekhauli",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "1.66",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11149106998406,
+     26.31561593179336
+    ],
+    [
+     82.11568692141273,
+     26.31561593179336
+    ],
+    [
+     82.11589671398417,
+     26.31905652996487
+    ],
+    [
+     82.11149106998406,
+     26.319392198079168
+    ],
+    [
+     82.11149106998406,
+     26.31561593179336
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2014-06-28",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-07-13",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0026",
+ "status": "RED",
+ "confidence": 0.9529,
+ "note": "High-confidence litigation connection found",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Murli @ Muralidhar",
+  "father_name": "Neemar"
+ }
+}

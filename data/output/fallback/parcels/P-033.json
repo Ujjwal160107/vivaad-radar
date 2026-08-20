@@ -1,0 +1,49 @@
+{
+ "id": "P-033",
+ "survey_no": "172",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ballipur",
+ "village_canon": "ballipur",
+ "taluk": "Barausa",
+ "district": "Sultanpur",
+ "area": "5.01",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.10146384887803,
+     26.18740875991513
+    ],
+    [
+     82.10588116063154,
+     26.18740875991513
+    ],
+    [
+     82.10610202621922,
+     26.19103095555301
+    ],
+    [
+     82.10146384887803,
+     26.19138434049329
+    ],
+    [
+     82.10146384887803,
+     26.18740875991513
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0014",
+ "status": "AMBER",
+ "confidence": 0.8629,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kamlesh  Kumar",
+  "father_name": "Dukhi"
+ }
+}

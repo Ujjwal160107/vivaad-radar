@@ -1,0 +1,54 @@
+{
+ "id": "P-054",
+ "survey_no": "3290",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "5.04",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.10874255664544,
+     26.333465792276204
+    ],
+    [
+     82.11152864975809,
+     26.333465792276204
+    ],
+    [
+     82.11166795441372,
+     26.335750388628576
+    ],
+    [
+     82.10874255664544,
+     26.33597327607759
+    ],
+    [
+     82.10874255664544,
+     26.333465792276204
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2014-04-21",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0027",
+ "status": "RED",
+ "confidence": 0.9647,
+ "note": "High-confidence litigation connection found",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rambachan",
+  "father_name": "Ali Bux"
+ }
+}

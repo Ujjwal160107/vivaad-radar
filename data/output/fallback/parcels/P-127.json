@@ -1,0 +1,54 @@
+{
+ "id": "P-127",
+ "survey_no": "471/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "4.27",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05868280846941,
+     26.327542980528555
+    ],
+    [
+     82.06229598635355,
+     26.327542980528555
+    ],
+    [
+     82.06247664524776,
+     26.330505786393545
+    ],
+    [
+     82.05868280846941,
+     26.330794840624275
+    ],
+    [
+     82.05868280846941,
+     26.327542980528555
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-02-25",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0033",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Santu  Prasad",
+  "father_name": "Sita Ram"
+ }
+}

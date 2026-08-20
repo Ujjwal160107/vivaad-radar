@@ -1,0 +1,76 @@
+{
+ "id": "UPHC010368772025",
+ "case_no": "WRIB/399/2025",
+ "court": "Allahabad High Court",
+ "case_type": "tenancy",
+ "filing_date": "2025-01-25",
+ "order_date": "2025-02-04",
+ "status": "active",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cisdb_16012018/orders_2025_202100003992025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "DOMAN AND 8 OTHERS"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "STATE OF U.P. AND 8 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-01-25",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "interim_order",
+   "date": "2025-02-04",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-005",
+   "confidence_score": 0.9529,
+   "status": "RED"
+  },
+  {
+   "parcel_id": "P-006",
+   "confidence_score": 0.9529,
+   "status": "RED"
+  },
+  {
+   "parcel_id": "P-007",
+   "confidence_score": 0.9529,
+   "status": "RED"
+  },
+  {
+   "parcel_id": "P-008",
+   "confidence_score": 0.9529,
+   "status": "RED"
+  },
+  {
+   "parcel_id": "P-066",
+   "confidence_score": 0.7647,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-067",
+   "confidence_score": 0.7647,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-068",
+   "confidence_score": 0.7647,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-069",
+   "confidence_score": 0.7647,
+   "status": "AMBER"
+  }
+ ]
+}

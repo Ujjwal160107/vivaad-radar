@@ -1,0 +1,58 @@
+{
+ "id": "P-111",
+ "survey_no": "2241/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "1.03",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.158230562561,
+     26.18271415261694
+    ],
+    [
+     82.16239451243304,
+     26.18271415261694
+    ],
+    [
+     82.16260270992663,
+     26.186128591512002
+    ],
+    [
+     82.158230562561,
+     26.186461707501767
+    ],
+    [
+     82.158230562561,
+     26.18271415261694
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-11-06",
+   "type": "mutation"
+  },
+  {
+   "date": "2020-11-27",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0045",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Bhagwati  Prasad",
+  "father_name": "Sita Ram"
+ }
+}

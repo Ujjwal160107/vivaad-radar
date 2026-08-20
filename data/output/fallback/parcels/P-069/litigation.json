@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-069",
+ "status": "AMBER",
+ "confidence": 0.7647,
+ "note": "Possible connection - verification recommended",
+ "closed_history": false,
+ "links": [
+  {
+   "case_id": "UPHC010368772025",
+   "case_no": "WRIB/399/2025",
+   "court": "Allahabad High Court",
+   "case_type": "tenancy",
+   "case_status": "active",
+   "confidence": 0.7647,
+   "band": "MEDIUM",
+   "link_status": "AMBER",
+   "reason": "possible connection, verification recommended",
+   "evidence": {
+    "survey_match": "subdivision",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.6,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2025-01-25",
+   "order_date": "2025-02-04",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cisdb_16012018/orders_2025_202100003992025_1.pdf"
+  }
+ ]
+}

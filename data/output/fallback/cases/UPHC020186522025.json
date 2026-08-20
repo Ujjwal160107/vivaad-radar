@@ -1,0 +1,41 @@
+{
+ "id": "UPHC020186522025",
+ "case_no": "WRIB/232/2025",
+ "court": "Allahabad High Court",
+ "case_type": "consolidation_chak",
+ "filing_date": "2025-03-11",
+ "order_date": "2025-08-22",
+ "status": "active",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100002322025_3.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "GANGA SAGAR PANDEY"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION, DISTT. SULTANPUR AND 4 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-03-11",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "interim_order",
+   "date": "2025-08-22",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-034",
+   "confidence_score": 0.9765,
+   "status": "RED"
+  }
+ ]
+}

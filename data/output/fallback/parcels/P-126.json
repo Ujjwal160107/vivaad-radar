@@ -1,0 +1,58 @@
+{
+ "id": "P-126",
+ "survey_no": "1255",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Saidapur Bhau",
+ "village_canon": "saidapur bhau",
+ "taluk": "Chanda",
+ "district": "Sultanpur",
+ "area": "0.4",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.98500523229652,
+     26.226412319254923
+    ],
+    [
+     81.98756068000189,
+     26.226412319254923
+    ],
+    [
+     81.98768845238716,
+     26.228507786373335
+    ],
+    [
+     81.98500523229652,
+     26.228712222189767
+    ],
+    [
+     81.98500523229652,
+     26.226412319254923
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-05-05",
+   "type": "mutation"
+  },
+  {
+   "date": "2023-09-03",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0041",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "R. Maurya",
+  "father_name": "Hari Prasad"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "id": "UPHC020395822024",
+ "case_no": "WRIB/631/2024",
+ "court": "Allahabad High Court",
+ "case_type": "mutation_revenue_record",
+ "filing_date": "2024-05-30",
+ "order_date": "2024-06-04",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100006312024_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "SHYAMALA PRASAD SINGH"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION AND 3 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2024-05-30",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2024-06-04",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-029",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  }
+ ]
+}

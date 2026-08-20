@@ -1,0 +1,49 @@
+{
+ "id": "P-080",
+ "survey_no": "5066/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Miranpur",
+ "district": "Sultanpur",
+ "area": "3.89",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.02547760789672,
+     26.254257386247193
+    ],
+    [
+     82.03044535043958,
+     26.254257386247193
+    ],
+    [
+     82.03069373756672,
+     26.25833093513234
+    ],
+    [
+     82.02547760789672,
+     26.25872835453577
+    ],
+    [
+     82.02547760789672,
+     26.254257386247193
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0004",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Doman",
+  "father_name": "Hari Prasad"
+ }
+}

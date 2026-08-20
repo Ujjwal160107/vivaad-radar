@@ -1,0 +1,205 @@
+{
+ "parcel_b": {
+  "parcel": {
+   "id": "P-B01",
+   "survey_no": "1365-1",
+   "khasra_no": null,
+   "khata_no": "153",
+   "village": "Madanpur Panyar",
+   "village_canon": "madanpur paniyar",
+   "taluk": "Sultanpur",
+   "district": "Sultanpur",
+   "area": "1.0",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       82.11834224369916,
+       26.25451221209065
+      ],
+      [
+       82.1226776272719,
+       26.25451221209065
+      ],
+      [
+       82.12289439645053,
+       26.25806722662029
+      ],
+      [
+       82.11834224369916,
+       26.258414057306112
+      ],
+      [
+       82.11834224369916,
+       26.25451221209065
+      ]
+     ]
+    ]
+   },
+   "land_events": [
+    {
+     "date": "2025-12-13",
+     "type": "sale"
+    }
+   ],
+   "owner_ref": "PR-0051",
+   "status": "RED",
+   "confidence": 0.9105,
+   "note": "High-confidence litigation connection found",
+   "closed_history": 0,
+   "source_label": "synthetic",
+   "owner": {
+    "name": "Shyam Dhar Dubey",
+    "father_name": "Bhola"
+   }
+  },
+  "litigation": {
+   "parcel_id": "P-B01",
+   "status": "RED",
+   "confidence": 0.9105,
+   "note": "High-confidence litigation connection found",
+   "closed_history": false,
+   "links": [
+    {
+     "case_id": "UPHC020611812025",
+     "case_no": "WRIB/784/2025",
+     "court": "Allahabad High Court",
+     "case_type": "succession_inheritance",
+     "case_status": "active",
+     "confidence": 0.9105,
+     "band": "HIGH",
+     "link_status": "RED",
+     "reason": "high confidence, identifier match, active case",
+     "evidence": {
+      "survey_match": "exact",
+      "name_similarity": 0.682,
+      "father_name_similarity": 1.0,
+      "village_match": true,
+      "taluk_match": false,
+      "case_type_relevance": 0.9,
+      "weights_used": {
+       "identifier": 0.4,
+       "name": 0.25,
+       "father_name": 0.15,
+       "village": 0.1,
+       "case_type": 0.1
+      },
+      "features_absent": [],
+      "block": "village",
+      "location_unconfirmed": false
+     },
+     "filing_date": "2025-08-11",
+     "order_date": "2025-08-22",
+     "next_hearing": null,
+     "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007842025_1.pdf"
+    }
+   ]
+  }
+ },
+ "parcel_a": {
+  "parcel": {
+   "id": "P-A01",
+   "survey_no": "418",
+   "khasra_no": null,
+   "khata_no": null,
+   "village": "Madanpur Paniyar",
+   "village_canon": "madanpur paniyar",
+   "taluk": "Sultanpur",
+   "district": "Sultanpur",
+   "area": "1.6",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       82.11073518757202,
+       26.335387000844168
+      ],
+      [
+       82.11381423187866,
+       26.335387000844168
+      ],
+      [
+       82.11396818409399,
+       26.33791181717562
+      ],
+      [
+       82.11073518757202,
+       26.33815814072015
+      ],
+      [
+       82.11073518757202,
+       26.335387000844168
+      ]
+     ]
+    ]
+   },
+   "land_events": [
+    {
+     "date": "2014-10-10",
+     "type": "sale"
+    }
+   ],
+   "owner_ref": "PR-0052",
+   "status": "GREEN",
+   "confidence": 0.0,
+   "note": "No matching active litigation found in available records",
+   "closed_history": 0,
+   "source_label": "synthetic",
+   "owner": {
+    "name": "Ram Autar Verma",
+    "father_name": "Dukhi"
+   }
+  },
+  "litigation": {
+   "parcel_id": "P-A01",
+   "status": "GREEN",
+   "confidence": 0.0,
+   "note": "No matching active litigation found in available records",
+   "closed_history": false,
+   "links": []
+  }
+ },
+ "case": {
+  "id": "UPHC020611812025",
+  "case_no": "WRIB/784/2025",
+  "court": "Allahabad High Court",
+  "case_type": "succession_inheritance",
+  "filing_date": "2025-08-11",
+  "order_date": "2025-08-22",
+  "status": "active",
+  "next_hearing_date": null,
+  "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007842025_1.pdf",
+  "source_label": "real",
+  "parties": [
+   {
+    "role": "petitioner",
+    "name_as_written": "SHYAMDHAR DUBEY AND 9 OTHERS"
+   },
+   {
+    "role": "respondent",
+    "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION, SULTANPUR AND OTHERS"
+   }
+  ],
+  "events": [
+   {
+    "event_type": "filed",
+    "date": "2025-08-11",
+    "note": "Case filed"
+   },
+   {
+    "event_type": "interim_order",
+    "date": "2025-08-22",
+    "note": "Latest order on record"
+   }
+  ],
+  "linked_parcels": [
+   {
+    "parcel_id": "P-B01",
+    "confidence_score": 0.9105,
+    "status": "RED"
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-034",
+ "status": "RED",
+ "confidence": 0.9765,
+ "note": "High-confidence litigation connection found",
+ "closed_history": false,
+ "links": [
+  {
+   "case_id": "UPHC020186522025",
+   "case_no": "WRIB/232/2025",
+   "court": "Allahabad High Court",
+   "case_type": "consolidation_chak",
+   "case_status": "active",
+   "confidence": 0.9765,
+   "band": "HIGH",
+   "link_status": "RED",
+   "reason": "high confidence, identifier match, active case",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.8,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2025-03-11",
+   "order_date": "2025-08-22",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100002322025_3.pdf"
+  }
+ ]
+}

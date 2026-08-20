@@ -1,0 +1,35 @@
+{
+ "id": "UPHC020268732025",
+ "case_no": "WRIB/335/2025",
+ "court": "Allahabad High Court",
+ "case_type": "mutation_revenue_record",
+ "filing_date": "2025-04-11",
+ "order_date": "2025-04-16",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100003352025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "RAM NEWAL"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION, SULTANPUR AND 3 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-04-11",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-04-16",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": []
+}

@@ -1,0 +1,54 @@
+{
+ "id": "P-071",
+ "survey_no": "495/2",
+ "khasra_no": null,
+ "khata_no": "495/2",
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Chanda",
+ "district": "Sultanpur",
+ "area": "0.72",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.0688976678514,
+     26.247896176155674
+    ],
+    [
+     82.07172008661057,
+     26.247896176155674
+    ],
+    [
+     82.07186120754854,
+     26.250210559538193
+    ],
+    [
+     82.0688976678514,
+     26.250436353038925
+    ],
+    [
+     82.0688976678514,
+     26.247896176155674
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-06-19",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0006",
+ "status": "AMBER",
+ "confidence": 0.6643,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampa Ti",
+  "father_name": "Ram Autar"
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "P-098",
+ "survey_no": "1670/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lohramau",
+ "village_canon": "lohramau",
+ "taluk": "Chanda",
+ "district": "Sultanpur",
+ "area": "4.48",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.0924068983826,
+     26.18148914628547
+    ],
+    [
+     82.09718649311978,
+     26.18148914628547
+    ],
+    [
+     82.09742547285664,
+     26.185408413969956
+    ],
+    [
+     82.0924068983826,
+     26.18579078154893
+    ],
+    [
+     82.0924068983826,
+     26.18148914628547
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-08-07",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0039",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Vijay Bahadur",
+  "father_name": "Jagdish"
+ }
+}

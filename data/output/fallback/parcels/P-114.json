@@ -1,0 +1,54 @@
+{
+ "id": "P-114",
+ "survey_no": "805",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Chanda",
+ "district": "Sultanpur",
+ "area": "4.47",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05675964186256,
+     26.258626085844522
+    ],
+    [
+     82.0619681967378,
+     26.258626085844522
+    ],
+    [
+     82.06222862448156,
+     26.26289710084222
+    ],
+    [
+     82.05675964186256,
+     26.26331378523224
+    ],
+    [
+     82.05675964186256,
+     26.258626085844522
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2014-01-17",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0037",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rajesh  Maurya",
+  "father_name": "Jagdish"
+ }
+}

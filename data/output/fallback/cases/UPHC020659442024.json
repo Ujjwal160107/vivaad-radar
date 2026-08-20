@@ -1,0 +1,35 @@
+{
+ "id": "UPHC020659442024",
+ "case_no": "A227/4525/2024",
+ "court": "Allahabad High Court",
+ "case_type": "tenancy",
+ "filing_date": "2024-09-20",
+ "order_date": "2024-10-17",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_209000045252024_2.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "KUSH KUMAR TIWARI"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "SMT. PREMWATI"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2024-09-20",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2024-10-17",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": []
+}

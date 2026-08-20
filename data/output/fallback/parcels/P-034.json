@@ -1,0 +1,49 @@
+{
+ "id": "P-034",
+ "survey_no": "122",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "5.22",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.10233763478121,
+     26.324642998313326
+    ],
+    [
+     82.10396400778029,
+     26.324642998313326
+    ],
+    [
+     82.10404532643025,
+     26.32597662417258
+    ],
+    [
+     82.10233763478121,
+     26.326106734012505
+    ],
+    [
+     82.10233763478121,
+     26.324642998313326
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0015",
+ "status": "RED",
+ "confidence": 0.9765,
+ "note": "High-confidence litigation connection found",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Ganga Sagar Pandey",
+  "father_name": "Munna"
+ }
+}

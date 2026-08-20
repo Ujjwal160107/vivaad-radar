@@ -1,0 +1,58 @@
+{
+ "id": "P-051",
+ "survey_no": "4095m",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Malapur Jagdishpur",
+ "village_canon": "malapur jagdishpur",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "5.52",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.10216400828365,
+     26.255206059126376
+    ],
+    [
+     82.10467781868138,
+     26.255206059126376
+    ],
+    [
+     82.10480350920126,
+     26.25726738365251
+    ],
+    [
+     82.10216400828365,
+     26.257468488484328
+    ],
+    [
+     82.10216400828365,
+     26.255206059126376
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2017-04-13",
+   "type": "mutation"
+  },
+  {
+   "date": "2019-02-24",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0025",
+ "status": "AMBER",
+ "confidence": 0.8669,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Manju  Srivastava",
+  "father_name": "Sita Ram"
+ }
+}

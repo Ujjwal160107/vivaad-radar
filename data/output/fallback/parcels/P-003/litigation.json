@@ -1,0 +1,77 @@
+{
+ "parcel_id": "P-003",
+ "status": "AMBER",
+ "confidence": 0.9765,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": true,
+ "links": [
+  {
+   "case_id": "UPHC010239492025",
+   "case_no": "WRIB/222/2025",
+   "court": "Allahabad High Court",
+   "case_type": "consolidation_chak",
+   "case_status": "disposed",
+   "confidence": 0.9765,
+   "band": "HIGH",
+   "link_status": "AMBER",
+   "reason": "high confidence but case is disposed",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.8,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2025-01-17",
+   "order_date": "2025-05-02",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cisdb_16012018/orders_2025_202100002222025_4.pdf"
+  },
+  {
+   "case_id": "UPHC020182632025",
+   "case_no": "WRIB/222/2025",
+   "court": "Allahabad High Court",
+   "case_type": "acquisition_compensation",
+   "case_status": "disposed",
+   "confidence": 0.7342,
+   "band": "MEDIUM",
+   "link_status": "AMBER",
+   "reason": "possible connection, verification recommended",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 0.256,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.6,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2025-03-08",
+   "order_date": "2025-04-30",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100002222025_3.pdf"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "P-106",
+ "survey_no": "1557/4",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Tato Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "2.52",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.10998640535756,
+     26.27807182385089
+    ],
+    [
+     82.11354623065675,
+     26.27807182385089
+    ],
+    [
+     82.11372422192171,
+     26.280990880596228
+    ],
+    [
+     82.10998640535756,
+     26.28127566662016
+    ],
+    [
+     82.10998640535756,
+     26.27807182385089
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-03-11",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0025",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Manju  Srivastava",
+  "father_name": "Sita Ram"
+ }
+}

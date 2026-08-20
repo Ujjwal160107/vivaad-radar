@@ -1,0 +1,54 @@
+{
+ "id": "P-088",
+ "survey_no": "2049",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "4.98",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.99601350779832,
+     26.315427770684114
+    ],
+    [
+     81.99821776942346,
+     26.315427770684114
+    ],
+    [
+     81.99832798250472,
+     26.317235265216723
+    ],
+    [
+     81.99601350779832,
+     26.317411606146734
+    ],
+    [
+     81.99601350779832,
+     26.315427770684114
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-04-12",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0033",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Santu  Prasad",
+  "father_name": "Sita Ram"
+ }
+}

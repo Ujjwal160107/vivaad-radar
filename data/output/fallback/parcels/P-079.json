@@ -1,0 +1,58 @@
+{
+ "id": "P-079",
+ "survey_no": "3561",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ballipur",
+ "village_canon": "ballipur",
+ "taluk": "Chanda",
+ "district": "Sultanpur",
+ "area": "2.4",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.13467708837281,
+     26.266203981887585
+    ],
+    [
+     82.1364044333193,
+     26.266203981887585
+    ],
+    [
+     82.13649080056662,
+     26.2676204047437
+    ],
+    [
+     82.13467708837281,
+     26.26775859233942
+    ],
+    [
+     82.13467708837281,
+     26.266203981887585
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-05-20",
+   "type": "mutation"
+  },
+  {
+   "date": "2019-07-01",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0004",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Doman",
+  "father_name": "Hari Prasad"
+ }
+}

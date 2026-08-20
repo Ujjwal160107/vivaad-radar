@@ -1,0 +1,54 @@
+{
+ "id": "P-A01",
+ "survey_no": "418",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Madanpur Paniyar",
+ "village_canon": "madanpur paniyar",
+ "taluk": "Sultanpur",
+ "district": "Sultanpur",
+ "area": "1.6",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11073518757202,
+     26.335387000844168
+    ],
+    [
+     82.11381423187866,
+     26.335387000844168
+    ],
+    [
+     82.11396818409399,
+     26.33791181717562
+    ],
+    [
+     82.11073518757202,
+     26.33815814072015
+    ],
+    [
+     82.11073518757202,
+     26.335387000844168
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2014-10-10",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0052",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Ram Autar Verma",
+  "father_name": "Dukhi"
+ }
+}

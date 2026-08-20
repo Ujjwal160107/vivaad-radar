@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-042",
+ "status": "AMBER",
+ "confidence": 0.9647,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": true,
+ "links": [
+  {
+   "case_id": "UPHC020259672024",
+   "case_no": "WRIB/396/2024",
+   "court": "Allahabad High Court",
+   "case_type": "sale_deed_transfer",
+   "case_status": "disposed",
+   "confidence": 0.9647,
+   "band": "HIGH",
+   "link_status": "AMBER",
+   "reason": "high confidence but case is disposed",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.7,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2024-04-12",
+   "order_date": "2024-04-16",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100003962024_1.pdf"
+  }
+ ]
+}

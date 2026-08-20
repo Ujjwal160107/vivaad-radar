@@ -1,0 +1,54 @@
+{
+ "id": "P-103",
+ "survey_no": "1770",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Malapur Jagdishpur",
+ "village_canon": "malapur jagdishpur",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "3.44",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.05135052627884,
+     26.181050607642327
+    ],
+    [
+     82.05456434535061,
+     26.181050607642327
+    ],
+    [
+     82.0547250363042,
+     26.183685939281187
+    ],
+    [
+     82.05135052627884,
+     26.18394304480693
+    ],
+    [
+     82.05135052627884,
+     26.181050607642327
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-04-09",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0043",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Ram Newal",
+  "father_name": "Chhotey Lal"
+ }
+}

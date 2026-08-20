@@ -1,0 +1,49 @@
+{
+ "id": "P-124",
+ "survey_no": "1773",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Miranpur",
+ "district": "Sultanpur",
+ "area": "2.51",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.13416705024787,
+     26.34183745272079
+    ],
+    [
+     82.13677268770711,
+     26.34183745272079
+    ],
+    [
+     82.13690296958008,
+     26.34397407543737
+    ],
+    [
+     82.13416705024787,
+     26.34418252643411
+    ],
+    [
+     82.13416705024787,
+     26.34183745272079
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0039",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Vijay Bahadur",
+  "father_name": "Jagdish"
+ }
+}

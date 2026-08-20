@@ -1,0 +1,81 @@
+{
+ "id": "UPHC020577002024",
+ "case_no": "WRIB/866/2024",
+ "court": "Allahabad High Court",
+ "case_type": "succession_inheritance",
+ "filing_date": "2024-08-24",
+ "order_date": "2025-02-11",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2024_202100008662024_12.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "SMT. RAMPATI AND OTHERS"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DEPUTY DIRECTOR OF CONSOLIDATION, SULTANPUR AND OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2024-08-24",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-02-11",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-009",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-010",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-012",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-013",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-011",
+   "confidence_score": 0.8525,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-070",
+   "confidence_score": 0.8,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-072",
+   "confidence_score": 0.8,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-071",
+   "confidence_score": 0.6643,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-073",
+   "confidence_score": 0.6643,
+   "status": "AMBER"
+  }
+ ]
+}
