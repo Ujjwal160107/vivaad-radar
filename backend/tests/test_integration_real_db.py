@@ -31,6 +31,9 @@ def test_flagship_parcel_b_is_red_high_confidence(real_client):
     assert body["status"] == "RED"
     assert body["confidence"] >= 0.85
     assert body["links"], "flagship parcel must carry at least one link"
+    link = next(l for l in body["links"] if l["case_id"] == FLAGSHIP_CNR)
+    assert link["next_hearing_source"] == "derived"
+    assert link["next_hearing"]
 
 
 def test_flagship_parcel_a_is_green(real_client):

@@ -65,7 +65,8 @@ def litigation(parcel_id: str):
         """SELECT l.case_id, l.confidence_score, l.confidence_band,
                   l.identifier_match, l.evidence, l.status AS link_status, l.reason,
                   c.case_no, c.court, c.status AS case_status, c.filing_date,
-                  c.order_date, c.next_hearing_date, c.case_type, c.raw_text_ref
+                  c.order_date, c.next_hearing_date, c.next_hearing_source,
+                  c.case_type, c.raw_text_ref
            FROM ParcelCaseLink l JOIN CourtCase c ON c.id = l.case_id
            WHERE l.parcel_id = ? ORDER BY l.confidence_score DESC""",
         (parcel_id,)).fetchall()
@@ -82,6 +83,7 @@ def litigation(parcel_id: str):
             "link_status": r["link_status"], "reason": r["reason"],
             "evidence": evidence, "filing_date": r["filing_date"],
             "order_date": r["order_date"], "next_hearing": r["next_hearing_date"],
+            "next_hearing_source": r["next_hearing_source"],
             "raw_text_ref": r["raw_text_ref"],
         })
     return {

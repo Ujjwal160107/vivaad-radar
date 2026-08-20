@@ -10,6 +10,7 @@ def test_parcel_b_is_red_high_confidence(client):
     assert link["band"] == "HIGH"
     assert link["evidence"]["survey_match"] == "exact"
     assert link["next_hearing"] == "2026-09-12"
+    assert link["next_hearing_source"] == "derived"
 
 
 def test_parcel_a_is_green(client):
@@ -29,5 +30,6 @@ def test_link_fields_match_s7_contract(client):
     assert set(link) == {
         "case_id", "case_no", "court", "case_type", "case_status",
         "confidence", "band", "link_status", "reason", "evidence",
-        "filing_date", "order_date", "next_hearing", "raw_text_ref",
+        "filing_date", "order_date", "next_hearing", "next_hearing_source",
+        "raw_text_ref",
     }

@@ -140,7 +140,7 @@ This is the interface between pipeline and backend. The pipeline owns it; the ba
 |---|---|
 | `Parcel` | `id, survey_no, khasra_no, khata_no, village, village_canon, taluk, district, area, geometry, land_events, owner_ref, status, confidence, note, closed_history, source_label` |
 | `Person` | `id, name, name_normalized, father_name, address, source_label` |
-| `CourtCase` | `id` (**the CNR — there is no separate `cnr` column**)`, case_no, court, case_type, filing_date, order_date, status, next_hearing_date, raw_text_ref, source_label` |
+| `CourtCase` | `id` (**the CNR — there is no separate `cnr` column**)`, case_no, court, case_type, filing_date, order_date, status, next_hearing_date, raw_text_ref, source_label, next_hearing_source` (`derived` \| `real` \| NULL) |
 | `CaseParty` | `case_id, person_id, role, name_as_written` |
 | `CourtEvent` | `id, case_id, event_type, date, note` — `event_type ∈ {filed, interim_order, judgment, next_hearing}` |
 | `ParcelCaseLink` | `id, parcel_id, case_id, confidence_score, confidence_band, identifier_match, evidence, status, reason, created_at` |
