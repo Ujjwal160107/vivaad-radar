@@ -1,0 +1,659 @@
+<title>Vivaad Radar Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+  --ground:      #F1F4F7;
+  --surface:     #FFFFFF;
+  --surface-alt: #E8EDF2;
+  --ink:         #131A23;
+  --ink-mid:     #46535F;
+  --ink-soft:    #6B7885;
+  --rule:        #D2DAE2;
+  --rule-soft:   #E2E8EE;
+  --accent:      #1C4A73;
+  --accent-lit:  #2E6DA4;
+  --accent-wash: #E3ECF4;
+  --go:          #216B45;
+  --go-wash:     #DDEEE4;
+  --risk:        #8E5A0C;
+  --risk-wash:   #F6EBD8;
+  --dead:        #9E2B22;
+  --dead-wash:   #F7E2E0;
+  --shadow:      0 1px 2px rgba(19,26,35,.05), 0 6px 18px -10px rgba(19,26,35,.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:      #0E1319;
+    --surface:     #161D26;
+    --surface-alt: #1E2732;
+    --ink:         #E3E9F0;
+    --ink-mid:     #A3B0BD;
+    --ink-soft:    #7C8996;
+    --rule:        #2B343F;
+    --rule-soft:   #222B35;
+    --accent:      #7EB3E2;
+    --accent-lit:  #9BC7EE;
+    --accent-wash: #17293A;
+    --go:          #58B482;
+    --go-wash:     #14291F;
+    --risk:        #D79B44;
+    --risk-wash:   #2C2416;
+    --dead:        #E5837A;
+    --dead-wash:   #2E1A18;
+    --shadow:      0 1px 2px rgba(0,0,0,.3), 0 6px 18px -10px rgba(0,0,0,.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground:      #0E1319;
+  --surface:     #161D26;
+  --surface-alt: #1E2732;
+  --ink:         #E3E9F0;
+  --ink-mid:     #A3B0BD;
+  --ink-soft:    #7C8996;
+  --rule:        #2B343F;
+  --rule-soft:   #222B35;
+  --accent:      #7EB3E2;
+  --accent-lit:  #9BC7EE;
+  --accent-wash: #17293A;
+  --go:          #58B482;
+  --go-wash:     #14291F;
+  --risk:        #D79B44;
+  --risk-wash:   #2C2416;
+  --dead:        #E5837A;
+  --dead-wash:   #2E1A18;
+  --shadow:      0 1px 2px rgba(0,0,0,.3), 0 6px 18px -10px rgba(0,0,0,.6);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.62;
+  margin: 0;
+  padding: 0 20px 96px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 62rem; margin: 0 auto; }
+
+/* ---------- type ---------- */
+h1, h2, h3, .eyebrow, .chip, .stage-num, th, .btn {
+  font-family: Archivo, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5.2vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -.022em;
+  line-height: 1.04;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(1.32rem, 2.6vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: -.014em;
+  line-height: 1.18;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -.004em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+p { margin: 0; max-width: 66ch; }
+
+.eyebrow {
+  font-size: .69rem;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+code, kbd, .mono {
+  font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: .855em;
+}
+
+code {
+  background: var(--surface-alt);
+  border-radius: 3px;
+  padding: .1em .34em;
+  word-break: break-word;
+}
+
+a { color: var(--accent-lit); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid var(--accent-lit);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+strong { font-weight: 600; }
+
+/* ---------- masthead ---------- */
+.masthead {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 72px 0 34px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.mast-rule {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.mast-rule .line { flex: 1; height: 1px; background: var(--rule); }
+
+.deck {
+  font-size: 1.16rem;
+  color: var(--ink-mid);
+  max-width: 60ch;
+}
+
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .74rem;
+  color: var(--ink-soft);
+  letter-spacing: .01em;
+}
+
+/* ---------- sections ---------- */
+section { margin-top: 62px; display: flex; flex-direction: column; gap: 22px; }
+.sec-head { display: flex; flex-direction: column; gap: 9px; }
+
+/* ---------- chips ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .655rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .26em .62em;
+  border-radius: 3px;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+.chip.go     { background: var(--go-wash);   color: var(--go);   }
+.chip.risk   { background: var(--risk-wash); color: var(--risk); }
+.chip.dead   { background: var(--dead-wash); color: var(--dead); }
+.chip.neutral{ background: var(--surface-alt); color: var(--ink-soft); }
+
+/* ---------- finding cards ---------- */
+.findings { display: grid; gap: 18px; grid-template-columns: 1fr; }
+@media (min-width: 780px) { .findings { grid-template-columns: 1fr 1fr; } }
+
+.finding {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 24px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+.finding p { font-size: .95rem; }
+
+/* ---------- tables ---------- */
+.tscroll {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 640px;
+  font-size: .87rem;
+  font-variant-numeric: tabular-nums;
+}
+th {
+  text-align: left;
+  font-size: .67rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--surface-alt);
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+  line-height: 1.48;
+}
+tbody tr:last-child td { border-bottom: none; }
+td.tight { white-space: nowrap; }
+
+/* ---------- stages ---------- */
+.stages { display: flex; flex-direction: column; gap: 2px; }
+.stage {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 20px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px 22px;
+}
+.stage + .stage { margin-top: 12px; }
+.stage-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.03em;
+}
+.stage-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.stage-body p { font-size: .93rem; }
+.stage-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; }
+
+/* ---------- callout ---------- */
+.callout {
+  background: var(--accent-wash);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.callout.warn { background: var(--risk-wash); border-left-color: var(--risk); }
+.callout p { font-size: .95rem; }
+
+/* ---------- lists ---------- */
+ul, ol { margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 7px; max-width: 66ch; }
+li { padding-left: .18rem; }
+li::marker { color: var(--ink-soft); }
+
+.checks { list-style: none; padding-left: 0; gap: 11px; }
+.checks li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  padding-left: 0;
+  font-size: .95rem;
+}
+.checks .box {
+  width: 15px; height: 15px;
+  border: 1.5px solid var(--ink-soft);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* ---------- schedule ---------- */
+.sched { display: flex; flex-direction: column; gap: 10px; }
+.slot {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 18px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.slot:last-child { border-bottom: none; }
+.slot .when {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .76rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: .01em;
+}
+.slot .what { font-size: .95rem; }
+.slot .what b { font-weight: 600; }
+
+/* ---------- footer ---------- */
+footer {
+  margin-top: 74px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-size: .82rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer p { max-width: 70ch; }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Idea 1 · Build plan</p>
+  <h1>Vivaad Radar</h1>
+  <p class="deck">Joining district-court litigation to land parcels by survey number — what to scrape, from where, in what order, and when to abandon it.</p>
+  <div class="mast-rule"><span class="line"></span></div>
+  <div class="meta-strip">
+    <span>Researched 20 Aug 2026</span>
+    <span>110 claims · 34 adversarial checks</span>
+    <span>Target: Karnataka, one taluk</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">What changed</p>
+    <h2>Two findings that reshape the project</h2>
+    <p>Everything else in this document is logistics. These two are the reason the plan looks the way it does.</p>
+  </div>
+
+  <div class="findings">
+    <article class="finding">
+      <h3>Karnataka already publishes a dispute register keyed by survey number</h3>
+      <p><code>landrecords.karnataka.gov.in/service22</code> is a live Bhoomi service titled <em>Dispute Case Reports</em>, with a <strong>“Survey No Wise”</strong> report type. No login. No CAPTCHA.</p>
+      <p>It carries <strong>revenue-court</strong> cases only — Bhoomi itself points users elsewhere for civil courts. So it is not a competitor. It is three things at once: proof the field is wanted, a precise map of the gap, and — most valuable — <strong>a ground-truth label set you did not author</strong>.</p>
+      <p>The pitch upgrades accordingly: <em>“Karnataka already flags disputed land by survey number. It only sees revenue courts. Here are the civil suits it cannot see.”</em></p>
+    </article>
+
+    <article class="finding">
+      <h3>You can enumerate court orders by date range, not case number</h3>
+      <p>On the eCourts district portal, exactly two POST endpoints require a CAPTCHA: <code>?p=courtorder/submitOrderDate</code> and <code>?p=casestatus/submitCaseNo</code>. Everything else — <code>fillDistrict</code>, <code>fillcomplex</code>, <code>home/viewHistory</code>, <code>home/display_pdf</code> — is ungated.</p>
+      <p><code>submitOrderDate</code> takes a <strong>date range for a whole court establishment</strong>. One CAPTCHA buys you every order issued in that window, and the PDFs then download without another one.</p>
+      <p>That is the difference between one CAPTCHA per case and one per week of court business. It is what makes the corpus reachable in a weekend.</p>
+    </article>
+  </div>
+
+  <div class="callout">
+    <p><strong>Free bonus, worth 30 minutes:</strong> the portal runs stock Securimage, and the audio CAPTCHA channel is present in the live DOM — the image’s own alt text reads <em>“or select the audio Captcha and type the characters you hear.”</em> Securimage audio is a WAV of spoken characters and is usually far easier to solve than its distorted image. Test it before you fight the vision model.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Decision</p>
+    <h2>Pick Karnataka, and accept one weakness</h2>
+    <p>Three states are plausible. Each fails somewhere different, and the failures are not equally survivable.</p>
+  </div>
+
+  <div class="tscroll">
+    <table>
+      <thead>
+        <tr><th>State</th><th>Record of Rights</th><th>Cadastral polygons</th><th>Court text</th><th>Verdict</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tight"><strong>Karnataka</strong></td>
+          <td>Bhoomi <code>Service2</code> — survey-number cascade, no CAPTCHA on the entry form. Plus the <code>service22</code> dispute register.</td>
+          <td>Weak. Not on NIC’s Bhu-Naksha list; uses CollabLand with no public URL. Only <code>BhoomiMaps</code> (beta) and the Dishaank app.</td>
+          <td>Largely English</td>
+          <td><span class="chip go">Pick</span></td>
+        </tr>
+        <tr>
+          <td class="tight"><strong>Bihar / AP</strong></td>
+          <td>Messier, and Bihar is mid-resurvey</td>
+          <td>Strong. Bhu-Naksha serves unauthenticated JSON under <code>../rest/</code>, no CAPTCHA, full district→village codes inline, parcel field <code>plotNo</code>.</td>
+          <td>Hindi / Telugu</td>
+          <td><span class="chip risk">Only if maps matter more than the join</span></td>
+        </tr>
+        <tr>
+          <td class="tight"><strong>Maharashtra</strong></td>
+          <td>7/12 via an ASP.NET page method that will not replay outside a browser — returns <code>{"d":null}</code>. Needs Playwright.</td>
+          <td>Listed, but <code>mahabhunakasha</code> 302-redirect-loops without a browser session.</td>
+          <td>Marathi + English</td>
+          <td><span class="chip risk">Highest friction</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <p><strong>The weakness you are accepting:</strong> Karnataka has no clean public cadastral GeoJSON. Do not solve this by mixing states — a Bihar map under a Karnataka record is a lie a judge may catch.</p>
+    <p>Solve it by demoting the map. Your evidence is the survey-number match and the case record; the map is presentation. Render the demo village as a <strong>labelled schematic grid</strong>, say on screen that it is schematic, and spend the saved hours on precision. If <code>BhoomiMaps</code> yields real geometry for your village in under an hour, take it — otherwise walk away.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Reference</p>
+    <h2>Every source, with its gate and its licence</h2>
+    <p>Verified live on 20 August 2026 unless marked otherwise. Check the marked ones yourself before you depend on them.</p>
+  </div>
+
+  <div class="tscroll">
+    <table>
+      <thead>
+        <tr><th>Source</th><th>What you get</th><th>Gate</th><th>Licence / status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tight"><code>services.ecourts.gov.in<br>/ecourtindia_v6/</code></td>
+          <td>District-court orders + judgments as PDFs; case status metadata. <strong>Your primary source.</strong></td>
+          <td>6-char Securimage alphanumeric, image or audio, on two POSTs only. Rotating <code>app_token</code> per session. HTTP 405 → back off 30 s.</td>
+          <td>No anti-scraping text on the search page; terms exist as footer links. Be polite: 2 workers, ~1 req/s.</td>
+        </tr>
+        <tr>
+          <td class="tight"><code>landrecords.karnataka<br>.gov.in/Service2</code></td>
+          <td>RTC + mutation, via District→Taluk→Hobli→Village→Survey→Surnoc→Hissa→Period→Year</td>
+          <td>No CAPTCHA on the entry form. <span class="chip neutral">Deeper flow unverified</span></td>
+          <td>Free view path; the printable copy is paid (₹15) and you don’t need it</td>
+        </tr>
+        <tr>
+          <td class="tight"><code>landrecords.karnataka<br>.gov.in/service22</code></td>
+          <td>Bhoomi dispute register — District Wise / <strong>Survey No Wise</strong> / Consolidated</td>
+          <td>None</td>
+          <td>Revenue-court cases only. Coverage in practice is unmeasured — measuring it is part of your contribution.</td>
+        </tr>
+        <tr>
+          <td class="tight"><code>s3://indian-high-court<br>-judgments</code></td>
+          <td>~17.8 M judgments, 25 High Courts, ~1.25 TiB. Parquet metadata carries <code>title</code>, <code>description</code>, <code>disposal_nature</code>, <code>date_of_registration</code>.</td>
+          <td>None — <code>--no-sign-request</code>, ap-south-1, no AWS account</td>
+          <td>CC-BY-4.0. <strong>High Courts only.</strong> Use it to train and benchmark the extractor, not as the district corpus.</td>
+        </tr>
+        <tr>
+          <td class="tight">Development Data Lab<br>judicial data</td>
+          <td>81.2 M district-court cases, 2010–2018</td>
+          <td>None — bulk download</td>
+          <td>ODbL. <strong>Metadata only, anonymised, no free text, no parcel identifier.</strong> Good for base rates. Useless for the join.</td>
+        </tr>
+        <tr>
+          <td class="tight">NAPIX<br><code>napix.gov.in</code></td>
+          <td>NIC’s official API exchange; eCourts is published there</td>
+          <td>Government-department credentials</td>
+          <td>You cannot get access in a weekend — but naming it answers <em>“why hasn’t the government done this?”</em> precisely.</td>
+        </tr>
+        <tr>
+          <td class="tight">DAKSH database</td>
+          <td>High Court dashboards</td>
+          <td>None</td>
+          <td><span class="chip dead">Skip</span> CC BY-NC, High Court only, no sign of maintenance past 2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:12px">Tooling, ranked</h3>
+  <ul>
+    <li><strong><code>bharat-courts</code></strong> (pip, MIT, last push Aug 2026) — the only maintained package covering the <em>district</em> portal, plus High Courts, the judgments portal and SCI. Ships three CAPTCHA solvers: ddddocr OCR at a self-reported ~75%, an ONNX solver, and a manual fallback; five retries by default. Single-author, 20 stars, unaudited — read the code before you trust it.</li>
+    <li><strong><code>vanga/indian-district-court-judgments</code></strong> (MIT, WIP) — a district-court harness with a 95 MB ONNX CAPTCHA model and S3 sync. Publishes <em>no</em> public dataset, so it is a code reference, not a shortcut.</li>
+    <li><strong><code>openjustice-in/ecourts</code></strong> (PyPI <code>ecourts</code>, GPL-3.0, 64 stars) — well-maintained but <strong>High Court only</strong>. Its Tesseract preprocessing pipeline is worth reading even though the target is wrong.</li>
+    <li><strong><code>opennyai</code></strong> — Indian legal NER, 14 entity types, <em>none of them a land identifier</em> (the most granular is GPE, which stops at village). Its <code>PROVISION</code> type does catch “Section 52 TPA” and “Order 39 CPC”, which is a genuinely useful signal. The survey-number extractor is yours to build.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Architecture</p>
+    <h2>The pipeline</h2>
+    <p>Five stages. Stage 3 is the project; everything else is plumbing.</p>
+  </div>
+
+  <div class="stages">
+
+    <article class="stage">
+      <div class="stage-num">01</div>
+      <div class="stage-body">
+        <div class="stage-title"><h3>Sweep</h3><span class="chip neutral">~4 h</span></div>
+        <p>Pin the <code>State → District → Court Complex → Establishment</code> codes for your taluk via the ungated <code>fillDistrict</code> / <code>fillcomplex</code> calls. Then walk <code>submitOrderDate</code> backwards in weekly windows from today, solving one CAPTCHA per window, collecting order metadata and PDF pointers. Pull the PDFs through <code>display_pdf</code>, which needs no CAPTCHA.</p>
+        <p><strong>Budget ~20% attrition</strong> from dead links and non-machine-readable scans — that is the measured loss rate from a published Delhi High Court scrape, and you should expect no better. Cache every byte to SQLite on first fetch.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">02</div>
+      <div class="stage-body">
+        <div class="stage-title"><h3>Filter to land matters</h3><span class="chip go">Cheap and defensible</span></div>
+        <p>A keyword classifier over the first 4,000 characters — <em>khasra, khata, khatauni, khewat, jamabandi, patta, bigha, biswa, record of rights, mutation, survey number</em> — separated land litigation from the rest at <strong>96.7% accuracy on a 700-case hand check</strong> in the Delhi study. Reproduce it, hand-check your own sample, and report the number.</p>
+        <p>Do this with regex and say so. Using arithmetic where arithmetic is correct buys you credibility for the places you do use a model.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">03</div>
+      <div class="stage-body">
+        <div class="stage-title"><h3>Extract the parcel</h3><span class="chip risk">The actual project</span></div>
+        <p>Pull <code>SURVEY_NO</code>, <code>HISSA</code>, <code>VILLAGE</code>, <code>HOBLI</code>, <code>TALUK</code>, <code>AREA</code> and <code>PARTY_ROLE</code> out of order text. Regex handles the clean <code>112/1</code> forms; the tail is where the interesting cases hide, and that is where a fine-tuned span model earns its place.</p>
+        <p>Train on the High Court S3 corpus — it is free, bulk, CC-BY, and its <code>description</code> field gives you weak labels at scale. Then evaluate on hand-labelled <em>district</em> orders, because that is the distribution you actually serve.</p>
+        <p><strong>Weight interim orders heavily.</strong> An Order 39 injunction must identify the property it restrains, so it names the survey number where an adjournment order names nothing. Those are also the highest-risk cases. Measure and report both rates separately — your coverage number is far better on the subset that matters, and that turns your weakest question into your best answer.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">04</div>
+      <div class="stage-body">
+        <div class="stage-title"><h3>Resolve and score</h3></div>
+        <p>Match extracted parcels against Bhoomi RTC rows scraped for the same village. Second signal: fuzzy-match court party names against RTC holder names across transliteration variance — <code>"Ramesh Kumar S/o Shyamlal"</code> against <code>"RAMESH KUMAR SHYAMLAL"</code>.</p>
+        <p>Emit a confidence, never a verdict. Village + survey number + surname is high. Village + surname alone is <em>“possible — verify these two cases.”</em> Report precision and recall as a table in the deck.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">05</div>
+      <div class="stage-body">
+        <div class="stage-title"><h3>Serve</h3></div>
+        <p>Citizen search: survey number → verdict card with the case, the pendency clock, the next hearing, and the evidence that produced the match. Officer view: village schematic, colour-coded, with a cluster list. Watchlist with a mock notification panel — cheap to build, disproportionately impressive.</p>
+        <p>Add the timeline from Idea 2: <em>suit filed 2019 → interim order 2021 → sale registered 2024 → next hearing 2026</em>, with the sale visibly landing inside the litigation window. One afternoon, and it makes Section 52 self-explanatory.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Gate</p>
+    <h2>The six-hour spike</h2>
+    <p>Decide these before anyone writes UI code. If the spike fails, you switch ideas with 40 hours left instead of 12.</p>
+  </div>
+
+  <ul class="checks">
+    <li><span class="box"></span><span>One CAPTCHA solved end-to-end against <code>submitOrderDate</code>, image <em>or</em> audio, and a week of orders enumerated for your chosen establishment.</span></li>
+    <li><span class="box"></span><span><strong>200+ order PDFs</strong> downloaded and text-extracted, without hand-clicking.</span></li>
+    <li><span class="box"></span><span><strong>≥20% of the land-classified subset</strong> carries an extractable survey number. Count it by hand on 50 documents — do not estimate.</span></li>
+    <li><span class="box"></span><span>Bhoomi <code>Service2</code> returns an RTC for a known survey number from a plain HTTP client, with no CAPTCHA appearing deeper in the cascade.</span></li>
+    <li><span class="box"></span><span><code>service22</code> “Survey No Wise” returns rows for your taluk — your ground truth exists and is non-empty.</span></li>
+  </ul>
+
+  <div class="callout warn">
+    <p><strong>Any box unchecked at hour six, switch to Idea 2</strong> and build the Parcel Time Machine on a real scraped village. That is a real fallback, not a consolation — Bhoomi RTC plus computed polygon areas gives you genuine findings on real data.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Sequence</p>
+    <h2>Where the hours go</h2>
+  </div>
+
+  <div class="sched">
+    <div class="slot"><span class="when">H0 – H6</span><span class="what"><b>Spike.</b> The five checks above. Nobody builds UI. One person starts the Bhoomi scrape in parallel — it is independent and low-risk.</span></div>
+    <div class="slot"><span class="when">H6 – H14</span><span class="what"><b>Corpus.</b> Sweep the full taluk over your chosen date window, cache to SQLite, extract text. Run overnight — it is I/O-bound at 1 req/s and needs no supervision.</span></div>
+    <div class="slot"><span class="when">H8 – H20</span><span class="what"><b>Extractor.</b> Regex baseline first, committed and measured. Then the span model, with the baseline as the floor it must beat.</span></div>
+    <div class="slot"><span class="when">H14 – H24</span><span class="what"><b>Join + scoring.</b> Entity resolution, confidence bands, and the evidence payload behind every match.</span></div>
+    <div class="slot"><span class="when">H20 – H32</span><span class="what"><b>Frontend.</b> Verdict card, village view, timeline, watchlist. Build against cached data from the first line.</span></div>
+    <div class="slot"><span class="when">H32 – H38</span><span class="what"><b>Measure.</b> Hand-label a held-out set. Produce the precision/recall table and the coverage split between interim-order and adjournment-only cases.</span></div>
+    <div class="slot"><span class="when">H38 – H44</span><span class="what"><b>Rehearse.</b> Demo off the cache — never live-scrape on stage. Two people drill the hostile questions until the answers are one breath each.</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Do not attempt</p>
+    <h2>Dead ends the research closed</h2>
+  </div>
+
+  <ul>
+    <li><strong>Judgment corpora cannot answer “is this in court now?”</strong> They contain cases with a written final decision. Cases dismissed without one — “a large majority” — are absent, and pending cases are absent by definition. Pending suits reach you only through case status, cause lists and interim orders.</li>
+    <li><strong>Case metadata carries no property field.</strong> District case status returns case number, type, CNR, filing and registration numbers, parties, status, court, judges, next hearing. No plaint, no schedule of property, no survey number. Pleadings are never published. Order and judgment text is the only path.</li>
+    <li><strong>eCourts has no parcel search key.</strong> The entry points are CNR, case number, filing number, party, advocate, FIR, act and case type. There is no property search, so the join must be built from extracted text — which is precisely why the gap exists.</li>
+    <li><strong>The Development Data Lab dump will not save you.</strong> 81 M district cases sounds decisive, but it is metadata only, anonymised, and stops in 2018. It is a base-rate source, not a corpus.</li>
+    <li><strong>ULPIN is not a usable join key yet.</strong> It is derived from parcel geometry, so it exists only where the cadastre is geo-referenced, and there is no public queryable service. Survey number is your key.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Defence</p>
+    <h2>What the judges will ask</h2>
+  </div>
+
+  <div class="stages">
+    <article class="stage">
+      <div class="stage-num">Q</div>
+      <div class="stage-body">
+        <h3>“Doesn’t this already exist? Landeed sells it.”</h3>
+        <p>No, and you can be precise. Landeed’s Andhra product resells the Registration Department’s 22-A/22-B <em>prohibited properties</em> list; its Gujarat product consumes the Revenue Department’s tracker, covering Mamlatdar, Collector and Revenue Tribunal matters. Both are administratively-maintained registers of <strong>revenue</strong> proceedings and prohibitory orders. Neither reaches the district civil court where a Section 52 suit is filed. Landeed’s own Gujarat record fields do not include a survey number at all.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">Q</div>
+      <div class="stage-body">
+        <h3>“Why hasn’t the government done this?”</h3>
+        <p>It is trying, and the shape of the attempt is the point. DILRMP carries a component whose stated aim is to let anyone “easily know whether any case relating to a particular property is pending in any court,” 26 States and UTs had High Court clearance for eCourts-to-land-records integration as of April 2024, and pilots ran in Haryana, Maharashtra and Uttar Pradesh. But the designed flow is <strong>land records into courts</strong> — authenticated evidence for judges. The citizen-facing parcel lookup is listed as a downstream benefit, with no published join key, no endpoint, and no delivery date.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">Q</div>
+      <div class="stage-body">
+        <h3>“A false flag destroys my land’s value.”</h3>
+        <p>The strongest attack, and the answer must be architectural. The system never asserts — it surfaces a candidate match with its evidence and a confidence band. Red requires a high-precision threshold. Every card shows the two documents that produced the match and an objection route. Build the evidence panel before you build anything else; a screen reading <span class="chip dead">disputed</span> with no evidence behind it loses this question regardless of what you say.</p>
+      </div>
+    </article>
+
+    <article class="stage">
+      <div class="stage-num">Q</div>
+      <div class="stage-body">
+        <h3>“Isn’t this just scraping a government website?”</h3>
+        <p>The scrape is the input. The product is the resolution layer between two identifier systems that never agreed on a key — courts index by party name, land records by survey number. And point at <code>service22</code>: Karnataka built the dispute column, populated it from revenue courts, and left the civil-court half empty. You are filling a field the state already designed.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Verification note.</strong> Sources were fetched live on 20 August 2026 and put through an adversarial check that overturned several first-pass claims — the CAPTCHA is six characters and not five, it does offer an audio channel, NJDG does expose case-level search, and an official eCourts API does exist via NAPIX. Two items remain unverified and are marked as such: whether a CAPTCHA appears deeper in the Bhoomi <code>Service2</code> cascade, and how well <code>service22</code> is populated in practice.</p>
+  <p>Scope discipline: citizen search, village view, watchlist. If a document upload, a chatbot or a chain appears in your repo, you have drifted into the pile you were trying to escape.</p>
+</footer>
+
+</div>
