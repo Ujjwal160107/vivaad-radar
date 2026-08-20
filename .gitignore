@@ -14,6 +14,7 @@ dist/
 
 # Pipeline artifacts (regenerable)
 data/intermediate/
+data/output/
 
 # OS
 Thumbs.db
