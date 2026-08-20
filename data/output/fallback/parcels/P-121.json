@@ -1,0 +1,54 @@
+{
+ "id": "P-121",
+ "survey_no": "1715",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Panchayat",
+ "village_canon": "panchayat",
+ "taluk": "Miranpur",
+ "district": "Sultanpur",
+ "area": "4.14",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.99256286328419,
+     26.255952525824146
+    ],
+    [
+     81.99694780432338,
+     26.255952525824146
+    ],
+    [
+     81.99716705137534,
+     26.259548177476283
+    ],
+    [
+     81.99256286328419,
+     26.25989897275942
+    ],
+    [
+     81.99256286328419,
+     26.255952525824146
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2015-04-15",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0033",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Santu  Prasad",
+  "father_name": "Sita Ram"
+ }
+}

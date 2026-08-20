@@ -1,0 +1,54 @@
+{
+ "id": "P-B01",
+ "survey_no": "1365-1",
+ "khasra_no": null,
+ "khata_no": "153",
+ "village": "Madanpur Panyar",
+ "village_canon": "madanpur paniyar",
+ "taluk": "Sultanpur",
+ "district": "Sultanpur",
+ "area": "1.0",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11834224369916,
+     26.25451221209065
+    ],
+    [
+     82.1226776272719,
+     26.25451221209065
+    ],
+    [
+     82.12289439645053,
+     26.25806722662029
+    ],
+    [
+     82.11834224369916,
+     26.258414057306112
+    ],
+    [
+     82.11834224369916,
+     26.25451221209065
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2025-12-13",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0051",
+ "status": "RED",
+ "confidence": 0.9105,
+ "note": "High-confidence litigation connection found",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Shyam Dhar Dubey",
+  "father_name": "Bhola"
+ }
+}

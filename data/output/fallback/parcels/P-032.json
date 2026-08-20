@@ -1,0 +1,58 @@
+{
+ "id": "P-032",
+ "survey_no": "126",
+ "khasra_no": null,
+ "khata_no": "126",
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "5.63",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.1146882323122,
+     26.31634110474698
+    ],
+    [
+     82.11662772577955,
+     26.31634110474698
+    ],
+    [
+     82.11672470045292,
+     26.317931489390205
+    ],
+    [
+     82.1146882323122,
+     26.31808664886759
+    ],
+    [
+     82.1146882323122,
+     26.31634110474698
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-05-05",
+   "type": "mutation"
+  },
+  {
+   "date": "2018-04-26",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0013",
+ "status": "RED",
+ "confidence": 0.9765,
+ "note": "High-confidence litigation connection found",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kamal",
+  "father_name": "Ali Bux"
+ }
+}

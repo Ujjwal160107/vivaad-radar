@@ -1,0 +1,58 @@
+{
+ "id": "P-100",
+ "survey_no": "2274",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Sabha",
+ "village_canon": "sabha",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "2.17",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.09605870827559,
+     26.209921392721956
+    ],
+    [
+     82.10134367921108,
+     26.209921392721956
+    ],
+    [
+     82.10160792775787,
+     26.214255068889063
+    ],
+    [
+     82.09605870827559,
+     26.214677866563903
+    ],
+    [
+     82.09605870827559,
+     26.209921392721956
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-02-24",
+   "type": "sale"
+  },
+  {
+   "date": "2015-03-15",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0042",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Nanhe Lal",
+  "father_name": "Ali Bux"
+ }
+}

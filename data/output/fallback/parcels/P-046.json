@@ -1,0 +1,54 @@
+{
+ "id": "P-046",
+ "survey_no": "622",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "2.3",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.12417518771214,
+     26.250003421193078
+    ],
+    [
+     82.12771015850112,
+     26.250003421193078
+    ],
+    [
+     82.12788690704056,
+     26.25290209724004
+    ],
+    [
+     82.12417518771214,
+     26.253184894903157
+    ],
+    [
+     82.12417518771214,
+     26.250003421193078
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2023-06-27",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0022",
+ "status": "AMBER",
+ "confidence": 1.0,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Mahrajdeen  Verma",
+  "father_name": "Ali Bux"
+ }
+}

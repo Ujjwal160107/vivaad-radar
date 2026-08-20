@@ -1,0 +1,54 @@
+{
+ "id": "P-123",
+ "survey_no": "2200/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kasba Sultanpur",
+ "village_canon": "kasba sultanpur",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "0.55",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.14029266359282,
+     26.2772869473498
+    ],
+    [
+     82.14234414717599,
+     26.2772869473498
+    ],
+    [
+     82.14244672135514,
+     26.278969163888
+    ],
+    [
+     82.14029266359282,
+     26.27913328257465
+    ],
+    [
+     82.14029266359282,
+     26.2772869473498
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2021-07-02",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0037",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rajesh  Maurya",
+  "father_name": "Jagdish"
+ }
+}

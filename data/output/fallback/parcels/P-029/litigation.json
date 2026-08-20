@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-029",
+ "status": "AMBER",
+ "confidence": 0.9882,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": true,
+ "links": [
+  {
+   "case_id": "UPHC020395822024",
+   "case_no": "WRIB/631/2024",
+   "court": "Allahabad High Court",
+   "case_type": "mutation_revenue_record",
+   "case_status": "disposed",
+   "confidence": 0.9882,
+   "band": "HIGH",
+   "link_status": "AMBER",
+   "reason": "high confidence but case is disposed",
+   "evidence": {
+    "survey_match": "exact",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.9,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2024-05-30",
+   "order_date": "2024-06-04",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100006312024_1.pdf"
+  }
+ ]
+}

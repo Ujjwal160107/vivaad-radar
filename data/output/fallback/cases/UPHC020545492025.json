@@ -1,0 +1,41 @@
+{
+ "id": "UPHC020545492025",
+ "case_no": "WRIB/680/2025",
+ "court": "Allahabad High Court",
+ "case_type": "succession_inheritance",
+ "filing_date": "2025-07-19",
+ "order_date": "2025-07-22",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100006802025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "SMT. KAMRUN NISHA ANSARI AND OTHERS"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "CHAIRMAN BOARD OF REVENUE U.P. PRAYAGRAJ AND OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-07-19",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-07-22",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-045",
+   "confidence_score": 0.8673,
+   "status": "AMBER"
+  }
+ ]
+}

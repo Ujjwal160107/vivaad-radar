@@ -1,0 +1,58 @@
+{
+ "id": "P-097",
+ "survey_no": "356/3",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Mungar",
+ "village_canon": "mungar",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "2.6",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.98555743610844,
+     26.33400502415242
+    ],
+    [
+     81.99017697525238,
+     26.33400502415242
+    ],
+    [
+     81.99040795220958,
+     26.33779304625046
+    ],
+    [
+     81.98555743610844,
+     26.33816260938198
+    ],
+    [
+     81.98555743610844,
+     26.33400502415242
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2015-07-07",
+   "type": "sale"
+  },
+  {
+   "date": "2018-01-06",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0041",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "R. Maurya",
+  "father_name": "Hari Prasad"
+ }
+}

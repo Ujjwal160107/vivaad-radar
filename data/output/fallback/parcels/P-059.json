@@ -1,0 +1,54 @@
+{
+ "id": "P-059",
+ "survey_no": "211/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lohramau",
+ "village_canon": "lohramau",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "1.06",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.02869667819571,
+     26.324118600970706
+    ],
+    [
+     82.03175498593988,
+     26.324118600970706
+    ],
+    [
+     82.03190790132709,
+     26.326626413320923
+    ],
+    [
+     82.02869667819571,
+     26.326871077940456
+    ],
+    [
+     82.02869667819571,
+     26.324118600970706
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-08-16",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0031",
+ "status": "AMBER",
+ "confidence": 0.7978,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Riyaz Uddin",
+  "father_name": "Bhola"
+ }
+}

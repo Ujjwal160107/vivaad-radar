@@ -1,0 +1,49 @@
+{
+ "id": "P-075",
+ "survey_no": "2829",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lohramau",
+ "village_canon": "lohramau",
+ "taluk": "Lambhua",
+ "district": "Sultanpur",
+ "area": "3.17",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.09543801568472,
+     26.23544117280585
+    ],
+    [
+     82.099685823835,
+     26.23544117280585
+    ],
+    [
+     82.09989821424251,
+     26.238924375489077
+    ],
+    [
+     82.09543801568472,
+     26.2392642001411
+    ],
+    [
+     82.09543801568472,
+     26.23544117280585
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0003",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "A. Kalaam",
+  "father_name": "Bhola"
+ }
+}

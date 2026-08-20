@@ -1,0 +1,54 @@
+{
+ "id": "P-036",
+ "survey_no": "498",
+ "khasra_no": null,
+ "khata_no": "498",
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "3.88",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.15479029092475,
+     26.262210142251256
+    ],
+    [
+     82.15889304683569,
+     26.262210142251256
+    ],
+    [
+     82.15909818463123,
+     26.265574402098217
+    ],
+    [
+     82.15479029092475,
+     26.26590262257109
+    ],
+    [
+     82.15479029092475,
+     26.262210142251256
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2022-09-12",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0016",
+ "status": "AMBER",
+ "confidence": 0.9882,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kasim",
+  "father_name": "Hari Prasad"
+ }
+}

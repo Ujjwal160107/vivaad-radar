@@ -1,0 +1,13 @@
+{
+ "district": "Sultanpur",
+ "parcels": 135,
+ "cases": 38,
+ "status_counts": {
+  "RED": 12,
+  "AMBER": 62,
+  "GREEN": 61
+ },
+ "active_cases": 8,
+ "high_confidence_links": 48,
+ "possible_matches": 36
+}

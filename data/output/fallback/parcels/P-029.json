@@ -1,0 +1,49 @@
+{
+ "id": "P-029",
+ "survey_no": "105",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Sabha",
+ "village_canon": "sabha",
+ "taluk": "Kadipur",
+ "district": "Sultanpur",
+ "area": "2.47",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.15289803615158,
+     26.256664285787195
+    ],
+    [
+     82.1556223288198,
+     26.256664285787195
+    ],
+    [
+     82.15575854345322,
+     26.258898205775136
+    ],
+    [
+     82.15289803615158,
+     26.259116149188593
+    ],
+    [
+     82.15289803615158,
+     26.256664285787195
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0011",
+ "status": "AMBER",
+ "confidence": 0.9882,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Shyamala Prasad Singh",
+  "father_name": "Hari Prasad"
+ }
+}

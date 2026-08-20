@@ -1,0 +1,49 @@
+{
+ "id": "P-108",
+ "survey_no": "1292",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "3.96",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.02386286124019,
+     26.311822566627733
+    ],
+    [
+     82.02796659868729,
+     26.311822566627733
+    ],
+    [
+     82.02817178555964,
+     26.315187631334346
+    ],
+    [
+     82.02386286124019,
+     26.315515930330115
+    ],
+    [
+     82.02386286124019,
+     26.311822566627733
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0035",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Sarita Devi",
+  "father_name": "Dukhi"
+ }
+}

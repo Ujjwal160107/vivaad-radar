@@ -1,0 +1,49 @@
+{
+ "id": "P-115",
+ "survey_no": "800/2",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Lohramau",
+ "village_canon": "lohramau",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "4.4",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.13051929441448,
+     26.24585672535248
+    ],
+    [
+     82.13512412873875,
+     26.24585672535248
+    ],
+    [
+     82.13535437045496,
+     26.249632689498373
+    ],
+    [
+     82.13051929441448,
+     26.250001076244317
+    ],
+    [
+     82.13051929441448,
+     26.24585672535248
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0046",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "R. Newal",
+  "father_name": "Neemar"
+ }
+}

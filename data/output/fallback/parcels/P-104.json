@@ -1,0 +1,54 @@
+{
+ "id": "P-104",
+ "survey_no": "1648",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Sekhauli",
+ "village_canon": "sekhauli",
+ "taluk": "Miranpur",
+ "district": "Sultanpur",
+ "area": "2.23",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.09854957089868,
+     26.344320496660306
+    ],
+    [
+     82.10142621105315,
+     26.344320496660306
+    ],
+    [
+     82.10157004306087,
+     26.34667934158697
+    ],
+    [
+     82.09854957089868,
+     26.346909472799325
+    ],
+    [
+     82.09854957089868,
+     26.344320496660306
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-02-18",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0034",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "V. Bahadur",
+  "father_name": "Ali Bux"
+ }
+}

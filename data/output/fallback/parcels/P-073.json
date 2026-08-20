@@ -1,0 +1,49 @@
+{
+ "id": "P-073",
+ "survey_no": "496/2",
+ "khasra_no": null,
+ "khata_no": "496/2",
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "1.87",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.14450630186744,
+     26.174789169368186
+    ],
+    [
+     82.14853785689019,
+     26.174789169368186
+    ],
+    [
+     82.14873943464133,
+     26.178095044486845
+    ],
+    [
+     82.14450630186744,
+     26.178417568888666
+    ],
+    [
+     82.14450630186744,
+     26.174789169368186
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0006",
+ "status": "AMBER",
+ "confidence": 0.6643,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampa Ti",
+  "father_name": "Ram Autar"
+ }
+}

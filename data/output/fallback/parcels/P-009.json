@@ -1,0 +1,49 @@
+{
+ "id": "P-009",
+ "survey_no": "495",
+ "khasra_no": null,
+ "khata_no": "495",
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Meeranpur",
+ "district": "Sultanpur",
+ "area": "3.1",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.01586114385884,
+     26.29545348186549
+    ],
+    [
+     82.02107583253975,
+     26.29545348186549
+    ],
+    [
+     82.02133656697379,
+     26.299729526583832
+    ],
+    [
+     82.01586114385884,
+     26.300146701678305
+    ],
+    [
+     82.01586114385884,
+     26.29545348186549
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0005",
+ "status": "AMBER",
+ "confidence": 0.9882,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

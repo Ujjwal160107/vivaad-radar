@@ -1,0 +1,43 @@
+{
+ "parcel_id": "P-070",
+ "status": "AMBER",
+ "confidence": 0.8,
+ "note": "Possible connection - verification recommended",
+ "closed_history": false,
+ "links": [
+  {
+   "case_id": "UPHC020577002024",
+   "case_no": "WRIB/866/2024",
+   "court": "Allahabad High Court",
+   "case_type": "succession_inheritance",
+   "case_status": "disposed",
+   "confidence": 0.8,
+   "band": "MEDIUM",
+   "link_status": "AMBER",
+   "reason": "possible connection, verification recommended",
+   "evidence": {
+    "survey_match": "subdivision",
+    "name_similarity": 1.0,
+    "father_name_similarity": null,
+    "village_match": true,
+    "taluk_match": false,
+    "case_type_relevance": 0.9,
+    "weights_used": {
+     "identifier": 0.4,
+     "name": 0.25,
+     "village": 0.1,
+     "case_type": 0.1
+    },
+    "features_absent": [
+     "father_name"
+    ],
+    "block": "village",
+    "location_unconfirmed": false
+   },
+   "filing_date": "2024-08-24",
+   "order_date": "2025-02-11",
+   "next_hearing": null,
+   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2024_202100008662024_12.pdf"
+  }
+ ]
+}

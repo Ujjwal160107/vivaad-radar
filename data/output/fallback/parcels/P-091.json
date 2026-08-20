@@ -1,0 +1,49 @@
+{
+ "id": "P-091",
+ "survey_no": "537",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Belhari",
+ "village_canon": "belhari",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "4.44",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.1346756018297,
+     26.333032889513
+    ],
+    [
+     82.13878054319554,
+     26.333032889513
+    ],
+    [
+     82.13898579026383,
+     26.33639894143299
+    ],
+    [
+     82.1346756018297,
+     26.336727336742257
+    ],
+    [
+     82.1346756018297,
+     26.333032889513
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0036",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Phoolchand",
+  "father_name": "Bhola"
+ }
+}

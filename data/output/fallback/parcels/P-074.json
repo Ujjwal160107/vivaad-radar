@@ -1,0 +1,54 @@
+{
+ "id": "P-074",
+ "survey_no": "211",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Barausa",
+ "district": "Sultanpur",
+ "area": "1.62",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.01849640017564,
+     26.347436863345248
+    ],
+    [
+     82.02106888018774,
+     26.347436863345248
+    ],
+    [
+     82.02119750418835,
+     26.34954629695517
+    ],
+    [
+     82.01849640017564,
+     26.34975209535614
+    ],
+    [
+     82.01849640017564,
+     26.347436863345248
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2015-03-20",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0001",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Riyazuddin",
+  "father_name": "Dukhi"
+ }
+}

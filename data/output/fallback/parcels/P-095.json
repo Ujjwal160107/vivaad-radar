@@ -1,0 +1,49 @@
+{
+ "id": "P-095",
+ "survey_no": "1159",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ghatampur",
+ "village_canon": "ghatampur",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "2.03",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.12257825429289,
+     26.19572380465636
+    ],
+    [
+     82.12774014802662,
+     26.19572380465636
+    ],
+    [
+     82.1279982427133,
+     26.19995655751801
+    ],
+    [
+     82.12257825429289,
+     26.20036950901671
+    ],
+    [
+     82.12257825429289,
+     26.19572380465636
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0040",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "S. Prasad",
+  "father_name": "Sita Ram"
+ }
+}

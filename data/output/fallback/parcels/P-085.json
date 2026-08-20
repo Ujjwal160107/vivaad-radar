@@ -1,0 +1,49 @@
+{
+ "id": "P-085",
+ "survey_no": "436",
+ "khasra_no": null,
+ "khata_no": "436",
+ "village": "Saidapur Bhau",
+ "village_canon": "saidapur bhau",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "1.27",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.07262826604564,
+     26.325829985274044
+    ],
+    [
+     82.07535542193816,
+     26.325829985274044
+    ],
+    [
+     82.07549177973279,
+     26.328066253105906
+    ],
+    [
+     82.07262826604564,
+     26.32828442557731
+    ],
+    [
+     82.07262826604564,
+     26.325829985274044
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0005",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

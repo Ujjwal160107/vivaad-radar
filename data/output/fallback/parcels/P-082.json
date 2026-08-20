@@ -1,0 +1,54 @@
+{
+ "id": "P-082",
+ "survey_no": "495",
+ "khasra_no": null,
+ "khata_no": "495",
+ "village": "Belhari",
+ "village_canon": "belhari",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "1.7",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.14283388822354,
+     26.23604959429498
+    ],
+    [
+     82.14706330073678,
+     26.23604959429498
+    ],
+    [
+     82.14727477136243,
+     26.239517712555838
+    ],
+    [
+     82.14283388822354,
+     26.239856065556896
+    ],
+    [
+     82.14283388822354,
+     26.23604959429498
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2020-12-14",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0005",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

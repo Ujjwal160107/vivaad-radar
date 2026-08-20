@@ -1,0 +1,49 @@
+{
+ "id": "P-110",
+ "survey_no": "1932",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Miranpur",
+ "district": "Sultanpur",
+ "area": "4.31",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.99268868013522,
+     26.287942467971895
+    ],
+    [
+     81.99527417672631,
+     26.287942467971895
+    ],
+    [
+     81.99540345155587,
+     26.290062575176595
+    ],
+    [
+     81.99268868013522,
+     26.290269414903886
+    ],
+    [
+     81.99268868013522,
+     26.287942467971895
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0034",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "V. Bahadur",
+  "father_name": "Ali Bux"
+ }
+}

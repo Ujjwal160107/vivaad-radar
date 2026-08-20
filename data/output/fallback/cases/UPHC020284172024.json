@@ -1,0 +1,41 @@
+{
+ "id": "UPHC020284172024",
+ "case_no": "WRIB/429/2024",
+ "court": "Allahabad High Court",
+ "case_type": "tenancy",
+ "filing_date": "2024-04-23",
+ "order_date": "2024-04-27",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100004292024_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "JAY PAL YADAV"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DY. DIRECTOR OF CONSOLIDATION, SULTANPUR AND OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2024-04-23",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2024-04-27",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-030",
+   "confidence_score": 0.9529,
+   "status": "AMBER"
+  }
+ ]
+}

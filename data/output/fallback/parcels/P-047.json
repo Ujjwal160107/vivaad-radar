@@ -1,0 +1,54 @@
+{
+ "id": "P-047",
+ "survey_no": "43/0",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kasba Sultanpur",
+ "village_canon": "kasba sultanpur",
+ "taluk": "Barosa",
+ "district": "Sultanpur",
+ "area": "4.26",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.1583709914463,
+     26.214550974600858
+    ],
+    [
+     82.1622225380603,
+     26.214550974600858
+    ],
+    [
+     82.16241511539101,
+     26.217709242824345
+    ],
+    [
+     82.1583709914463,
+     26.218017366553465
+    ],
+    [
+     82.1583709914463,
+     26.214550974600858
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2022-06-23",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0023",
+ "status": "AMBER",
+ "confidence": 0.9392,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "K. Ahmad",
+  "father_name": "Shyam Lal"
+ }
+}

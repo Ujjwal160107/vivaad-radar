@@ -1,0 +1,202 @@
+{
+ "villages": [
+  {
+   "village": "Tato Muraini",
+   "village_canon": "tato muraini",
+   "parcels": 18,
+   "RED": 4,
+   "AMBER": 11,
+   "GREEN": 3,
+   "density": 0.528
+  },
+  {
+   "village": "Kisni",
+   "village_canon": "kisni",
+   "parcels": 14,
+   "RED": 0,
+   "AMBER": 13,
+   "GREEN": 1,
+   "density": 0.464
+  },
+  {
+   "village": "Panchayat",
+   "village_canon": "panchayat",
+   "parcels": 10,
+   "RED": 0,
+   "AMBER": 9,
+   "GREEN": 1,
+   "density": 0.45
+  },
+  {
+   "village": "Lakhipur",
+   "village_canon": "lakhipur",
+   "parcels": 5,
+   "RED": 2,
+   "AMBER": 0,
+   "GREEN": 3,
+   "density": 0.4
+  },
+  {
+   "village": "Milkipur",
+   "village_canon": "milkipur",
+   "parcels": 12,
+   "RED": 0,
+   "AMBER": 9,
+   "GREEN": 3,
+   "density": 0.375
+  },
+  {
+   "village": "Ghatampur",
+   "village_canon": "ghatampur",
+   "parcels": 3,
+   "RED": 1,
+   "AMBER": 0,
+   "GREEN": 2,
+   "density": 0.333
+  },
+  {
+   "village": "Kasba Sultanpur",
+   "village_canon": "kasba sultanpur",
+   "parcels": 6,
+   "RED": 0,
+   "AMBER": 4,
+   "GREEN": 2,
+   "density": 0.333
+  },
+  {
+   "village": "Sekhauli",
+   "village_canon": "sekhauli",
+   "parcels": 6,
+   "RED": 2,
+   "AMBER": 0,
+   "GREEN": 4,
+   "density": 0.333
+  },
+  {
+   "village": "Ramaipur",
+   "village_canon": "ramaipur",
+   "parcels": 4,
+   "RED": 1,
+   "AMBER": 0,
+   "GREEN": 3,
+   "density": 0.25
+  },
+  {
+   "village": "Kaithawan",
+   "village_canon": "kaithawan",
+   "parcels": 6,
+   "RED": 0,
+   "AMBER": 3,
+   "GREEN": 3,
+   "density": 0.25
+  },
+  {
+   "village": "Lohramau",
+   "village_canon": "lohramau",
+   "parcels": 7,
+   "RED": 0,
+   "AMBER": 3,
+   "GREEN": 4,
+   "density": 0.214
+  },
+  {
+   "village": "Judapatti",
+   "village_canon": "judapatti",
+   "parcels": 5,
+   "RED": 0,
+   "AMBER": 2,
+   "GREEN": 3,
+   "density": 0.2
+  },
+  {
+   "village": "Pakadpur",
+   "village_canon": "pakadpur",
+   "parcels": 5,
+   "RED": 1,
+   "AMBER": 0,
+   "GREEN": 4,
+   "density": 0.2
+  },
+  {
+   "village": "Madanpur Paniyar",
+   "village_canon": "madanpur paniyar",
+   "parcels": 5,
+   "RED": 1,
+   "AMBER": 0,
+   "GREEN": 4,
+   "density": 0.2
+  },
+  {
+   "village": "Kutta",
+   "village_canon": "kutta",
+   "parcels": 3,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 2,
+   "density": 0.167
+  },
+  {
+   "village": "Sabha",
+   "village_canon": "sabha",
+   "parcels": 3,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 2,
+   "density": 0.167
+  },
+  {
+   "village": "Ballipur",
+   "village_canon": "ballipur",
+   "parcels": 3,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 2,
+   "density": 0.167
+  },
+  {
+   "village": "Sonari",
+   "village_canon": "sonari",
+   "parcels": 3,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 2,
+   "density": 0.167
+  },
+  {
+   "village": "Belhari",
+   "village_canon": "belhari",
+   "parcels": 4,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 3,
+   "density": 0.125
+  },
+  {
+   "village": "Saidapur Bhau",
+   "village_canon": "saidapur bhau",
+   "parcels": 4,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 3,
+   "density": 0.125
+  },
+  {
+   "village": "Malapur Jagdishpur",
+   "village_canon": "malapur jagdishpur",
+   "parcels": 4,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 3,
+   "density": 0.125
+  },
+  {
+   "village": "Mungar",
+   "village_canon": "mungar",
+   "parcels": 5,
+   "RED": 0,
+   "AMBER": 1,
+   "GREEN": 4,
+   "density": 0.1
+  }
+ ]
+}

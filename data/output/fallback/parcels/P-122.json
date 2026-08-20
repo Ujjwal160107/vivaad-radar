@@ -1,0 +1,58 @@
+{
+ "id": "P-122",
+ "survey_no": "528",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Mungar",
+ "village_canon": "mungar",
+ "taluk": "Barausa",
+ "district": "Sultanpur",
+ "area": "3.01",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.13402250145955,
+     26.21169188727471
+    ],
+    [
+     82.13751308048363,
+     26.21169188727471
+    ],
+    [
+     82.13768760943483,
+     26.21455416207445
+    ],
+    [
+     82.13402250145955,
+     26.214833408396373
+    ],
+    [
+     82.13402250145955,
+     26.21169188727471
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-06-06",
+   "type": "sale"
+  },
+  {
+   "date": "2020-09-20",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0042",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Nanhe Lal",
+  "father_name": "Ali Bux"
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "id": "P-083",
+ "survey_no": "496",
+ "khasra_no": null,
+ "khata_no": "496",
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "3.41",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11994759668019,
+     26.284693499996536
+    ],
+    [
+     82.12472998281349,
+     26.284693499996536
+    ],
+    [
+     82.12496910212016,
+     26.28861505662584
+    ],
+    [
+     82.11994759668019,
+     26.288997647516506
+    ],
+    [
+     82.11994759668019,
+     26.284693499996536
+    ]
+   ]
+  ]
+ },
+ "land_events": [],
+ "owner_ref": "PR-0005",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

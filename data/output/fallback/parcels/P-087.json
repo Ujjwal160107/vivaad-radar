@@ -1,0 +1,54 @@
+{
+ "id": "P-087",
+ "survey_no": "981",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kasba Sultanpur",
+ "village_canon": "kasba sultanpur",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "3.91",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11382195111689,
+     26.179477259780242
+    ],
+    [
+     82.11735061469267,
+     26.179477259780242
+    ],
+    [
+     82.11752704787146,
+     26.18237076391238
+    ],
+    [
+     82.11382195111689,
+     26.182653056998443
+    ],
+    [
+     82.11382195111689,
+     26.179477259780242
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2018-09-18",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0032",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Deo  Nayak",
+  "father_name": "Bhola"
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "P-084",
+ "survey_no": "101",
+ "khasra_no": null,
+ "khata_no": "101",
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Lambhua",
+ "district": "Sultanpur",
+ "area": "3.29",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.14242046273475,
+     26.347238574633998
+    ],
+    [
+     82.14544699164654,
+     26.347238574633998
+    ],
+    [
+     82.14559831809213,
+     26.34972032834166
+    ],
+    [
+     82.14242046273475,
+     26.349962450654605
+    ],
+    [
+     82.14242046273475,
+     26.347238574633998
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-10-13",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0005",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

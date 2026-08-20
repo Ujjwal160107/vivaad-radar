@@ -1,0 +1,56 @@
+{
+ "id": "UPHC020610682025",
+ "case_no": "WRIB/785/2025",
+ "court": "Allahabad High Court",
+ "case_type": "mutation_revenue_record",
+ "filing_date": "2025-08-11",
+ "order_date": "2025-08-22",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007852025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "KAFEEL AHMAD"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "STATE OF U.P. THRU. ADDL. CHIEF SECY. REVENUE DEPTT., LKO. AND OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-08-11",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-08-22",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-048",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-049",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-050",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-047",
+   "confidence_score": 0.9392,
+   "status": "AMBER"
+  }
+ ]
+}

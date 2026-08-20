@@ -1,0 +1,54 @@
+{
+ "id": "P-099",
+ "survey_no": "1061",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Saidapur Bhau",
+ "village_canon": "saidapur bhau",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "3.78",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     81.98680683532932,
+     26.306289071863873
+    ],
+    [
+     81.99013894035288,
+     26.306289071863873
+    ],
+    [
+     81.99030554560406,
+     26.309021397983198
+    ],
+    [
+     81.98680683532932,
+     26.30928796638508
+    ],
+    [
+     81.98680683532932,
+     26.306289071863873
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-04-06",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0037",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rajesh  Maurya",
+  "father_name": "Jagdish"
+ }
+}

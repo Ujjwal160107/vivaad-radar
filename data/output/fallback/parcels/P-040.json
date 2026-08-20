@@ -1,0 +1,54 @@
+{
+ "id": "P-040",
+ "survey_no": "355",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Aldemau",
+ "district": "Sultanpur",
+ "area": "5.93",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.06971085746723,
+     26.289845526758363
+    ],
+    [
+     82.07179388975204,
+     26.289845526758363
+    ],
+    [
+     82.07189804136628,
+     26.291553613231912
+    ],
+    [
+     82.06971085746723,
+     26.2917202558147
+    ],
+    [
+     82.06971085746723,
+     26.289845526758363
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2019-04-21",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0020",
+ "status": "AMBER",
+ "confidence": 0.9059,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "S. Devi",
+  "father_name": "Bhola"
+ }
+}

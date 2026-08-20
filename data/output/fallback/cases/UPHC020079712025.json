@@ -1,0 +1,51 @@
+{
+ "id": "UPHC020079712025",
+ "case_no": "A227/620/2025",
+ "court": "Allahabad High Court",
+ "case_type": "partition",
+ "filing_date": "2025-02-05",
+ "order_date": "2025-05-14",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_209000006202025_9.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "SHAFQATULLAH KHAN"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "RAJENDRA PRASAD AND ANOTHER"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-02-05",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-05-14",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-055",
+   "confidence_score": 1.0,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-057",
+   "confidence_score": 0.9412,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-056",
+   "confidence_score": 0.9076,
+   "status": "AMBER"
+  }
+ ]
+}

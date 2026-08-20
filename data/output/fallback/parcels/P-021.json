@@ -1,0 +1,58 @@
+{
+ "id": "P-021",
+ "survey_no": "1125",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kisni",
+ "village_canon": "kisni",
+ "taluk": "Jagdishpur",
+ "district": "Sultanpur",
+ "area": "2.21",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.07561336545568,
+     26.184282124125158
+    ],
+    [
+     82.0774464366398,
+     26.184282124125158
+    ],
+    [
+     82.077538090199,
+     26.185785242496134
+    ],
+    [
+     82.07561336545568,
+     26.18593188819086
+    ],
+    [
+     82.07561336545568,
+     26.184282124125158
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2021-04-09",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-02-19",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0009",
+ "status": "AMBER",
+ "confidence": 0.8413,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "S. Mohammad Rehaan",
+  "father_name": "Bhola"
+ }
+}

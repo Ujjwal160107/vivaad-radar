@@ -1,0 +1,58 @@
+{
+ "id": "P-133",
+ "survey_no": "1801/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Mungar",
+ "village_canon": "mungar",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "0.35",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.07501796877033,
+     26.340878476688548
+    ],
+    [
+     82.07895433304473,
+     26.340878476688548
+    ],
+    [
+     82.07915115125846,
+     26.344106295393562
+    ],
+    [
+     82.07501796877033,
+     26.344421204535514
+    ],
+    [
+     82.07501796877033,
+     26.340878476688548
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2013-06-15",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-01-21",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0050",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Shyamdhar  Dubey",
+  "father_name": "Sita Ram"
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "id": "UPHC020962572025",
+ "case_no": "WRIC/12100/2025",
+ "court": "Allahabad High Court",
+ "case_type": "mutation_revenue_record",
+ "filing_date": "2025-12-10",
+ "order_date": "2025-12-12",
+ "status": "active",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202200121002025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "BANKE LAL MAURIYA AND ANOTHER"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "DISTT. MAGISTRATE SULTANPUR AND 3 OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-12-10",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "interim_order",
+   "date": "2025-12-12",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": []
+}

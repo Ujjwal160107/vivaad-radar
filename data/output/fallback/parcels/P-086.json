@@ -1,0 +1,58 @@
+{
+ "id": "P-086",
+ "survey_no": "13",
+ "khasra_no": null,
+ "khata_no": "13",
+ "village": "Sekhauli",
+ "village_canon": "sekhauli",
+ "taluk": "Lambhuwa",
+ "district": "Sultanpur",
+ "area": "2.55",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.04323845602109,
+     26.23089601143387
+    ],
+    [
+     82.0482509424994,
+     26.23089601143387
+    ],
+    [
+     82.0485015668233,
+     26.235006250346082
+    ],
+    [
+     82.04323845602109,
+     26.235407249264348
+    ],
+    [
+     82.04323845602109,
+     26.23089601143387
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2012-08-09",
+   "type": "sale"
+  },
+  {
+   "date": "2014-05-10",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0005",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

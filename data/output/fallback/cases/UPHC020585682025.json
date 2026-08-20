@@ -1,0 +1,46 @@
+{
+ "id": "UPHC020585682025",
+ "case_no": "WRIB/761/2025",
+ "court": "Allahabad High Court",
+ "case_type": "succession_inheritance",
+ "filing_date": "2025-08-04",
+ "order_date": "2025-08-08",
+ "status": "disposed",
+ "next_hearing_date": null,
+ "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007612025_1.pdf",
+ "source_label": "real",
+ "parties": [
+  {
+   "role": "petitioner",
+   "name_as_written": "KASIM"
+  },
+  {
+   "role": "respondent",
+   "name_as_written": "BOARD OF REVENUE, U.P. LKO., THRU. SECY. AND OTHERS"
+  }
+ ],
+ "events": [
+  {
+   "event_type": "filed",
+   "date": "2025-08-04",
+   "note": "Case filed"
+  },
+  {
+   "event_type": "judgment",
+   "date": "2025-08-08",
+   "note": "Latest order on record"
+  }
+ ],
+ "linked_parcels": [
+  {
+   "parcel_id": "P-035",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-036",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  }
+ ]
+}

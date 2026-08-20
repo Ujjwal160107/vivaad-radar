@@ -1,0 +1,58 @@
+{
+ "id": "P-129",
+ "survey_no": "669/1",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
+ "taluk": "Amethi",
+ "district": "Sultanpur",
+ "area": "1.47",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.11017951210607,
+     26.320984047092267
+    ],
+    [
+     82.11348746719408,
+     26.320984047092267
+    ],
+    [
+     82.11365286494848,
+     26.32369657026444
+    ],
+    [
+     82.11017951210607,
+     26.323961206671477
+    ],
+    [
+     82.11017951210607,
+     26.320984047092267
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2016-08-11",
+   "type": "mutation"
+  },
+  {
+   "date": "2021-06-15",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0050",
+ "status": "GREEN",
+ "confidence": 0.0,
+ "note": "No matching active litigation found in available records",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Shyamdhar  Dubey",
+  "father_name": "Sita Ram"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "id": "P-072",
+ "survey_no": "496/1",
+ "khasra_no": null,
+ "khata_no": "496/1",
+ "village": "Milkipur",
+ "village_canon": "milkipur",
+ "taluk": "Baronsa",
+ "district": "Sultanpur",
+ "area": "0.75",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.04871948447176,
+     26.309549619180725
+    ],
+    [
+     82.05310535047423,
+     26.309549619180725
+    ],
+    [
+     82.05332464377435,
+     26.313146029302743
+    ],
+    [
+     82.04871948447176,
+     26.31349689858294
+    ],
+    [
+     82.04871948447176,
+     26.309549619180725
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2014-05-13",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-06-15",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0005",
+ "status": "AMBER",
+ "confidence": 0.8,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Rampati",
+  "father_name": "Chhotey Lal"
+ }
+}

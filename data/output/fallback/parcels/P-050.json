@@ -1,0 +1,58 @@
+{
+ "id": "P-050",
+ "survey_no": "1676-646",
+ "khasra_no": null,
+ "khata_no": null,
+ "village": "Kasba Sultanpur",
+ "village_canon": "kasba sultanpur",
+ "taluk": "Barosa",
+ "district": "Sultanpur",
+ "area": "3.86",
+ "geometry": {
+  "type": "Polygon",
+  "coordinates": [
+   [
+    [
+     82.03261099139351,
+     26.282897580636973
+    ],
+    [
+     82.03481784216739,
+     26.282897580636973
+    ],
+    [
+     82.03492818470608,
+     26.284707198271548
+    ],
+    [
+     82.03261099139351,
+     26.284883746333456
+    ],
+    [
+     82.03261099139351,
+     26.282897580636973
+    ]
+   ]
+  ]
+ },
+ "land_events": [
+  {
+   "date": "2015-02-17",
+   "type": "sale"
+  },
+  {
+   "date": "2022-03-19",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0024",
+ "status": "AMBER",
+ "confidence": 0.9882,
+ "note": "Possible connection - verification recommended; closed litigation history on record",
+ "closed_history": 1,
+ "source_label": "synthetic",
+ "owner": {
+  "name": "Kafeel Ahmad",
+  "father_name": "Munna"
+ }
+}
