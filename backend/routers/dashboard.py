@@ -18,7 +18,7 @@ def overview():
     rows = conn.execute(PARCEL_STATUS_SQL).fetchall()
     counts = {"red": 0, "amber": 0, "green": 0}
     for r in rows:
-        counts[STATUS[r["rank"]]] += 1
+        counts[STATUS.get(r["rank"], "green")] += 1
     active = conn.execute(
         "SELECT COUNT(DISTINCT c.id) c FROM court_case c "
         "JOIN parcel_case_link l ON l.case_id = c.id WHERE c.status='active'"
@@ -38,10 +38,13 @@ def heatmap():
             r["village"],
             {"village": r["village"], "red": 0, "amber": 0, "green": 0, "total_links": 0},
         )
-        v[STATUS[r["rank"]]] += 1
+        v[STATUS.get(r["rank"], "green")] += 1
     for r in conn.execute(
         "SELECT p.village, COUNT(*) n FROM parcel_case_link l "
         "JOIN parcel p ON p.id = l.parcel_id GROUP BY p.village"
     ):
-        villages[r["village"]]["total_links"] = r["n"]
+        # A foreign-built DB may contain link rows whose village never made it
+        # into the parcel scan above; skip rather than KeyError.
+        if r["village"] in villages:
+            villages[r["village"]]["total_links"] = r["n"]
     return {"villages": list(villages.values())}
