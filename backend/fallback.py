@@ -11,7 +11,6 @@ def fallback_dir() -> Path:
 
 
 def _fallback_response(request) -> Response | None:
-    base = fallback_dir().resolve()
     name = (
         request.url.path.strip("/")
         .replace("/", "_")
@@ -20,16 +19,14 @@ def _fallback_response(request) -> Response | None:
     )
     if ".." in name:
         return None
-    candidate = (base / name).resolve()
     try:
+        base = fallback_dir().resolve()
+        candidate = (base / name).resolve()
         candidate.relative_to(base)
-    except ValueError:
-        return None
-    try:
         if not candidate.is_file():
             return None
         return Response(candidate.read_bytes(), media_type="application/json")
-    except OSError:
+    except (OSError, ValueError):
         return None
 
 
