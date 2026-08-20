@@ -1,45 +1,56 @@
-import json as _json
+import json
 
 from fastapi import APIRouter, HTTPException
 from backend.db import get_conn
+from backend.normalize import norm_survey, norm_place
 
 router = APIRouter(prefix="/parcels", tags=["parcels"])
 
 NOT_FOUND = {"error": "not_found", "hint": "check spelling/format"}
 
+SEARCH_COLS = ("id, survey_no, khasra_no, khata_no, village, village_canon,"
+               " taluk, status, confidence")
+
 
 @router.get("/search")
 def search(survey_no: str = "", village: str = ""):
     conn = get_conn()
-    rows = conn.execute(
-        """SELECT id, survey_no, village, taluk, district FROM parcel
-           WHERE survey_no_norm = ? AND lower(village) = lower(?)""",
-        (survey_no.strip().replace("-", "/"), village.strip()),
-    ).fetchall()
-    return {"results": [
-        {"parcel_id": r["id"], "survey_no": r["survey_no"], "village": r["village"],
-         "taluk": r["taluk"], "district": r["district"]} for r in rows]}
+    want_survey = norm_survey(survey_no)
+    want_village = norm_place(village)
+    if want_village:
+        rows = conn.execute(
+            f"SELECT {SEARCH_COLS} FROM Parcel WHERE village_canon = ?",
+            (want_village,)).fetchall()
+    else:
+        rows = conn.execute(f"SELECT {SEARCH_COLS} FROM Parcel").fetchall()
+    out = []
+    for r in rows:
+        if want_survey and want_survey not in {
+            norm_survey(r["survey_no"]), norm_survey(r["khasra_no"]),
+            norm_survey(r["khata_no"]),
+        }:
+            continue
+        out.append(dict(r))
+    return {"parcels": out}
 
 
 @router.get("/{parcel_id}")
 def detail(parcel_id: str):
     conn = get_conn()
-    r = conn.execute(
-        """SELECT p.*, per.name AS owner_name, s.source_type AS provenance
-           FROM parcel p
-           LEFT JOIN person per ON per.id = p.owner_ref
-           LEFT JOIN source_record s ON s.id = p.source_id
-           WHERE p.id = ?""",
-        (parcel_id,),
-    ).fetchone()
+    r = conn.execute("SELECT * FROM Parcel WHERE id = ?", (parcel_id,)).fetchone()
     if r is None:
         raise HTTPException(404, NOT_FOUND)
-    return {
-        "parcel_id": r["id"], "survey_no": r["survey_no"], "khasra_no": r["khasra_no"],
-        "khata_no": r["khata_no"], "village": r["village"], "taluk": r["taluk"],
-        "district": r["district"], "area": r["area"], "geometry": r["geometry"],
-        "owner_name": r["owner_name"], "provenance": r["provenance"],
-    }
+    body = dict(r)
+    owner = conn.execute(
+        "SELECT name, father_name FROM Person WHERE id = ?",
+        (r["owner_ref"],)).fetchone()
+    body["owner"] = dict(owner) if owner else None
+    for col in ("geometry", "land_events"):
+        try:
+            body[col] = json.loads(body[col]) if body[col] else ([] if col == "land_events" else None)
+        except (TypeError, ValueError):
+            pass  # serve the raw value rather than 500 on foreign data
+    return body
 
 
 # Unknown statuses from a foreign-built DB rank as AMBER-equivalent (1), never RED.
@@ -51,7 +62,7 @@ def _parse_evidence(raw):
     if raw is None:
         return None
     try:
-        return _json.loads(raw)
+        return json.loads(raw)
     except (ValueError, TypeError):
         return raw
 
