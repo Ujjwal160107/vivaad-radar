@@ -13,3 +13,4 @@ def test_case_detail_flagship(client):
 def test_case_not_found(client):
     r = client.get("/cases/C-999")
     assert r.status_code == 404
+    assert r.json()["detail"] == {"error": "not_found", "hint": "check spelling/format"}
