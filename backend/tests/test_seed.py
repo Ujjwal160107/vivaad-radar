@@ -1,5 +1,6 @@
+import json
 from backend.db import get_conn, init_schema
-from backend.seed_stub import seed
+from backend.seed_stub import seed, FLAGSHIP_CNR
 
 
 def make_db(tmp_path):
@@ -9,35 +10,33 @@ def make_db(tmp_path):
     return conn
 
 
-def test_flagship_red_link_exists(tmp_path):
+def test_flagship_parcel_is_precomputed_red(tmp_path):
     conn = make_db(tmp_path)
-    row = conn.execute(
-        "SELECT * FROM parcel_case_link WHERE parcel_id='P-002' AND status='RED'"
-    ).fetchone()
-    assert row is not None
-    assert row["confidence_score"] >= 0.85
-    assert row["confidence_band"] == "HIGH"
+    p = conn.execute("SELECT * FROM Parcel WHERE id='P-B01'").fetchone()
+    assert p["status"] == "RED"
+    assert p["confidence"] >= 0.85
 
 
-def test_parcel_a_has_no_links(tmp_path):
+def test_parcel_a_is_green_with_no_links(tmp_path):
     conn = make_db(tmp_path)
+    p = conn.execute("SELECT * FROM Parcel WHERE id='P-A01'").fetchone()
+    assert p["status"] == "GREEN"
     n = conn.execute(
-        "SELECT COUNT(*) c FROM parcel_case_link WHERE parcel_id='P-001'"
+        "SELECT COUNT(*) c FROM ParcelCaseLink WHERE parcel_id='P-A01'"
     ).fetchone()["c"]
     assert n == 0
 
 
 def test_flagship_case_is_active_with_hearing(tmp_path):
     conn = make_db(tmp_path)
-    case = conn.execute("SELECT * FROM court_case WHERE id='C-001'").fetchone()
+    case = conn.execute("SELECT * FROM CourtCase WHERE id=?", (FLAGSHIP_CNR,)).fetchone()
     assert case["status"] == "active"
-    assert case["next_hearing_date"] is not None
+    assert case["next_hearing_date"] == "2026-09-12"
 
 
 def test_sale_event_inside_litigation_window(tmp_path):
     conn = make_db(tmp_path)
-    sale = conn.execute(
-        "SELECT date FROM land_event WHERE parcel_id='P-002' AND event_type='sale'"
-    ).fetchone()
-    case = conn.execute("SELECT * FROM court_case WHERE id='C-001'").fetchone()
+    p = conn.execute("SELECT land_events FROM Parcel WHERE id='P-B01'").fetchone()
+    sale = next(e for e in json.loads(p["land_events"]) if e["event_type"] == "sale")
+    case = conn.execute("SELECT * FROM CourtCase WHERE id=?", (FLAGSHIP_CNR,)).fetchone()
     assert case["filing_date"] < sale["date"] < case["next_hearing_date"]

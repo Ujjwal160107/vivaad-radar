@@ -1,86 +1,89 @@
-"""Stub vivaad.db seeder. Mirrors the real Sultanpur flagship case so the
-frontend and tests work before the ML pipeline delivers the real DB."""
+"""Stub vivaad.db seeder in the REAL pipeline dialect (design doc §5b).
+Mirrors the real flagship IDs so stub tests and the real-DB gate agree."""
 import json
 from backend.db import get_conn, init_schema, db_path
 
+FLAGSHIP_CNR = "UPHC020611812025"
+DISPOSED_CNR = "UPHC020412342024"
+NOW = "2026-08-20"
+
 
 def seed(conn) -> None:
-    now = "2026-08-20"
     conn.executemany(
-        "INSERT INTO source_record VALUES (?,?,?,?,?)",
+        "INSERT INTO Person (id,name,name_normalized,father_name,address,source_label)"
+        " VALUES (?,?,?,?,?,?)",
         [
-            ("SRC-REAL", "real", "Allahabad HC parquet corpus", now, None),
-            ("SRC-SYN", "synthetic", "stub seed script", now, None),
-            ("SRC-DER", "derived", "hand-set stub links (pipeline replaces)", now, None),
+            ("PR-001", "Ramesh Verma", "ramesh verma", "Sohan Lal", "Baraunsa, Sultanpur", "synthetic"),
+            ("PR-002", "Shyam Dhar Dubey", "shyam dhar dubey", "Santu", "Madanpur Panyar, Sultanpur", "synthetic"),
+            ("PR-003", "Rakesh Kumar", "rakesh kumar", "Mahesh", "Kurwar, Sultanpur", "synthetic"),
         ],
     )
     conn.executemany(
-        "INSERT INTO person VALUES (?,?,?,?,?,?)",
+        "INSERT INTO Parcel VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         [
-            ("PER-001", "Ramesh Verma", "ramesh verma", "Sohan Lal", "Baraunsa, Sultanpur", "SRC-SYN"),
-            ("PER-002", "Shyam Dhar Dubey", "shyamdhar dubey", "Santu", "Madanpur Paniyar, Sultanpur", "SRC-SYN"),
-            ("PER-003", "Rakesh Kumar", "rakesh kumar", "Mahesh", "Kurwar, Sultanpur", "SRC-SYN"),
+            ("P-A01", "88", None, "KH-88", "Baraunsa", "baraunsa", "Sadar", "Sultanpur",
+             "0.5 bigha", None,
+             json.dumps([{"event_type": "mutation", "date": "2023-06-10", "note": "Routine mutation"}]),
+             "PR-001", "GREEN", 0.0, None, 0, "synthetic"),
+            ("P-B01", "1365-1", "1365-1", "KH-153", "Madanpur Panyar", "madanpur paniyar",
+             "Sadar", "Sultanpur", "1 bigha", None,
+             json.dumps([{"event_type": "sale", "date": "2025-11-05", "note": "Sale registered during pendency"}]),
+             "PR-002", "RED", 0.9105, "Sale registered during pendency", 0, "synthetic"),
+            ("P-C01", "142/3", None, "KH-142", "Kurwar", "kurwar", "Sadar", "Sultanpur",
+             "0.8 bigha", None, json.dumps([]),
+             "PR-003", "AMBER", 0.68, None, 0, "synthetic"),
         ],
     )
     conn.executemany(
-        "INSERT INTO parcel VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+        "INSERT INTO CourtCase VALUES (?,?,?,?,?,?,?,?,?,?)",
         [
-            ("P-001", "88", "88", None, "KH-88", "Baraunsa", "Sadar", "Sultanpur",
-             "0.5 bigha", None, "PER-001", "SRC-SYN"),
-            ("P-002", "153", "153", "1365/1", "KH-153", "Madanpur Paniyar", "Sadar",
-             "Sultanpur", "1 bigha", None, "PER-002", "SRC-SYN"),
-            ("P-003", "142/3", "142/3", None, "KH-142", "Kurwar", "Sadar", "Sultanpur",
-             "0.8 bigha", None, "PER-003", "SRC-SYN"),
+            (FLAGSHIP_CNR, "WRIB/784/2025", "Allahabad High Court", "consolidation/title",
+             "2025-08-11", "2025-08-22", "active", "2026-09-12", None, "real"),
+            (DISPOSED_CNR, "WRIB/312/2024", "Allahabad High Court", "partition",
+             "2024-03-02", "2025-01-15", "disposed", None, None, "real"),
         ],
     )
     conn.executemany(
-        "INSERT INTO court_case VALUES (?,?,?,?,?,?,?,?,?,?)",
+        "INSERT INTO CaseParty (case_id,person_id,role,name_as_written) VALUES (?,?,?,?)",
         [
-            ("C-001", "WRIB/784/2025", "UPHC020611812025", "Allahabad High Court",
-             "consolidation/title", "2025-08-11", "active", "2026-09-12", None, "SRC-REAL"),
-            ("C-002", "WRIB/312/2024", "UPHC020412342024", "Allahabad High Court",
-             "partition", "2024-03-02", "disposed", None, None, "SRC-REAL"),
+            (FLAGSHIP_CNR, "PR-002", "petitioner", "SHYAMDHAR DUBEY AND 9 OTHERS"),
+            (FLAGSHIP_CNR, None, "respondent", "DEPUTY DIRECTOR OF CONSOLIDATION, SULTANPUR"),
+            (DISPOSED_CNR, "PR-003", "petitioner", "RAKESH KUMAR"),
+            (DISPOSED_CNR, None, "respondent", "STATE OF UP"),
         ],
     )
     conn.executemany(
-        "INSERT INTO case_party VALUES (?,?,?,?)",
+        "INSERT INTO CourtEvent (case_id,event_type,date,note) VALUES (?,?,?,?)",
         [
-            ("C-001", None, "petitioner", "SHYAMDHAR DUBEY AND 9 OTHERS"),
-            ("C-001", None, "respondent", "DEPUTY DIRECTOR OF CONSOLIDATION, SULTANPUR"),
-            ("C-002", None, "petitioner", "RAKESH KUMAR"),
-            ("C-002", None, "respondent", "STATE OF UP"),
+            (FLAGSHIP_CNR, "filed", "2025-08-11", "Case filed"),
+            (FLAGSHIP_CNR, "interim_order", "2025-08-22", "Latest order on record"),
+            (FLAGSHIP_CNR, "next_hearing", "2026-09-12", "Next hearing"),
+            (DISPOSED_CNR, "filed", "2024-03-02", "Case filed"),
+            (DISPOSED_CNR, "judgment", "2025-01-15", "Latest order on record"),
         ],
     )
     conn.executemany(
-        "INSERT INTO court_event VALUES (?,?,?,?,?)",
+        "INSERT INTO ParcelCaseLink (parcel_id,case_id,confidence_score,confidence_band,"
+        "identifier_match,evidence,status,reason,created_at) VALUES (?,?,?,?,?,?,?,?,?)",
         [
-            ("E-001", "C-001", "filed", "2025-08-11", "Writ petition filed"),
-            ("E-002", "C-001", "interim_order", "2025-08-22", "Order on consolidation proceedings"),
-            ("E-003", "C-001", "hearing", "2026-09-12", "Next hearing"),
-            ("E-004", "C-002", "filed", "2024-03-02", None),
-            ("E-005", "C-002", "judgment", "2025-01-15", "Disposed"),
-        ],
-    )
-    conn.executemany(
-        "INSERT INTO land_event VALUES (?,?,?,?,?)",
-        [
-            ("LE-001", "P-002", "sale", "2025-11-05", "Sale registered during pendency"),
-            ("LE-002", "P-001", "mutation", "2023-06-10", "Routine mutation"),
-        ],
-    )
-    conn.executemany(
-        "INSERT INTO parcel_case_link VALUES (?,?,?,?,?,?,?,?)",
-        [
-            ("L-001", "P-002", "C-001", 0.94, "HIGH",
+            ("P-B01", FLAGSHIP_CNR, 0.9105, "HIGH", "exact",
              json.dumps({"survey_match": "exact", "name_similarity": 0.88,
                          "village_match": True, "father_name_similarity": 0.90,
                          "case_type_relevance": "high"}),
-             "RED", now),
-            ("L-002", "P-003", "C-002", 0.68, "MEDIUM",
+             "RED", "high-band link to active case with exact identifier match", NOW),
+            ("P-C01", DISPOSED_CNR, 0.68, "MEDIUM", "none",
              json.dumps({"survey_match": "normalized", "name_similarity": 0.55,
                          "village_match": True, "father_name_similarity": 0.20,
                          "case_type_relevance": "medium"}),
-             "AMBER", now),
+             "AMBER", "medium-band link to disposed case", NOW),
+        ],
+    )
+    conn.executemany(
+        "INSERT INTO SourceRecord (source_type,origin,ingested_at,raw_ref) VALUES (?,?,?,?)",
+        [
+            ("real", "Allahabad HC parquet corpus", NOW, None),
+            ("synthetic", "stub seed script", NOW, None),
+            ("derived", "hand-set stub links (pipeline replaces)", NOW, None),
         ],
     )
     conn.commit()
