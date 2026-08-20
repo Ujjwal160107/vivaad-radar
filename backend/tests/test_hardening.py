@@ -1,5 +1,4 @@
 """Guards against unexpected values in a foreign-built (pipeline-delivered) DB."""
-import json
 from backend.db import get_conn
 
 

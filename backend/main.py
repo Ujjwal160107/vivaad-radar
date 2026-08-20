@@ -26,7 +26,7 @@ def _check_db() -> None:
         conn = sqlite3.connect(path)
         try:
             has_parcel = conn.execute(
-                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='parcel'"
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='Parcel'"
             ).fetchone() is not None
         finally:
             conn.close()
@@ -34,7 +34,7 @@ def _check_db() -> None:
         logger.warning("Could not inspect DB at %s", path, exc_info=True)
         return
     if not has_parcel:
-        logger.warning("DB at %s has no 'parcel' table; is it the right database?", path)
+        logger.warning("DB at %s has no 'Parcel' table; is it the right database?", path)
 
 
 @asynccontextmanager

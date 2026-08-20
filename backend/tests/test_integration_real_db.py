@@ -1,6 +1,10 @@
 """§62 acceptance gate: the app must serve the REAL pipeline DB.
-Run: python -m pytest backend/tests/test_integration_real_db.py -v
-For a new DB drop: VIVAAD_DB=<file> python -m pytest backend/tests/ -v"""
+
+The real_client fixture copies the tracked data/output/vivaad.db into a temp
+path and points VIVAAD_DB at that copy. The test module fails at collection
+time if the tracked file is missing (run pipeline/run_all.py first).
+
+Run: python -m pytest backend/tests/test_integration_real_db.py -v"""
 import shutil
 from pathlib import Path
 
