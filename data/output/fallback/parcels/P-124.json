@@ -1,49 +1,58 @@
 {
  "id": "P-124",
- "survey_no": "1773",
+ "survey_no": "554/4",
  "khasra_no": null,
  "khata_no": null,
- "village": "Kutta",
- "village_canon": "kutta",
- "taluk": "Miranpur",
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "2.51",
+ "area": "1.21",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13416705024787,
-     26.34183745272079
+     82.0374860580528,
+     26.30806653424781
     ],
     [
-     82.13677268770711,
-     26.34183745272079
+     82.04030042483797,
+     26.30806653424781
     ],
     [
-     82.13690296958008,
-     26.34397407543737
+     82.04044114317722,
+     26.310374315011636
     ],
     [
-     82.13416705024787,
-     26.34418252643411
+     82.0374860580528,
+     26.31059946435445
     ],
     [
-     82.13416705024787,
-     26.34183745272079
+     82.0374860580528,
+     26.30806653424781
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0039",
+ "land_events": [
+  {
+   "date": "2020-08-27",
+   "type": "sale"
+  },
+  {
+   "date": "2022-10-09",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0045",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Vijay Bahadur",
-  "father_name": "Jagdish"
+  "name": "Shyam Dhar Dubey",
+  "father_name": "Neemar"
  }
 }

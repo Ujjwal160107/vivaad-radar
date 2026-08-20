@@ -1,54 +1,54 @@
 {
  "id": "P-130",
- "survey_no": "330",
+ "survey_no": "1020",
  "khasra_no": null,
  "khata_no": null,
- "village": "Madanpur Paniyar",
- "village_canon": "madanpur paniyar",
- "taluk": "Chanda",
+ "village": "Tato Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "3.69",
+ "area": "3.43",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.16134946665494,
-     26.277019532855913
+     82.0402035293793,
+     26.21264998767879
     ],
     [
-     82.16483110440693,
-     26.277019532855913
+     82.0421393574143,
+     26.21264998767879
     ],
     [
-     82.16500518629454,
-     26.279874475812548
+     82.04223614881606,
+     26.214237366667497
     ],
     [
-     82.16134946665494,
-     26.28015300683271
+     82.0402035293793,
+     26.214392232910296
     ],
     [
-     82.16134946665494,
-     26.277019532855913
+     82.0402035293793,
+     26.21264998767879
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2013-10-21",
+   "date": "2023-11-06",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0043",
+ "owner_ref": "PR-0023",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Ram Newal",
-  "father_name": "Chhotey Lal"
+  "name": "Manju  Srivastava",
+  "father_name": "Ali Bux"
  }
 }

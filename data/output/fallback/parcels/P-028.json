@@ -7,41 +7,49 @@
  "village_canon": "belhari",
  "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "2.65",
+ "area": "1.04",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.01351526075965,
-     26.275050198076055
+     81.99731482166017,
+     26.3169253979695
     ],
     [
-     82.0159922509173,
-     26.275050198076055
+     82.00260124556114,
+     26.3169253979695
     ],
     [
-     82.01611610042518,
-     26.277081330005323
+     82.0028655667562,
+     26.3212602655683
     ],
     [
-     82.01351526075965,
-     26.277279489217936
+     81.99731482166017,
+     26.321683179480377
     ],
     [
-     82.01351526075965,
-     26.275050198076055
+     81.99731482166017,
+     26.3169253979695
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2018-09-09",
+   "date": "2012-03-15",
    "type": "mutation"
+  },
+  {
+   "date": "2020-06-11",
+   "type": "mutation"
+  },
+  {
+   "date": "2024-02-27",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0010",
+ "owner_ref": "PR-0008",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -49,6 +57,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Ramesh Chandra Singh",
-  "father_name": "Bansraj"
+  "father_name": "Munna"
  }
 }

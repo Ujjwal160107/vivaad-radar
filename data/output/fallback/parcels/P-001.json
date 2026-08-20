@@ -3,46 +3,46 @@
  "survey_no": "211",
  "khasra_no": null,
  "khata_no": null,
- "village": "Lohramau",
+ "village": "Lohramou",
  "village_canon": "lohramau",
  "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "3.45",
+ "area": "4.89",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09282525483228,
-     26.25210691591299
+     82.06039186373482,
+     26.247361088542714
     ],
     [
-     82.09610477503911,
-     26.25210691591299
+     82.0621672959101,
+     26.247361088542714
     ],
     [
-     82.09626875104945,
-     26.25479612248259
+     82.06225606751886,
+     26.24881694292644
     ],
     [
-     82.09282525483228,
-     26.255058484099134
+     82.06039186373482,
+     26.24895897750046
     ],
     [
-     82.09282525483228,
-     26.25210691591299
+     82.06039186373482,
+     26.247361088542714
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2018-07-24",
-   "type": "sale"
+   "date": "2013-09-18",
+   "type": "mutation"
   },
   {
-   "date": "2022-07-19",
-   "type": "sale"
+   "date": "2017-07-24",
+   "type": "mutation"
   }
  ],
  "owner_ref": "PR-0001",
@@ -53,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Riyazuddin",
-  "father_name": "Dukhi"
+  "father_name": "Chhotey Lal"
  }
 }

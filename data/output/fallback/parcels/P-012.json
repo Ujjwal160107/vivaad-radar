@@ -5,43 +5,47 @@
  "khata_no": "436",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Meeranpur",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "5.68",
+ "area": "3.63",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.9867421034782,
-     26.277870427555584
+     82.08877061504107,
+     26.333851237872565
     ],
     [
-     81.99027741082185,
-     26.277870427555584
+     82.09084583959984,
+     26.333851237872565
     ],
     [
-     81.99045417618903,
-     26.280769379577375
+     82.09094960082778,
+     26.335552922010756
     ],
     [
-     81.9867421034782,
-     26.281052204164865
+     82.08877061504107,
+     26.335718939975457
     ],
     [
-     81.9867421034782,
-     26.277870427555584
+     82.08877061504107,
+     26.333851237872565
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2017-04-10",
+   "date": "2012-09-20",
+   "type": "mutation"
+  },
+  {
+   "date": "2024-12-13",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0005",
+ "owner_ref": "PR-0004",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -49,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

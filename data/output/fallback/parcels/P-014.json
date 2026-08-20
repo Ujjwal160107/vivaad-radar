@@ -7,43 +7,48 @@
  "village_canon": "kutta",
  "taluk": "Baronsa",
  "district": "Sultanpur",
- "area": "5.67",
+ "area": "5.52",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.12803565164936,
-     26.238239328356148
+     82.00983694287245,
+     26.179078993399436
     ],
     [
-     82.13128998632573,
-     26.238239328356148
+     82.01395734521635,
+     26.179078993399436
     ],
     [
-     82.13145270305955,
-     26.240907882790772
+     82.01416336533354,
+     26.182457723321434
     ],
     [
-     82.12803565164936,
-     26.24116822956488
+     82.00983694287245,
+     26.182787355508946
     ],
     [
-     82.12803565164936,
-     26.238239328356148
+     82.00983694287245,
+     26.179078993399436
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0007",
+ "land_events": [
+  {
+   "date": "2022-02-19",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0005",
  "status": "AMBER",
- "confidence": 0.9515,
+ "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "D. Nayak",
-  "father_name": "Neemar"
+  "name": "Deo Nayak",
+  "father_name": "Ram Autar"
  }
 }

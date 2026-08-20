@@ -1,58 +1,58 @@
 {
  "id": "P-122",
- "survey_no": "528",
+ "survey_no": "1950",
  "khasra_no": null,
  "khata_no": null,
- "village": "Mungar",
- "village_canon": "mungar",
- "taluk": "Barausa",
+ "village": "Belhari",
+ "village_canon": "belhari",
+ "taluk": "Chanda",
  "district": "Sultanpur",
- "area": "3.01",
+ "area": "2.28",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13402250145955,
-     26.21169188727471
+     82.00112992338512,
+     26.351740656829445
     ],
     [
-     82.13751308048363,
-     26.21169188727471
+     82.00478310308563,
+     26.351740656829445
     ],
     [
-     82.13768760943483,
-     26.21455416207445
+     82.00496576207065,
+     26.354736264183856
     ],
     [
-     82.13402250145955,
-     26.214833408396373
+     82.00112992338512,
+     26.355028518559894
     ],
     [
-     82.13402250145955,
-     26.21169188727471
+     82.00112992338512,
+     26.351740656829445
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2019-06-06",
+   "date": "2020-02-12",
    "type": "sale"
   },
   {
-   "date": "2020-09-20",
+   "date": "2021-11-01",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0042",
+ "owner_ref": "PR-0036",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Nanhe Lal",
-  "father_name": "Ali Bux"
+  "name": "M. Srivastava",
+  "father_name": "Dukhi"
  }
 }

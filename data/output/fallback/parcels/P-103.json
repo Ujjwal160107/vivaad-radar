@@ -1,54 +1,49 @@
 {
  "id": "P-103",
- "survey_no": "1770",
+ "survey_no": "1773",
  "khasra_no": null,
  "khata_no": null,
- "village": "Malapur Jagdishpur",
- "village_canon": "malapur jagdishpur",
- "taluk": "Jagdishpur",
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "3.44",
+ "area": "2.51",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.05135052627884,
-     26.181050607642327
+     82.13416705024787,
+     26.34183745272079
     ],
     [
-     82.05456434535061,
-     26.181050607642327
+     82.13677268770711,
+     26.34183745272079
     ],
     [
-     82.0547250363042,
-     26.183685939281187
+     82.13690296958008,
+     26.34397407543737
     ],
     [
-     82.05135052627884,
-     26.18394304480693
+     82.13416705024787,
+     26.34418252643411
     ],
     [
-     82.05135052627884,
-     26.181050607642327
+     82.13416705024787,
+     26.34183745272079
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2016-04-09",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0043",
+ "land_events": [],
+ "owner_ref": "PR-0031",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Ram Newal",
-  "father_name": "Chhotey Lal"
+  "name": "Vijay Bahadur",
+  "father_name": "Neemar"
  }
 }

@@ -1,54 +1,54 @@
 {
  "id": "P-120",
- "survey_no": "1989",
+ "survey_no": "520",
  "khasra_no": null,
  "khata_no": null,
- "village": "Sekhauli",
- "village_canon": "sekhauli",
- "taluk": "Barausa",
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Amethi",
  "district": "Sultanpur",
- "area": "3.23",
+ "area": "1.76",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09463503550626,
-     26.273886776320122
+     82.0843284276293,
+     26.259488413694438
     ],
     [
-     82.09938076152395,
-     26.273886776320122
+     82.08607935376648,
+     26.259488413694438
     ],
     [
-     82.09961804782483,
-     26.27777827165463
+     82.08616690007334,
+     26.260924173126927
     ],
     [
-     82.09463503550626,
-     26.278157929736047
+     82.0843284276293,
+     26.261064247217902
     ],
     [
-     82.09463503550626,
-     26.273886776320122
+     82.0843284276293,
+     26.259488413694438
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2019-11-04",
-   "type": "mutation"
+   "date": "2016-05-27",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0048",
+ "owner_ref": "PR-0038",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "M. Srivastava",
-  "father_name": "Shyam Lal"
+  "name": "Sarita  Devi",
+  "father_name": "Sita Ram"
  }
 }

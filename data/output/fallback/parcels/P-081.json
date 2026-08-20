@@ -3,49 +3,49 @@
  "survey_no": "5066/2",
  "khasra_no": null,
  "khata_no": null,
- "village": "Ballipur",
- "village_canon": "ballipur",
- "taluk": "Baronsa",
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "3.73",
+ "area": "2.51",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.01817916769996,
-     26.256779117553535
+     82.05250736473751,
+     26.209207627859897
     ],
     [
-     82.02078897646099,
-     26.256779117553535
+     82.0557811033677,
+     26.209207627859897
     ],
     [
-     82.02091946689904,
-     26.25891916073758
+     82.05594479029922,
+     26.211892093536665
     ],
     [
-     82.01817916769996,
-     26.259127945438465
+     82.05250736473751,
+     26.21215399262708
     ],
     [
-     82.01817916769996,
-     26.256779117553535
+     82.05250736473751,
+     26.209207627859897
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2016-03-07",
-   "type": "mutation"
+   "date": "2017-06-07",
+   "type": "sale"
   },
   {
-   "date": "2017-11-21",
-   "type": "sale"
+   "date": "2018-04-20",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0004",
+ "owner_ref": "PR-0003",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -53,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Doman",
-  "father_name": "Hari Prasad"
+  "father_name": "Chhotey Lal"
  }
 }

@@ -5,45 +5,50 @@
  "khata_no": "496/2",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Meeranpur",
+ "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "1.87",
+ "area": "0.95",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14450630186744,
-     26.174789169368186
+     82.0521954288729,
+     26.193321346107044
     ],
     [
-     82.14853785689019,
-     26.174789169368186
+     82.05567697820504,
+     26.193321346107044
     ],
     [
-     82.14873943464133,
-     26.178095044486845
+     82.05585105567165,
+     26.196176216559397
     ],
     [
-     82.14450630186744,
-     26.178417568888666
+     82.0521954288729,
+     26.19645474050597
     ],
     [
-     82.14450630186744,
-     26.174789169368186
+     82.0521954288729,
+     26.193321346107044
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0006",
+ "land_events": [
+  {
+   "date": "2018-10-16",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0004",
  "status": "AMBER",
- "confidence": 0.6643,
+ "confidence": 0.8,
  "note": "Possible connection - verification recommended",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rampa Ti",
-  "father_name": "Ram Autar"
+  "name": "Rampati",
+  "father_name": "Neemar"
  }
 }

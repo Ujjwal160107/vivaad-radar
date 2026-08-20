@@ -7,36 +7,36 @@
  "village_canon": "kaithawan",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "4.19",
+ "area": "3.86",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.00443282678579,
-     26.17919930094927
+     82.11885571491366,
+     26.301254015957788
     ],
     [
-     82.0093962444707,
-     26.17919930094927
+     82.1215742842209,
+     26.301254015957788
     ],
     [
-     82.00964441535494,
-     26.1832693034509
+     82.12171021268625,
+     26.303483242789717
     ],
     [
-     82.00443282678579,
-     26.18366637686569
+     82.11885571491366,
+     26.303700728334295
     ],
     [
-     82.00443282678579,
-     26.17919930094927
+     82.11885571491366,
+     26.301254015957788
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0030",
+ "owner_ref": "PR-0027",
  "status": "AMBER",
  "confidence": 0.9412,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -44,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "S. Khan",
-  "father_name": "Bhola"
+  "father_name": "Dukhi"
  }
 }

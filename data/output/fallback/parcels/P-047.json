@@ -7,48 +7,52 @@
  "village_canon": "kasba sultanpur",
  "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "4.26",
+ "area": "3.43",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.1583709914463,
-     26.214550974600858
+     82.08265586719453,
+     26.21836561218845
     ],
     [
-     82.1622225380603,
-     26.214550974600858
+     82.08621215363198,
+     26.21836561218845
     ],
     [
-     82.16241511539101,
-     26.217709242824345
+     82.08638996795385,
+     26.22128176706715
     ],
     [
-     82.1583709914463,
-     26.218017366553465
+     82.08265586719453,
+     26.221566269982144
     ],
     [
-     82.1583709914463,
-     26.214550974600858
+     82.08265586719453,
+     26.21836561218845
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2022-06-23",
+   "date": "2012-08-07",
    "type": "sale"
+  },
+  {
+   "date": "2014-06-08",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0023",
+ "owner_ref": "PR-0021",
  "status": "AMBER",
- "confidence": 0.9392,
+ "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "K. Ahmad",
-  "father_name": "Shyam Lal"
+  "name": "Kafeel  Ahmad",
+  "father_name": "Munna"
  }
 }

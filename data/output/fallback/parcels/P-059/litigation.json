@@ -1,7 +1,7 @@
 {
  "parcel_id": "P-059",
  "status": "AMBER",
- "confidence": 0.7978,
+ "confidence": 0.8118,
  "note": "Possible connection - verification recommended",
  "closed_history": false,
  "links": [
@@ -11,13 +11,13 @@
    "court": "Allahabad High Court",
    "case_type": "boundary_demarcation",
    "case_status": "disposed",
-   "confidence": 0.7978,
+   "confidence": 0.8118,
    "band": "MEDIUM",
    "link_status": "AMBER",
    "reason": "possible connection, verification recommended",
    "evidence": {
     "survey_match": "subdivision",
-    "name_similarity": 0.952,
+    "name_similarity": 1.0,
     "father_name_similarity": null,
     "village_match": true,
     "taluk_match": false,
@@ -37,6 +37,7 @@
    "filing_date": "2025-11-13",
    "order_date": "2025-11-24",
    "next_hearing": null,
+   "next_hearing_source": null,
    "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100011042025_1.pdf"
   }
  ]

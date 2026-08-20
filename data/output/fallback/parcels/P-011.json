@@ -5,50 +5,45 @@
  "khata_no": "101",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Lambhuwa",
+ "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "4.96",
+ "area": "3.22",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.15459334524418,
-     26.324418553348917
+     82.00458202672098,
+     26.318090347734163
     ],
     [
-     82.15739652456311,
-     26.324418553348917
+     82.00648763306144,
+     26.318090347734163
     ],
     [
-     82.15753668352906,
-     26.32671716039044
+     82.00658291337847,
+     26.31965294493334
     ],
     [
-     82.15459334524418,
-     26.326941414735956
+     82.00458202672098,
+     26.31980539344058
     ],
     [
-     82.15459334524418,
-     26.324418553348917
+     82.00458202672098,
+     26.318090347734163
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2017-01-22",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0006",
+ "land_events": [],
+ "owner_ref": "PR-0004",
  "status": "AMBER",
- "confidence": 0.8525,
+ "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rampa Ti",
-  "father_name": "Ram Autar"
+  "name": "Rampati",
+  "father_name": "Neemar"
  }
 }

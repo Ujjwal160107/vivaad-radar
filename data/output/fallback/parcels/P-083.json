@@ -3,40 +3,49 @@
  "survey_no": "496",
  "khasra_no": null,
  "khata_no": "496",
- "village": "Kaithawan",
- "village_canon": "kaithawan",
- "taluk": "Baronsa",
+ "village": "Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Amethi",
  "district": "Sultanpur",
- "area": "3.41",
+ "area": "3.91",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.11994759668019,
-     26.284693499996536
+     82.02881374810171,
+     26.271892460554085
     ],
     [
-     82.12472998281349,
-     26.284693499996536
+     82.03236033280561,
+     26.271892460554085
     ],
     [
-     82.12496910212016,
-     26.28861505662584
+     82.03253766204081,
+     26.274800660011284
     ],
     [
-     82.11994759668019,
-     26.288997647516506
+     82.02881374810171,
+     26.275084386787597
     ],
     [
-     82.11994759668019,
-     26.284693499996536
+     82.02881374810171,
+     26.271892460554085
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0005",
+ "land_events": [
+  {
+   "date": "2019-06-08",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-01-05",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0004",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -44,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

@@ -7,36 +7,41 @@
  "village_canon": "tato muraini",
  "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "0.96",
+ "area": "1.46",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.98509496472558,
-     26.241026269408827
+     81.99782549213582,
+     26.33601570381644
     ],
     [
-     81.98772826059037,
-     26.241026269408827
+     82.00054765946402,
+     26.33601570381644
     ],
     [
-     81.98785992538362,
-     26.243185572017964
+     82.00068376783042,
+     26.33824788102556
     ],
     [
-     81.98509496472558,
-     26.24339623568715
+     81.99782549213582,
+     26.338465654411813
     ],
     [
-     81.98509496472558,
-     26.241026269408827
+     81.99782549213582,
+     26.33601570381644
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0004",
+ "land_events": [
+  {
+   "date": "2017-01-16",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0003",
  "status": "AMBER",
  "confidence": 0.7647,
  "note": "Possible connection - verification recommended",
@@ -44,6 +49,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Doman",
-  "father_name": "Hari Prasad"
+  "father_name": "Chhotey Lal"
  }
 }

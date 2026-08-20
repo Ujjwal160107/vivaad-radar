@@ -7,48 +7,43 @@
  "village_canon": "kisni",
  "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "1.99",
+ "area": "2.16",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.11041557004049,
-     26.27610602348124
+     82.09324934570185,
+     26.282004497820445
     ],
     [
-     82.11436469542127,
-     26.27610602348124
+     82.0957957570756,
+     26.282004497820445
     ],
     [
-     82.11456215169032,
-     26.27934430629349
+     82.0959230776443,
+     26.284092555146927
     ],
     [
-     82.11041557004049,
-     26.279660236323952
+     82.09324934570185,
+     26.284296268056828
     ],
     [
-     82.11041557004049,
-     26.27610602348124
+     82.09324934570185,
+     26.282004497820445
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2014-07-20",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0008",
+ "land_events": [],
+ "owner_ref": "PR-0007",
  "status": "AMBER",
- "confidence": 0.8433,
+ "confidence": 0.8365,
  "note": "Possible connection - verification recommended",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
   "name": "Saiyed Mohammad Rehaan",
-  "father_name": "Jagdish"
+  "father_name": "Ali Bux"
  }
 }

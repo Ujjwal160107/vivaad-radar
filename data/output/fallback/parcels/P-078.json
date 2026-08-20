@@ -3,40 +3,49 @@
  "survey_no": "3560",
  "khasra_no": null,
  "khata_no": null,
- "village": "Malapur Jagdishpur",
- "village_canon": "malapur jagdishpur",
+ "village": "Kasba Sultanpur",
+ "village_canon": "kasba sultanpur",
  "taluk": "Baronsa",
  "district": "Sultanpur",
- "area": "3.78",
+ "area": "0.58",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13189034326525,
-     26.25490099030251
+     82.12539579094978,
+     26.27814377261321
     ],
     [
-     82.13521034677348,
-     26.25490099030251
+     82.12815127478714,
+     26.27814377261321
     ],
     [
-     82.13537634694889,
-     26.257623393179248
+     82.12828904897901,
+     26.28040326935985
     ],
     [
-     82.13189034326525,
-     26.257888993459904
+     82.12539579094978,
+     26.28062370806684
     ],
     [
-     82.13189034326525,
-     26.25490099030251
+     82.12539579094978,
+     26.27814377261321
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0004",
+ "land_events": [
+  {
+   "date": "2017-03-28",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-10-09",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0003",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -44,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Doman",
-  "father_name": "Hari Prasad"
+  "father_name": "Chhotey Lal"
  }
 }

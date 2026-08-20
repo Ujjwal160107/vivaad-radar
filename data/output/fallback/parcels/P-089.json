@@ -1,54 +1,58 @@
 {
  "id": "P-089",
- "survey_no": "275/1",
+ "survey_no": "1233",
  "khasra_no": null,
  "khata_no": null,
- "village": "Muraini",
- "village_canon": "tato muraini",
- "taluk": "Baronsa",
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "1.78",
+ "area": "2.74",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09517277213715,
-     26.2365825409706
+     82.11187895101378,
+     26.279640536363726
     ],
     [
-     82.10009222974749,
-     26.2365825409706
+     82.11406109898627,
+     26.279640536363726
     ],
     [
-     82.10033820262801,
-     26.240616496211082
+     82.1141702063849,
+     26.281429897701173
     ],
     [
-     82.09517277213715,
-     26.24101005281991
+     82.11187895101378,
+     26.281604469538973
     ],
     [
-     82.09517277213715,
-     26.2365825409706
+     82.11187895101378,
+     26.279640536363726
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2018-06-25",
+   "date": "2015-02-13",
+   "type": "mutation"
+  },
+  {
+   "date": "2018-09-12",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0034",
+ "owner_ref": "PR-0032",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "V. Bahadur",
-  "father_name": "Ali Bux"
+  "name": "Nanhe  Lal",
+  "father_name": "Bansraj"
  }
 }

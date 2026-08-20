@@ -1,49 +1,49 @@
 {
  "id": "P-118",
- "survey_no": "2048/2",
+ "survey_no": "1131/3",
  "khasra_no": null,
  "khata_no": null,
- "village": "Judapatti",
- "village_canon": "judapatti",
- "taluk": "Lambhuwa",
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Baronsa",
  "district": "Sultanpur",
- "area": "4.64",
+ "area": "2.08",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.05950616616433,
-     26.193184969940887
+     81.98418006820934,
+     26.334817951772692
     ],
     [
-     82.06228044172387,
-     26.193184969940887
+     81.98731376692142,
+     26.334817951772692
     ],
     [
-     82.06241915550184,
-     26.19545987589971
+     81.98747045185702,
+     26.337387584716595
     ],
     [
-     82.05950616616433,
-     26.19568181794447
+     81.98418006820934,
+     26.33763828061356
     ],
     [
-     82.05950616616433,
-     26.193184969940887
+     81.98418006820934,
+     26.334817951772692
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0036",
+ "owner_ref": "PR-0046",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Phoolchand",
-  "father_name": "Bhola"
+  "name": "N. Lal",
+  "father_name": "Ali Bux"
  }
 }

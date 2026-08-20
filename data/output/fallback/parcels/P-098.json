@@ -1,54 +1,49 @@
 {
  "id": "P-098",
- "survey_no": "1670/2",
+ "survey_no": "1855",
  "khasra_no": null,
  "khata_no": null,
- "village": "Lohramau",
- "village_canon": "lohramau",
- "taluk": "Chanda",
+ "village": "Pakadpur",
+ "village_canon": "pakadpur",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "4.48",
+ "area": "0.35",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.0924068983826,
-     26.18148914628547
+     82.14803071541738,
+     26.24008524388661
     ],
     [
-     82.09718649311978,
-     26.18148914628547
+     82.15329777677715,
+     26.24008524388661
     ],
     [
-     82.09742547285664,
-     26.185408413969956
+     82.15356112984514,
+     26.244404234201628
     ],
     [
-     82.0924068983826,
-     26.18579078154893
+     82.14803071541738,
+     26.24482559911041
     ],
     [
-     82.0924068983826,
-     26.18148914628547
+     82.14803071541738,
+     26.24008524388661
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2019-08-07",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0039",
+ "land_events": [],
+ "owner_ref": "PR-0037",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Vijay Bahadur",
-  "father_name": "Jagdish"
+  "name": "K. Nisha",
+  "father_name": "Ram Autar"
  }
 }

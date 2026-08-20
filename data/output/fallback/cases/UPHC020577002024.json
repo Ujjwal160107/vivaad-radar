@@ -9,6 +9,7 @@
  "next_hearing_date": null,
  "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2024_202100008662024_12.pdf",
  "source_label": "real",
+ "next_hearing_source": null,
  "parties": [
   {
    "role": "petitioner",
@@ -43,6 +44,11 @@
    "status": "AMBER"
   },
   {
+   "parcel_id": "P-011",
+   "confidence_score": 0.9882,
+   "status": "AMBER"
+  },
+  {
    "parcel_id": "P-012",
    "confidence_score": 0.9882,
    "status": "AMBER"
@@ -53,12 +59,12 @@
    "status": "AMBER"
   },
   {
-   "parcel_id": "P-011",
-   "confidence_score": 0.8525,
+   "parcel_id": "P-070",
+   "confidence_score": 0.8,
    "status": "AMBER"
   },
   {
-   "parcel_id": "P-070",
+   "parcel_id": "P-071",
    "confidence_score": 0.8,
    "status": "AMBER"
   },
@@ -68,13 +74,8 @@
    "status": "AMBER"
   },
   {
-   "parcel_id": "P-071",
-   "confidence_score": 0.6643,
-   "status": "AMBER"
-  },
-  {
    "parcel_id": "P-073",
-   "confidence_score": 0.6643,
+   "confidence_score": 0.8,
    "status": "AMBER"
   }
  ]

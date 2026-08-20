@@ -3,49 +3,49 @@
  "survey_no": "16",
  "khasra_no": null,
  "khata_no": "16",
- "village": "Sekhauli",
+ "village": "Sekhouli",
  "village_canon": "sekhauli",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "2.87",
+ "area": "2.53",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.15852823573874,
-     26.29084545685651
+     82.14915665334041,
+     26.20716493494684
     ],
     [
-     82.16399759650459,
-     26.29084545685651
+     82.15218676199363,
+     26.20716493494684
     ],
     [
-     82.16427106454287,
-     26.2953303326845
+     82.15233826742629,
+     26.209649624042477
     ],
     [
-     82.15852823573874,
-     26.29576788154577
+     82.14915665334041,
+     26.209892032734732
     ],
     [
-     82.15852823573874,
-     26.29084545685651
+     82.14915665334041,
+     26.20716493494684
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2012-04-19",
+   "date": "2021-10-18",
    "type": "sale"
   },
   {
-   "date": "2019-01-08",
-   "type": "mutation"
+   "date": "2025-04-03",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0026",
+ "owner_ref": "PR-0024",
  "status": "RED",
  "confidence": 0.9529,
  "note": "High-confidence litigation connection found",
@@ -53,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Murli @ Muralidhar",
-  "father_name": "Neemar"
+  "father_name": "Sita Ram"
  }
 }

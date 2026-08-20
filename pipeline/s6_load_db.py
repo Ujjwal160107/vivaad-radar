@@ -32,7 +32,7 @@ CREATE TABLE Person (
 CREATE TABLE CourtCase (
   id TEXT PRIMARY KEY, case_no TEXT, court TEXT, case_type TEXT,
   filing_date TEXT, order_date TEXT, status TEXT, next_hearing_date TEXT,
-  raw_text_ref TEXT, source_label TEXT);
+  raw_text_ref TEXT, source_label TEXT, next_hearing_source TEXT);
 CREATE TABLE CaseParty (
   case_id TEXT, person_id TEXT, role TEXT, name_as_written TEXT);
 CREATE TABLE CourtEvent (
@@ -96,11 +96,11 @@ def run():
     for c in norm["cases"]:
         case_status = "unknown" if c.get("is_final") is None else (
             "disposed" if c["is_final"] else "active")
-        con.execute("INSERT INTO CourtCase VALUES (?,?,?,?,?,?,?,?,?,?)",
+        con.execute("INSERT INTO CourtCase VALUES (?,?,?,?,?,?,?,?,?,?,?)",
                     (c["cnr"], c.get("case_no"), c.get("court"), c.get("case_type"),
                      c.get("filing_date"), c.get("order_date"), case_status,
                      c.get("next_hearing_date"), c.get("raw_text_ref"),
-                     c.get("source_label")))
+                     c.get("source_label"), c.get("next_hearing_source")))
         for role, raw, nm in (("petitioner", c.get("petitioner_raw"), c.get("petitioner_norm")),
                               ("respondent", c.get("respondent_raw"), c.get("respondent_norm"))):
             if raw:

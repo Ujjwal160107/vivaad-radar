@@ -1,49 +1,58 @@
 {
  "id": "P-108",
- "survey_no": "1292",
+ "survey_no": "669/1",
  "khasra_no": null,
  "khata_no": null,
- "village": "Judapatti",
- "village_canon": "judapatti",
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
  "taluk": "Amethi",
  "district": "Sultanpur",
- "area": "3.96",
+ "area": "1.47",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.02386286124019,
-     26.311822566627733
+     82.11017951210607,
+     26.320984047092267
     ],
     [
-     82.02796659868729,
-     26.311822566627733
+     82.11348746719408,
+     26.320984047092267
     ],
     [
-     82.02817178555964,
-     26.315187631334346
+     82.11365286494848,
+     26.32369657026444
     ],
     [
-     82.02386286124019,
-     26.315515930330115
+     82.11017951210607,
+     26.323961206671477
     ],
     [
-     82.02386286124019,
-     26.311822566627733
+     82.11017951210607,
+     26.320984047092267
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0035",
+ "land_events": [
+  {
+   "date": "2016-08-11",
+   "type": "mutation"
+  },
+  {
+   "date": "2021-06-15",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0039",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Sarita Devi",
-  "father_name": "Dukhi"
+  "name": "Shyamdhar Dubey",
+  "father_name": "Ali Bux"
  }
 }

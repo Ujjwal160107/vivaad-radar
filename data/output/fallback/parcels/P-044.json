@@ -7,52 +7,48 @@
  "village_canon": "tato muraini",
  "taluk": "Aldemau",
  "district": "Sultanpur",
- "area": "2.33",
+ "area": "4.75",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.98618824089004,
-     26.24021117994792
+     81.99942279256432,
+     26.25087489434402
     ],
     [
-     81.99011539712444,
-     26.24021117994792
+     82.00381454393708,
+     26.25087489434402
     ],
     [
-     81.99031175493616,
-     26.243431448060125
+     82.00403413150572,
+     26.254476130469687
     ],
     [
-     81.98618824089004,
-     26.243745620558876
+     81.99942279256432,
+     26.254827470579507
     ],
     [
-     81.98618824089004,
-     26.24021117994792
+     81.99942279256432,
+     26.25087489434402
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2015-12-13",
-   "type": "sale"
-  },
-  {
-   "date": "2017-11-04",
+   "date": "2024-04-14",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0019",
+ "owner_ref": "PR-0018",
  "status": "AMBER",
- "confidence": 0.9647,
+ "confidence": 0.9059,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Sumitra Devi",
-  "father_name": "Hari Prasad"
+  "name": "Sumit Ra Devi",
+  "father_name": "Shyam Lal"
  }
 }

@@ -7,41 +7,45 @@
  "village_canon": "kaithawan",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "4.52",
+ "area": "4.41",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.08372326438356,
-     26.259625080078308
+     82.05307128938654,
+     26.202484679758694
     ],
     [
-     82.08830726369594,
-     26.259625080078308
+     82.05760532168107,
+     26.202484679758694
     ],
     [
-     82.08853646366155,
-     26.263383959514456
+     82.0578320232958,
+     26.206202586240213
     ],
     [
-     82.08372326438356,
-     26.26375067945945
+     82.05307128938654,
+     26.206565308823777
     ],
     [
-     82.08372326438356,
-     26.259625080078308
+     82.05307128938654,
+     26.202484679758694
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2012-04-17",
-   "type": "mutation"
+   "date": "2017-07-22",
+   "type": "sale"
+  },
+  {
+   "date": "2025-04-19",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0028",
+ "owner_ref": "PR-0026",
  "status": "AMBER",
  "confidence": 1.0,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -49,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Shafqatullah  Khan",
-  "father_name": "Bhola"
+  "father_name": "Munna"
  }
 }

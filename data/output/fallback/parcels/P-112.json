@@ -1,58 +1,58 @@
 {
  "id": "P-112",
- "survey_no": "2187",
+ "survey_no": "1801/1",
  "khasra_no": null,
  "khata_no": null,
- "village": "Tato Muraini",
- "village_canon": "tato muraini",
+ "village": "Mungar",
+ "village_canon": "mungar",
  "taluk": "Lambhuwa",
  "district": "Sultanpur",
- "area": "1.71",
+ "area": "0.35",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.02553627754276,
-     26.22519297248474
+     82.07501796877033,
+     26.340878476688548
     ],
     [
-     82.03097724263169,
-     26.22519297248474
+     82.07895433304473,
+     26.340878476688548
     ],
     [
-     82.03124929088614,
-     26.22965456385767
+     82.07915115125846,
+     26.344106295393562
     ],
     [
-     82.02553627754276,
-     26.23008984106479
+     82.07501796877033,
+     26.344421204535514
     ],
     [
-     82.02553627754276,
-     26.22519297248474
+     82.07501796877033,
+     26.340878476688548
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2014-08-11",
+   "date": "2013-06-15",
    "type": "mutation"
   },
   {
-   "date": "2017-07-14",
+   "date": "2022-01-21",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0038",
+ "owner_ref": "PR-0039",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Anil Kumar Singh",
-  "father_name": "Bansraj"
+  "name": "Shyamdhar Dubey",
+  "father_name": "Ali Bux"
  }
 }

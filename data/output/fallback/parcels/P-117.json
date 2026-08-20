@@ -1,54 +1,54 @@
 {
  "id": "P-117",
- "survey_no": "2079",
+ "survey_no": "711",
  "khasra_no": null,
  "khata_no": null,
- "village": "Lohramau",
- "village_canon": "lohramau",
- "taluk": "Aldemau",
+ "village": "Malapur Jagdishpur",
+ "village_canon": "malapur jagdishpur",
+ "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "4.34",
+ "area": "3.94",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.15641628824228,
-     26.201337640520627
+     82.01694640490044,
+     26.252246047866045
     ],
     [
-     82.15841650837578,
-     26.201337640520627
+     82.01976928472887,
+     26.252246047866045
     ],
     [
-     82.15851651938245,
-     26.202977821030093
+     82.01991042872028,
+     26.254560809325355
     ],
     [
-     82.15641628824228,
-     26.20313783864077
+     82.01694640490044,
+     26.25478663971163
     ],
     [
-     82.15641628824228,
-     26.201337640520627
+     82.01694640490044,
+     26.252246047866045
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2016-06-07",
+   "date": "2016-02-10",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0048",
+ "owner_ref": "PR-0023",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "M. Srivastava",
-  "father_name": "Shyam Lal"
+  "name": "Manju  Srivastava",
+  "father_name": "Ali Bux"
  }
 }

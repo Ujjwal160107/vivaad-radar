@@ -7,48 +7,48 @@
  "village_canon": "lohramau",
  "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "1.06",
+ "area": "2.09",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.02869667819571,
-     26.324118600970706
+     82.03780997558466,
+     26.325268065867398
     ],
     [
-     82.03175498593988,
-     26.324118600970706
+     82.04297387910246,
+     26.325268065867398
     ],
     [
-     82.03190790132709,
-     26.326626413320923
+     82.04323207427835,
+     26.329502466751986
     ],
     [
-     82.02869667819571,
-     26.326871077940456
+     82.03780997558466,
+     26.32991557903341
     ],
     [
-     82.02869667819571,
-     26.324118600970706
+     82.03780997558466,
+     26.325268065867398
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2013-08-16",
-   "type": "sale"
+   "date": "2021-01-01",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0031",
+ "owner_ref": "PR-0001",
  "status": "AMBER",
- "confidence": 0.7978,
+ "confidence": 0.8118,
  "note": "Possible connection - verification recommended",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Riyaz Uddin",
-  "father_name": "Bhola"
+  "name": "Riyazuddin",
+  "father_name": "Chhotey Lal"
  }
 }

@@ -1,58 +1,49 @@
 {
  "id": "P-113",
- "survey_no": "1430",
+ "survey_no": "1876",
  "khasra_no": null,
  "khata_no": null,
- "village": "Sonari",
- "village_canon": "sonari",
- "taluk": "Barausa",
+ "village": "Saidapur Bhau",
+ "village_canon": "saidapur bhau",
+ "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "3.11",
+ "area": "1.19",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.12480432116338,
-     26.25189388981166
+     82.05096358338372,
+     26.30273518757202
     ],
     [
-     82.12756276886635,
-     26.25189388981166
+     82.05409983905314,
+     26.30273518757202
     ],
     [
-     82.1277006912515,
-     26.254155816928098
+     82.0542566518366,
+     26.305306917220936
     ],
     [
-     82.12480432116338,
-     26.254376492744335
+     82.05096358338372,
+     26.30555781767449
     ],
     [
-     82.12480432116338,
-     26.25189388981166
+     82.05096358338372,
+     26.30273518757202
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2015-09-19",
-   "type": "sale"
-  },
-  {
-   "date": "2022-07-09",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0036",
+ "land_events": [],
+ "owner_ref": "PR-0045",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Phoolchand",
-  "father_name": "Bhola"
+  "name": "Shyam Dhar Dubey",
+  "father_name": "Neemar"
  }
 }

@@ -1,49 +1,54 @@
 {
  "id": "P-092",
- "survey_no": "132/1",
+ "survey_no": "2046",
  "khasra_no": null,
  "khata_no": null,
- "village": "Malapur Jagdishpur",
- "village_canon": "malapur jagdishpur",
- "taluk": "Miranpur",
+ "village": "Lakhipur",
+ "village_canon": "lakhipur",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "4.45",
+ "area": "2.38",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13622121255509,
-     26.264838222179474
+     82.14079232814017,
+     26.194079940331516
     ],
     [
-     82.1381592607806,
-     26.264838222179474
+     82.14602737828585,
+     26.194079940331516
     ],
     [
-     82.13825616319187,
-     26.26642742172439
+     82.14628913079314,
+     26.198372681450977
     ],
     [
-     82.13622121255509,
-     26.266582465582434
+     82.14079232814017,
+     26.19879148546263
     ],
     [
-     82.13622121255509,
-     26.264838222179474
+     82.14079232814017,
+     26.194079940331516
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0037",
+ "land_events": [
+  {
+   "date": "2018-04-03",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0017",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rajesh  Maurya",
-  "father_name": "Jagdish"
+  "name": "S. Devi",
+  "father_name": "Bhola"
  }
 }

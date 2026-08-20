@@ -1,51 +1,47 @@
 {
  "id": "P-008",
- "survey_no": "5066/2",
+ "survey_no": "5066-2",
  "khasra_no": null,
  "khata_no": null,
  "village": "Tato Muraini",
  "village_canon": "tato muraini",
  "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "1.36",
+ "area": "5.32",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13506280898156,
-     26.33810499264626
+     82.09431748840228,
+     26.22949312443963
     ],
     [
-     82.13902113256871,
-     26.33810499264626
+     82.09736189980477,
+     26.22949312443963
     ],
     [
-     82.13921904874807,
-     26.341350817987735
+     82.0975141203749,
+     26.231989541789673
     ],
     [
-     82.13506280898156,
-     26.34166748387471
+     82.09431748840228,
+     26.232233094701876
     ],
     [
-     82.13506280898156,
-     26.33810499264626
+     82.09431748840228,
+     26.22949312443963
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2012-03-10",
+   "date": "2026-03-12",
    "type": "sale"
-  },
-  {
-   "date": "2013-06-03",
-   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0004",
+ "owner_ref": "PR-0003",
  "status": "RED",
  "confidence": 0.9529,
  "note": "High-confidence litigation connection found",
@@ -53,6 +49,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Doman",
-  "father_name": "Hari Prasad"
+  "father_name": "Chhotey Lal"
  }
 }

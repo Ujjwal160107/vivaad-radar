@@ -7,43 +7,48 @@
  "village_canon": "sabha",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "2.47",
+ "area": "5.35",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.15289803615158,
-     26.256664285787195
+     82.00953633343613,
+     26.341679709322804
     ],
     [
-     82.1556223288198,
-     26.256664285787195
+     82.01191671904115,
+     26.341679709322804
     ],
     [
-     82.15575854345322,
-     26.258898205775136
+     82.0120357383214,
+     26.34363162551892
     ],
     [
-     82.15289803615158,
-     26.259116149188593
+     82.00953633343613,
+     26.343822056367323
     ],
     [
-     82.15289803615158,
-     26.256664285787195
+     82.00953633343613,
+     26.341679709322804
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0011",
+ "land_events": [
+  {
+   "date": "2024-06-01",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0009",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Shyamala Prasad Singh",
-  "father_name": "Hari Prasad"
+  "name": "Shyamala  Prasad  Singh",
+  "father_name": "Shyam Lal"
  }
 }

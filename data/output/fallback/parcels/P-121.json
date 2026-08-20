@@ -1,54 +1,54 @@
 {
  "id": "P-121",
- "survey_no": "1715",
+ "survey_no": "2390",
  "khasra_no": null,
  "khata_no": null,
- "village": "Panchayat",
- "village_canon": "panchayat",
- "taluk": "Miranpur",
+ "village": "Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Aldemau",
  "district": "Sultanpur",
- "area": "4.14",
+ "area": "2.49",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.99256286328419,
-     26.255952525824146
+     82.12595366427149,
+     26.29995085929051
     ],
     [
-     81.99694780432338,
-     26.255952525824146
+     82.1292090597489,
+     26.29995085929051
     ],
     [
-     81.99716705137534,
-     26.259548177476283
+     82.12937182952278,
+     26.30262028358199
     ],
     [
-     81.99256286328419,
-     26.25989897275942
+     82.12595366427149,
+     26.302880715220187
     ],
     [
-     81.99256286328419,
-     26.255952525824146
+     82.12595366427149,
+     26.29995085929051
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2015-04-15",
+   "date": "2020-08-02",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0033",
+ "owner_ref": "PR-0047",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Santu  Prasad",
-  "father_name": "Sita Ram"
+  "name": "Bhagw Ati Prasad",
+  "father_name": "Ali Bux"
  }
 }

@@ -6,9 +6,10 @@
  "filing_date": "2025-12-10",
  "order_date": "2025-12-12",
  "status": "active",
- "next_hearing_date": null,
+ "next_hearing_date": "2026-11-21",
  "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202200121002025_1.pdf",
  "source_label": "real",
+ "next_hearing_source": "derived",
  "parties": [
   {
    "role": "petitioner",
@@ -29,6 +30,11 @@
    "event_type": "interim_order",
    "date": "2025-12-12",
    "note": "Latest order on record"
+  },
+  {
+   "event_type": "next_hearing",
+   "date": "2026-11-21",
+   "note": "Next hearing"
   }
  ],
  "linked_parcels": []

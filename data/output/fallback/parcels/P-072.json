@@ -5,47 +5,38 @@
  "khata_no": "496/1",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Baronsa",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "0.75",
+ "area": "1.98",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.04871948447176,
-     26.309549619180725
+     82.11714066741156,
+     26.209979325274187
     ],
     [
-     82.05310535047423,
-     26.309549619180725
+     82.11875262230006,
+     26.209979325274187
     ],
     [
-     82.05332464377435,
-     26.313146029302743
+     82.11883322004448,
+     26.211301128282756
     ],
     [
-     82.04871948447176,
-     26.31349689858294
+     82.11714066741156,
+     26.211430084673836
     ],
     [
-     82.04871948447176,
-     26.309549619180725
+     82.11714066741156,
+     26.209979325274187
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2014-05-13",
-   "type": "mutation"
-  },
-  {
-   "date": "2022-06-15",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0005",
+ "land_events": [],
+ "owner_ref": "PR-0004",
  "status": "AMBER",
  "confidence": 0.8,
  "note": "Possible connection - verification recommended",
@@ -53,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

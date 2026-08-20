@@ -7,48 +7,48 @@
  "village_canon": "panchayat",
  "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "1.68",
+ "area": "3.75",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.03550486558976,
-     26.226923416562762
+     82.1042323754093,
+     26.275603758688586
     ],
     [
-     82.03794781217394,
-     26.226923416562762
+     82.1085415068671,
+     26.275603758688586
     ],
     [
-     82.03806995950315,
-     26.228926632761794
+     82.10875696343999,
+     26.279137246483984
     ],
     [
-     82.03550486558976,
-     26.22912206848853
+     82.1042323754093,
+     26.279481977000607
     ],
     [
-     82.03550486558976,
-     26.226923416562762
+     82.1042323754093,
+     26.275603758688586
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2013-06-01",
+   "date": "2018-01-01",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0003",
+ "owner_ref": "PR-0002",
  "status": "AMBER",
- "confidence": 0.9345,
+ "confidence": 0.9765,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "A. Kalaam",
-  "father_name": "Bhola"
+  "name": "Abdul Kalaam",
+  "father_name": "Jagdish"
  }
 }

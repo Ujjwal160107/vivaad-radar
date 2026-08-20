@@ -7,52 +7,48 @@
  "village_canon": "mungar",
  "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "1.88",
+ "area": "0.5",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09996181211284,
-     26.35286942709992
+     82.00680805439718,
+     26.181468396216594
     ],
     [
-     82.10317519415513,
-     26.35286942709992
+     82.01093365038712,
+     26.181468396216594
     ],
     [
-     82.10333586325724,
-     26.355504400374606
+     82.01113993018662,
+     26.184851384928336
     ],
     [
-     82.09996181211284,
-     26.35576147093799
+     82.00680805439718,
+     26.185181432607532
     ],
     [
-     82.09996181211284,
-     26.35286942709992
+     82.00680805439718,
+     26.181468396216594
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2019-05-07",
-   "type": "sale"
-  },
-  {
-   "date": "2021-04-04",
+   "date": "2022-06-12",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0021",
+ "owner_ref": "PR-0019",
  "status": "AMBER",
- "confidence": 0.8673,
+ "confidence": 0.8977,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
   "name": "Kamrun Nisha Ansari",
-  "father_name": "Dukhi"
+  "father_name": "Ram Autar"
  }
 }

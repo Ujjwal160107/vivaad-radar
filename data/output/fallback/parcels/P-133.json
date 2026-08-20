@@ -1,58 +1,58 @@
 {
  "id": "P-133",
- "survey_no": "1801/1",
+ "survey_no": "718",
  "khasra_no": null,
  "khata_no": null,
- "village": "Mungar",
- "village_canon": "mungar",
- "taluk": "Lambhuwa",
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "0.35",
+ "area": "4.72",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.07501796877033,
-     26.340878476688548
+     82.05655186298436,
+     26.197290004442788
     ],
     [
-     82.07895433304473,
-     26.340878476688548
+     82.05879266104884,
+     26.197290004442788
     ],
     [
-     82.07915115125846,
-     26.344106295393562
+     82.05890470095206,
+     26.199127458855656
     ],
     [
-     82.07501796877033,
-     26.344421204535514
+     82.05655186298436,
+     26.199306722700815
     ],
     [
-     82.07501796877033,
-     26.340878476688548
+     82.05655186298436,
+     26.197290004442788
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2013-06-15",
-   "type": "mutation"
+   "date": "2016-03-16",
+   "type": "sale"
   },
   {
-   "date": "2022-01-21",
-   "type": "sale"
+   "date": "2019-03-05",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0050",
+ "owner_ref": "PR-0046",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Shyamdhar  Dubey",
-  "father_name": "Sita Ram"
+  "name": "N. Lal",
+  "father_name": "Ali Bux"
  }
 }

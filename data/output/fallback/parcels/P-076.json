@@ -3,34 +3,34 @@
  "survey_no": "2724",
  "khasra_no": null,
  "khata_no": null,
- "village": "Madanpur Paniyar",
- "village_canon": "madanpur paniyar",
- "taluk": "Amethi",
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "3.29",
+ "area": "3.81",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.00142234529714,
-     26.197314206448976
+     82.15003527893198,
+     26.303834613482017
     ],
     [
-     82.0049245532576,
-     26.197314206448976
+     82.15417432248047,
+     26.303834613482017
     ],
     [
-     82.00509966365561,
-     26.200186016976545
+     82.1543812746579,
+     26.30722862919178
     ],
     [
-     82.00142234529714,
-     26.20046619361338
+     82.15003527893198,
+     26.307559752675658
     ],
     [
-     82.00142234529714,
-     26.197314206448976
+     82.15003527893198,
+     26.303834613482017
     ]
    ]
   ]
@@ -44,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Abdul Kalaam",
-  "father_name": "Bansraj"
+  "father_name": "Jagdish"
  }
 }

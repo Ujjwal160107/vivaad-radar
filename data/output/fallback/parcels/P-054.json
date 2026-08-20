@@ -7,41 +7,49 @@
  "village_canon": "pakadpur",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "5.04",
+ "area": "2.95",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.10874255664544,
-     26.333465792276204
+     82.14857380912476,
+     26.329619334325997
     ],
     [
-     82.11152864975809,
-     26.333465792276204
+     82.15209278695666,
+     26.329619334325997
     ],
     [
-     82.11166795441372,
-     26.335750388628576
+     82.15226873584825,
+     26.33250489614816
     ],
     [
-     82.10874255664544,
-     26.33597327607759
+     82.14857380912476,
+     26.332786414374713
     ],
     [
-     82.10874255664544,
-     26.333465792276204
+     82.14857380912476,
+     26.329619334325997
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2014-04-21",
+   "date": "2014-10-15",
+   "type": "sale"
+  },
+  {
+   "date": "2015-03-01",
    "type": "mutation"
+  },
+  {
+   "date": "2026-04-06",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0027",
+ "owner_ref": "PR-0025",
  "status": "RED",
  "confidence": 0.9647,
  "note": "High-confidence litigation connection found",
@@ -49,6 +57,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rambachan",
-  "father_name": "Ali Bux"
+  "father_name": "Shyam Lal"
  }
 }

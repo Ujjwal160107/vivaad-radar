@@ -1,58 +1,49 @@
 {
  "id": "P-097",
- "survey_no": "356/3",
+ "survey_no": "2228/3",
  "khasra_no": null,
  "khata_no": null,
- "village": "Mungar",
- "village_canon": "mungar",
- "taluk": "Amethi",
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "2.6",
+ "area": "0.67",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.98555743610844,
-     26.33400502415242
+     81.99964855229415,
+     26.181392033702437
     ],
     [
-     81.99017697525238,
-     26.33400502415242
+     82.00457286657601,
+     26.181392033702437
     ],
     [
-     81.99040795220958,
-     26.33779304625046
+     82.00481908229011,
+     26.18542997141357
     ],
     [
-     81.98555743610844,
-     26.33816260938198
+     81.99964855229415,
+     26.185823916556117
     ],
     [
-     81.98555743610844,
-     26.33400502415242
+     81.99964855229415,
+     26.181392033702437
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2015-07-07",
-   "type": "sale"
-  },
-  {
-   "date": "2018-01-06",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0041",
+ "land_events": [],
+ "owner_ref": "PR-0031",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "R. Maurya",
-  "father_name": "Hari Prasad"
+  "name": "Vijay Bahadur",
+  "father_name": "Neemar"
  }
 }

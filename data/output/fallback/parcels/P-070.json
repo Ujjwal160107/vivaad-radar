@@ -5,43 +5,38 @@
  "khata_no": "495/1",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Kadipur",
+ "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "1.52",
+ "area": "0.58",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14960366904697,
-     26.35089050095479
+     82.0899246830563,
+     26.237548580408898
     ],
     [
-     82.15142393462126,
-     26.35089050095479
+     82.09391247316911,
+     26.237548580408898
     ],
     [
-     82.15151494789998,
-     26.352383118725715
+     82.09411186267475,
+     26.240818568301403
     ],
     [
-     82.14960366904697,
-     26.35252873997166
+     82.0899246830563,
+     26.24113759151043
     ],
     [
-     82.14960366904697,
-     26.35089050095479
+     82.0899246830563,
+     26.237548580408898
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2015-10-11",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0005",
+ "land_events": [],
+ "owner_ref": "PR-0004",
  "status": "AMBER",
  "confidence": 0.8,
  "note": "Possible connection - verification recommended",
@@ -49,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

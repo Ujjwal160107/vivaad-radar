@@ -5,38 +5,43 @@
  "khata_no": "495",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Meeranpur",
+ "taluk": "Aldemau",
  "district": "Sultanpur",
- "area": "3.1",
+ "area": "0.95",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.01586114385884,
-     26.29545348186549
+     82.15684522196787,
+     26.195177121176616
     ],
     [
-     82.02107583253975,
-     26.29545348186549
+     82.15883449647927,
+     26.195177121176616
     ],
     [
-     82.02133656697379,
-     26.299729526583832
+     82.15893396020485,
+     26.196808326275967
     ],
     [
-     82.01586114385884,
-     26.300146701678305
+     82.15684522196787,
+     26.19696746823688
     ],
     [
-     82.01586114385884,
-     26.29545348186549
+     82.15684522196787,
+     26.195177121176616
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0005",
+ "land_events": [
+  {
+   "date": "2014-07-14",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0004",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -44,6 +49,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

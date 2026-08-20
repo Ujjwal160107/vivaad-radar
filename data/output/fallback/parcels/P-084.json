@@ -3,45 +3,45 @@
  "survey_no": "101",
  "khasra_no": null,
  "khata_no": "101",
- "village": "Lakhipur",
- "village_canon": "lakhipur",
- "taluk": "Lambhua",
+ "village": "Sonari",
+ "village_canon": "sonari",
+ "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "3.29",
+ "area": "3.49",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14242046273475,
-     26.347238574633998
+     82.04165726396316,
+     26.24573079044098
     ],
     [
-     82.14544699164654,
-     26.347238574633998
+     82.04335890911551,
+     26.24573079044098
     ],
     [
-     82.14559831809213,
-     26.34972032834166
+     82.04344399137312,
+     26.247126139465905
     ],
     [
-     82.14242046273475,
-     26.349962450654605
+     82.04165726396316,
+     26.247262271078093
     ],
     [
-     82.14242046273475,
-     26.347238574633998
+     82.04165726396316,
+     26.24573079044098
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2012-10-13",
+   "date": "2018-12-18",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0005",
+ "owner_ref": "PR-0004",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -49,6 +49,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

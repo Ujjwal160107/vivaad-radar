@@ -15,35 +15,39 @@
     "coordinates": [
      [
       [
-       82.11834224369916,
-       26.25451221209065
+       82.13000624656503,
+       26.19284585913613
       ],
       [
-       82.1226776272719,
-       26.25451221209065
+       82.1325764917343,
+       26.19284585913613
       ],
       [
-       82.12289439645053,
-       26.25806722662029
+       82.13270500399277,
+       26.194953460174933
       ],
       [
-       82.11834224369916,
-       26.258414057306112
+       82.13000624656503,
+       26.195159079788475
       ],
       [
-       82.11834224369916,
-       26.25451221209065
+       82.13000624656503,
+       26.19284585913613
       ]
      ]
     ]
    },
    "land_events": [
     {
-     "date": "2025-12-13",
+     "date": "2018-04-13",
+     "type": "mutation"
+    },
+    {
+     "date": "2026-04-24",
      "type": "sale"
     }
    ],
-   "owner_ref": "PR-0051",
+   "owner_ref": "PR-0045",
    "status": "RED",
    "confidence": 0.9105,
    "note": "High-confidence litigation connection found",
@@ -51,7 +55,7 @@
    "source_label": "synthetic",
    "owner": {
     "name": "Shyam Dhar Dubey",
-    "father_name": "Bhola"
+    "father_name": "Neemar"
    }
   },
   "litigation": {
@@ -91,7 +95,8 @@
      },
      "filing_date": "2025-08-11",
      "order_date": "2025-08-22",
-     "next_hearing": null,
+     "next_hearing": "2026-10-29",
+     "next_hearing_source": "derived",
      "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007842025_1.pdf"
     }
    ]
@@ -113,35 +118,35 @@
     "coordinates": [
      [
       [
-       82.11073518757202,
-       26.335387000844168
+       82.12376876377732,
+       26.298905408440785
       ],
       [
-       82.11381423187866,
-       26.335387000844168
+       82.12730815304907,
+       26.298905408440785
       ],
       [
-       82.11396818409399,
-       26.33791181717562
+       82.12748512251265,
+       26.301807707643615
       ],
       [
-       82.11073518757202,
-       26.33815814072015
+       82.12376876377732,
+       26.302090858785355
       ],
       [
-       82.11073518757202,
-       26.335387000844168
+       82.12376876377732,
+       26.298905408440785
       ]
      ]
     ]
    },
    "land_events": [
     {
-     "date": "2014-10-10",
+     "date": "2021-07-14",
      "type": "sale"
     }
    ],
-   "owner_ref": "PR-0052",
+   "owner_ref": "PR-0050",
    "status": "GREEN",
    "confidence": 0.0,
    "note": "No matching active litigation found in available records",
@@ -169,9 +174,10 @@
   "filing_date": "2025-08-11",
   "order_date": "2025-08-22",
   "status": "active",
-  "next_hearing_date": null,
+  "next_hearing_date": "2026-10-29",
   "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007842025_1.pdf",
   "source_label": "real",
+  "next_hearing_source": "derived",
   "parties": [
    {
     "role": "petitioner",
@@ -192,6 +198,11 @@
     "event_type": "interim_order",
     "date": "2025-08-22",
     "note": "Latest order on record"
+   },
+   {
+    "event_type": "next_hearing",
+    "date": "2026-10-29",
+    "note": "Next hearing"
    }
   ],
   "linked_parcels": [

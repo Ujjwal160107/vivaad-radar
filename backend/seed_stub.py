@@ -35,12 +35,12 @@ def seed(conn) -> None:
         ],
     )
     conn.executemany(
-        "INSERT INTO CourtCase VALUES (?,?,?,?,?,?,?,?,?,?)",
+        "INSERT INTO CourtCase VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         [
             (FLAGSHIP_CNR, "WRIB/784/2025", "Allahabad High Court", "consolidation/title",
-             "2025-08-11", "2025-08-22", "active", "2026-09-12", None, "real"),
+             "2025-08-11", "2025-08-22", "active", "2026-09-12", None, "real", "derived"),
             (DISPOSED_CNR, "WRIB/312/2024", "Allahabad High Court", "partition",
-             "2024-03-02", "2025-01-15", "disposed", None, None, "real"),
+             "2024-03-02", "2025-01-15", "disposed", None, None, "real", None),
         ],
     )
     conn.executemany(

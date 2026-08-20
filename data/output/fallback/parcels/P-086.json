@@ -3,49 +3,40 @@
  "survey_no": "13",
  "khasra_no": null,
  "khata_no": "13",
- "village": "Sekhauli",
- "village_canon": "sekhauli",
- "taluk": "Lambhuwa",
+ "village": "Tato Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "2.55",
+ "area": "2.15",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.04323845602109,
-     26.23089601143387
+     82.15641750496648,
+     26.28809543967214
     ],
     [
-     82.0482509424994,
-     26.23089601143387
+     82.15938581250317,
+     26.28809543967214
     ],
     [
-     82.0485015668233,
-     26.235006250346082
+     82.15953422788002,
+     26.29052945185223
     ],
     [
-     82.04323845602109,
-     26.235407249264348
+     82.15641750496648,
+     26.290766916455166
     ],
     [
-     82.04323845602109,
-     26.23089601143387
+     82.15641750496648,
+     26.28809543967214
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2012-08-09",
-   "type": "sale"
-  },
-  {
-   "date": "2014-05-10",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0005",
+ "land_events": [],
+ "owner_ref": "PR-0004",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -53,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

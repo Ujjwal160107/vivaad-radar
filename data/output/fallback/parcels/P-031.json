@@ -7,36 +7,36 @@
  "village_canon": "lakhipur",
  "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "6.2",
+ "area": "5.42",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.05696285635504,
-     26.307210820011058
+     82.05221275643461,
+     26.220737107257925
     ],
     [
-     82.05968575880429,
-     26.307210820011058
+     82.05484043715539,
+     26.220737107257925
     ],
     [
-     82.05982190392676,
-     26.309443600019446
+     82.05497182119143,
+     26.22289180544896
     ],
     [
-     82.05696285635504,
-     26.309661432215385
+     82.05221275643461,
+     26.22310201990662
     ],
     [
-     82.05696285635504,
-     26.307210820011058
+     82.05221275643461,
+     26.220737107257925
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0013",
+ "owner_ref": "PR-0011",
  "status": "RED",
  "confidence": 0.9765,
  "note": "High-confidence litigation connection found",
@@ -44,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Kamal",
-  "father_name": "Ali Bux"
+  "father_name": "Dukhi"
  }
 }

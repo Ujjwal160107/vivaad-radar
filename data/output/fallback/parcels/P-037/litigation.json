@@ -1,7 +1,7 @@
 {
  "parcel_id": "P-037",
  "status": "RED",
- "confidence": 0.9672,
+ "confidence": 0.9882,
  "note": "High-confidence litigation connection found",
  "closed_history": false,
  "links": [
@@ -11,13 +11,13 @@
    "court": "Allahabad High Court",
    "case_type": "mutation_revenue_record",
    "case_status": "active",
-   "confidence": 0.9672,
+   "confidence": 0.9882,
    "band": "HIGH",
    "link_status": "RED",
    "reason": "high confidence, identifier match, active case",
    "evidence": {
     "survey_match": "exact",
-    "name_similarity": 0.929,
+    "name_similarity": 1.0,
     "father_name_similarity": null,
     "village_match": true,
     "taluk_match": false,
@@ -36,7 +36,8 @@
    },
    "filing_date": "2024-02-12",
    "order_date": "2024-02-19",
-   "next_hearing": null,
+   "next_hearing": "2026-11-04",
+   "next_hearing_source": "derived",
    "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_200600000062024_1.pdf"
   }
  ]

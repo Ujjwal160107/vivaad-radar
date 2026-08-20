@@ -1,49 +1,49 @@
 {
  "id": "P-116",
- "survey_no": "133",
+ "survey_no": "261/4",
  "khasra_no": null,
  "khata_no": null,
- "village": "Pakadpur",
- "village_canon": "pakadpur",
- "taluk": "Aldemau",
+ "village": "Ballipur",
+ "village_canon": "ballipur",
+ "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "1.55",
+ "area": "3.04",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14656752023005,
-     26.19503159419122
+     82.01802841472231,
+     26.290234138500157
     ],
     [
-     82.15182273094821,
-     26.19503159419122
+     82.02268482950427,
+     26.290234138500157
     ],
     [
-     82.15208549148412,
-     26.199340866980112
+     82.02291765024337,
+     26.294052398621364
     ],
     [
-     82.14656752023005,
-     26.199761283837564
+     82.01802841472231,
+     26.29442491180392
     ],
     [
-     82.14656752023005,
-     26.19503159419122
+     82.01802841472231,
+     26.290234138500157
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0047",
+ "owner_ref": "PR-0032",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Kamrun  Nisha",
-  "father_name": "Ram Autar"
+  "name": "Nanhe  Lal",
+  "father_name": "Bansraj"
  }
 }

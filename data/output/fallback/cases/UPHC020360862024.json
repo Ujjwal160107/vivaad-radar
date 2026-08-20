@@ -9,6 +9,7 @@
  "next_hearing_date": null,
  "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100005632024_1.pdf",
  "source_label": "real",
+ "next_hearing_source": null,
  "parties": [
   {
    "role": "petitioner",
@@ -33,68 +34,68 @@
  ],
  "linked_parcels": [
   {
-   "parcel_id": "P-026",
-   "confidence_score": 0.8569,
-   "status": "AMBER"
-  },
-  {
    "parcel_id": "P-018",
-   "confidence_score": 0.8517,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-023",
-   "confidence_score": 0.8517,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-017",
    "confidence_score": 0.8495,
    "status": "AMBER"
   },
   {
-   "parcel_id": "P-025",
-   "confidence_score": 0.8453,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-020",
-   "confidence_score": 0.8433,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-021",
-   "confidence_score": 0.8413,
-   "status": "AMBER"
-  },
-  {
    "parcel_id": "P-019",
-   "confidence_score": 0.8373,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-022",
-   "confidence_score": 0.8373,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-015",
-   "confidence_score": 0.8365,
+   "confidence_score": 0.8495,
    "status": "AMBER"
   },
   {
    "parcel_id": "P-016",
-   "confidence_score": 0.8287,
+   "confidence_score": 0.8453,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-023",
+   "confidence_score": 0.8443,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-022",
+   "confidence_score": 0.8433,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-026",
+   "confidence_score": 0.8413,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-017",
+   "confidence_score": 0.8373,
    "status": "AMBER"
   },
   {
    "parcel_id": "P-027",
+   "confidence_score": 0.8373,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-020",
+   "confidence_score": 0.8365,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-021",
    "confidence_score": 0.8287,
    "status": "AMBER"
   },
   {
-   "parcel_id": "P-024",
+   "parcel_id": "P-015",
+   "confidence_score": 0.8277,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-025",
    "confidence_score": 0.8225,
+   "status": "AMBER"
+  },
+  {
+   "parcel_id": "P-024",
+   "confidence_score": 0.8208,
    "status": "AMBER"
   }
  ]

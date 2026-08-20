@@ -5,47 +5,47 @@
  "khata_no": "496",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Jagdishpur",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "4.1",
+ "area": "2.83",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.08152098819639,
-     26.33223753755079
+     82.14875910638955,
+     26.242723131935335
     ],
     [
-     82.0839420348872,
-     26.33223753755079
+     82.15190613828692,
+     26.242723131935335
     ],
     [
-     82.08406308722174,
-     26.334222795837253
+     82.15206348988178,
+     26.245303698091174
     ],
     [
-     82.08152098819639,
-     26.334416479572518
+     82.14875910638955,
+     26.24555546064296
     ],
     [
-     82.08152098819639,
-     26.33223753755079
+     82.14875910638955,
+     26.242723131935335
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2017-02-24",
-   "type": "mutation"
+   "date": "2023-07-14",
+   "type": "sale"
   },
   {
-   "date": "2023-04-14",
-   "type": "mutation"
+   "date": "2024-12-23",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0005",
+ "owner_ref": "PR-0004",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -53,6 +53,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

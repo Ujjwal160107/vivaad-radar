@@ -1,54 +1,49 @@
 {
  "id": "P-132",
- "survey_no": "653",
+ "survey_no": "978/3",
  "khasra_no": null,
  "khata_no": null,
- "village": "Belhari",
- "village_canon": "belhari",
+ "village": "Sabha",
+ "village_canon": "sabha",
  "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "4.97",
+ "area": "3.81",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.04349590877676,
-     26.34288497240923
+     82.12727104460147,
+     26.3535546552037
     ],
     [
-     82.04614170379867,
-     26.34288497240923
+     82.13195269129656,
+     26.3535546552037
     ],
     [
-     82.04627399354976,
-     26.34505452432719
+     82.13218677363132,
+     26.357393605493677
     ],
     [
-     82.04349590877676,
-     26.345266187928942
+     82.12727104460147,
+     26.357768137229286
     ],
     [
-     82.04349590877676,
-     26.34288497240923
+     82.12727104460147,
+     26.3535546552037
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2015-11-08",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0048",
+ "land_events": [],
+ "owner_ref": "PR-0044",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "M. Srivastava",
-  "father_name": "Shyam Lal"
+  "name": "Ram  Newal",
+  "father_name": "Hari Prasad"
  }
 }

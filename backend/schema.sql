@@ -10,7 +10,11 @@ CREATE TABLE IF NOT EXISTS Person (
 CREATE TABLE IF NOT EXISTS CourtCase (
   id TEXT PRIMARY KEY, case_no TEXT, court TEXT, case_type TEXT,
   filing_date TEXT, order_date TEXT, status TEXT, next_hearing_date TEXT,
-  raw_text_ref TEXT, source_label TEXT);
+  raw_text_ref TEXT, source_label TEXT,
+  -- 'derived' | 'real' | NULL. No case in the corpus carries a genuine next
+  -- hearing date, so the pipeline derives one for active cases and labels it,
+  -- keeping PRD 21 provenance intact. Mirrors pipeline/s6_load_db.py.
+  next_hearing_source TEXT);
 CREATE TABLE IF NOT EXISTS CaseParty (
   case_id TEXT, person_id TEXT, role TEXT, name_as_written TEXT);
 CREATE TABLE IF NOT EXISTS CourtEvent (

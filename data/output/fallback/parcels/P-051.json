@@ -7,52 +7,52 @@
  "village_canon": "malapur jagdishpur",
  "taluk": "Aldemau",
  "district": "Sultanpur",
- "area": "5.52",
+ "area": "4.41",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.10216400828365,
-     26.255206059126376
+     82.0691780005316,
+     26.353548553033356
     ],
     [
-     82.10467781868138,
-     26.255206059126376
+     82.0741752305048,
+     26.353548553033356
     ],
     [
-     82.10480350920126,
-     26.25726738365251
+     82.07442509200347,
+     26.35764628161139
     ],
     [
-     82.10216400828365,
-     26.257468488484328
+     82.0691780005316,
+     26.35804606000925
     ],
     [
-     82.10216400828365,
-     26.255206059126376
+     82.0691780005316,
+     26.353548553033356
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2017-04-13",
+   "date": "2019-03-24",
    "type": "mutation"
   },
   {
-   "date": "2019-02-24",
+   "date": "2024-05-22",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0025",
+ "owner_ref": "PR-0023",
  "status": "AMBER",
- "confidence": 0.8669,
- "note": "Possible connection - verification recommended; closed litigation history on record",
- "closed_history": 1,
+ "confidence": 0.8394,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
   "name": "Manju  Srivastava",
-  "father_name": "Sita Ram"
+  "father_name": "Ali Bux"
  }
 }

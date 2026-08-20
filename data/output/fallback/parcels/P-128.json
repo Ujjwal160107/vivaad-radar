@@ -1,49 +1,49 @@
 {
  "id": "P-128",
- "survey_no": "292/1",
+ "survey_no": "2355",
  "khasra_no": null,
  "khata_no": null,
- "village": "Sabha",
- "village_canon": "sabha",
- "taluk": "Miranpur",
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Lambhuwa",
  "district": "Sultanpur",
- "area": "3.8",
+ "area": "4.86",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.98923833329223,
-     26.27817598352224
+     82.15411581962265,
+     26.22843803995206
     ],
     [
-     81.991813268139,
-     26.27817598352224
+     82.1572474077273,
+     26.22843803995206
     ],
     [
-     81.99194201488133,
-     26.280287430096582
+     82.15740398713254,
+     26.23100594219788
     ],
     [
-     81.98923833329223,
-     26.280493424884323
+     82.15411581962265,
+     26.23125646924625
     ],
     [
-     81.98923833329223,
-     26.27817598352224
+     82.15411581962265,
+     26.22843803995206
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0049",
+ "owner_ref": "PR-0037",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "S. Dubey",
-  "father_name": "Sita Ram"
+  "name": "K. Nisha",
+  "father_name": "Ram Autar"
  }
 }

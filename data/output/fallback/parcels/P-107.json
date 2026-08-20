@@ -1,54 +1,49 @@
 {
  "id": "P-107",
- "survey_no": "1385/4",
+ "survey_no": "292/1",
  "khasra_no": null,
  "khata_no": null,
- "village": "Mungar",
- "village_canon": "mungar",
+ "village": "Sabha",
+ "village_canon": "sabha",
  "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "0.31",
+ "area": "3.8",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.99974112925022,
-     26.277810796383804
+     81.98923833329223,
+     26.27817598352224
     ],
     [
-     82.00449527631,
-     26.277810796383804
+     81.991813268139,
+     26.27817598352224
     ],
     [
-     82.00473298366298,
-     26.281709196972812
+     81.99194201488133,
+     26.280287430096582
     ],
     [
-     81.99974112925022,
-     26.282089528737593
+     81.98923833329223,
+     26.280493424884323
     ],
     [
-     81.99974112925022,
-     26.277810796383804
+     81.98923833329223,
+     26.27817598352224
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2012-05-23",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0042",
+ "land_events": [],
+ "owner_ref": "PR-0043",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Nanhe Lal",
-  "father_name": "Ali Bux"
+  "name": "S. Dubey",
+  "father_name": "Sita Ram"
  }
 }

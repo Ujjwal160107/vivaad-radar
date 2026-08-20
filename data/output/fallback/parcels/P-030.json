@@ -5,45 +5,54 @@
  "khata_no": null,
  "village": "Saidapur Bhau",
  "village_canon": "saidapur bhau",
- "taluk": "Lambhua",
+ "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "5.89",
+ "area": "5.37",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13796767315448,
-     26.25883745796741
+     81.9998614628577,
+     26.275727378907924
     ],
     [
-     82.14172388239464,
-     26.25883745796741
+     82.00190741134911,
+     26.275727378907924
     ],
     [
-     82.14191169285665,
-     26.261917549544343
+     82.00200970877368,
+     26.27740505667089
     ],
     [
-     82.13796767315448,
-     26.262218046283554
+     81.9998614628577,
+     26.2775687325502
     ],
     [
-     82.13796767315448,
-     26.25883745796741
+     81.9998614628577,
+     26.275727378907924
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0012",
+ "land_events": [
+  {
+   "date": "2012-04-20",
+   "type": "mutation"
+  },
+  {
+   "date": "2024-04-25",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0010",
  "status": "AMBER",
  "confidence": 0.9529,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Jay  Pal  Yadav",
+  "name": "Jay Pal Yadav",
   "father_name": "Chhotey Lal"
  }
 }

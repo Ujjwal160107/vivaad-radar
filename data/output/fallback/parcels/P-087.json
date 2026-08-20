@@ -3,52 +3,52 @@
  "survey_no": "981",
  "khasra_no": null,
  "khata_no": null,
- "village": "Kasba Sultanpur",
- "village_canon": "kasba sultanpur",
- "taluk": "Amethi",
+ "village": "Ramaipur",
+ "village_canon": "ramaipur",
+ "taluk": "Lambhuwa",
  "district": "Sultanpur",
- "area": "3.91",
+ "area": "2.11",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.11382195111689,
-     26.179477259780242
+     82.10561886677785,
+     26.24185612295346
     ],
     [
-     82.11735061469267,
-     26.179477259780242
+     82.10946007578849,
+     26.24185612295346
     ],
     [
-     82.11752704787146,
-     26.18237076391238
+     82.10965213623903,
+     26.245005914342194
     ],
     [
-     82.11382195111689,
-     26.182653056998443
+     82.10561886677785,
+     26.245313211063046
     ],
     [
-     82.11382195111689,
-     26.179477259780242
+     82.10561886677785,
+     26.24185612295346
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2018-09-18",
-   "type": "sale"
+   "date": "2015-03-11",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0032",
+ "owner_ref": "PR-0030",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Deo  Nayak",
-  "father_name": "Bhola"
+  "name": "D. Nayak",
+  "father_name": "Neemar"
  }
 }

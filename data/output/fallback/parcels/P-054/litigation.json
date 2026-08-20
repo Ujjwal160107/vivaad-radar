@@ -36,7 +36,8 @@
    },
    "filing_date": "2025-01-09",
    "order_date": "2025-02-06",
-   "next_hearing": null,
+   "next_hearing": "2026-10-11",
+   "next_hearing_source": "derived",
    "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100000252025_3.pdf"
   }
  ]

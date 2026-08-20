@@ -1,58 +1,54 @@
 {
  "id": "P-102",
- "survey_no": "1404",
+ "survey_no": "973",
  "khasra_no": null,
  "khata_no": null,
- "village": "Milkipur",
- "village_canon": "milkipur",
- "taluk": "Barausa",
+ "village": "Mungar",
+ "village_canon": "mungar",
+ "taluk": "Aldemau",
  "district": "Sultanpur",
- "area": "4.37",
+ "area": "4.79",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.01975948570994,
-     26.178472496828125
+     82.15959630211023,
+     26.210445590162223
     ],
     [
-     82.02448533182942,
-     26.178472496828125
+     82.16175843804083,
+     26.210445590162223
     ],
     [
-     82.0247216241354,
-     26.1823476906461
+     82.16186654483737,
+     26.21221854162532
     ],
     [
-     82.01975948570994,
-     26.18272575833566
+     82.15959630211023,
+     26.212391512499767
     ],
     [
-     82.01975948570994,
-     26.178472496828125
+     82.15959630211023,
+     26.210445590162223
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2015-06-09",
-   "type": "sale"
-  },
-  {
-   "date": "2021-09-18",
+   "date": "2021-07-02",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0035",
+ "owner_ref": "PR-0041",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Sarita Devi",
-  "father_name": "Dukhi"
+  "name": "Rajesh Maurya",
+  "father_name": "Bansraj"
  }
 }

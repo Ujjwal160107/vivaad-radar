@@ -1,49 +1,54 @@
 {
  "id": "P-095",
- "survey_no": "1159",
+ "survey_no": "1598",
  "khasra_no": null,
  "khata_no": null,
- "village": "Ghatampur",
- "village_canon": "ghatampur",
- "taluk": "Baronsa",
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Chanda",
  "district": "Sultanpur",
- "area": "2.03",
+ "area": "1.24",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.12257825429289,
-     26.19572380465636
+     82.14894093728087,
+     26.19239875006317
     ],
     [
-     82.12774014802662,
-     26.19572380465636
+     82.15202255116503,
+     26.19239875006317
     ],
     [
-     82.1279982427133,
-     26.19995655751801
+     82.15217663185923,
+     26.194925673448182
     ],
     [
-     82.12257825429289,
-     26.20036950901671
+     82.14894093728087,
+     26.195172202558915
     ],
     [
-     82.12257825429289,
-     26.19572380465636
+     82.14894093728087,
+     26.19239875006317
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0040",
+ "land_events": [
+  {
+   "date": "2018-10-14",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0036",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "S. Prasad",
-  "father_name": "Sita Ram"
+  "name": "M. Srivastava",
+  "father_name": "Dukhi"
  }
 }

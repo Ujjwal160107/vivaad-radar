@@ -1,54 +1,54 @@
 {
  "id": "P-114",
- "survey_no": "805",
+ "survey_no": "174",
  "khasra_no": null,
  "khata_no": null,
- "village": "Milkipur",
- "village_canon": "milkipur",
- "taluk": "Chanda",
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "4.47",
+ "area": "3.91",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.05675964186256,
-     26.258626085844522
+     82.02852167241954,
+     26.23071603800198
     ],
     [
-     82.0619681967378,
-     26.258626085844522
+     82.03358447572262,
+     26.23071603800198
     ],
     [
-     82.06222862448156,
-     26.26289710084222
+     82.03383761588778,
+     26.234867536710503
     ],
     [
-     82.05675964186256,
-     26.26331378523224
+     82.02852167241954,
+     26.23527256097475
     ],
     [
-     82.05675964186256,
-     26.258626085844522
+     82.02852167241954,
+     26.23071603800198
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2014-01-17",
+   "date": "2015-02-08",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0037",
+ "owner_ref": "PR-0033",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rajesh  Maurya",
-  "father_name": "Jagdish"
+  "name": "Kamrun Nisha",
+  "father_name": "Chhotey Lal"
  }
 }

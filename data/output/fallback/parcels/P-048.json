@@ -1,49 +1,58 @@
 {
  "id": "P-048",
- "survey_no": "431/0",
+ "survey_no": "431-0",
  "khasra_no": null,
  "khata_no": null,
  "village": "Kasba Sultanpur",
  "village_canon": "kasba sultanpur",
  "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "3.26",
+ "area": "1.84",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09150065368216,
-     26.245519053281765
+     82.03548166085444,
+     26.199380241982656
     ],
     [
-     82.09624535216963,
-     26.245519053281765
+     82.0386579029781,
+     26.199380241982656
     ],
     [
-     82.096482587094,
-     26.249409706041487
+     82.03881671508428,
+     26.201984760524056
     ],
     [
-     82.09150065368216,
-     26.249789281920485
+     82.03548166085444,
+     26.202238859893946
     ],
     [
-     82.09150065368216,
-     26.245519053281765
+     82.03548166085444,
+     26.199380241982656
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0024",
+ "land_events": [
+  {
+   "date": "2017-08-25",
+   "type": "mutation"
+  },
+  {
+   "date": "2017-10-22",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0021",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Kafeel Ahmad",
+  "name": "Kafeel  Ahmad",
   "father_name": "Munna"
  }
 }

@@ -9,6 +9,7 @@
  "next_hearing_date": null,
  "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100001602024_2.pdf",
  "source_label": "real",
+ "next_hearing_source": null,
  "parties": [
   {
    "role": "petitioner",
@@ -34,7 +35,7 @@
  "linked_parcels": [
   {
    "parcel_id": "P-033",
-   "confidence_score": 0.8629,
+   "confidence_score": 0.7817,
    "status": "AMBER"
   }
  ]

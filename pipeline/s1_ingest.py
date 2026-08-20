@@ -14,7 +14,8 @@ from common import (DATA_IN, DATA_MID, DISTRICT, FLAGSHIP_CNR, PROVENANCE,
                     ContractError, report)
 
 CASE_COLS = ["cnr", "case_no", "case_type", "court", "filing_date", "order_date",
-             "next_hearing_date", "is_final", "petitioner_raw", "respondent_raw",
+             "next_hearing_date", "next_hearing_source", "is_final",
+             "petitioner_raw", "respondent_raw",
              "extracted_survey_nos", "extracted_village", "extracted_taluk",
              "extracted_district", "extracted_relation", "raw_text_ref",
              "source_label"]
@@ -53,6 +54,16 @@ def run():
         if stray:
             raise ContractError(name + " has rows outside " + DISTRICT + ": " + str(stray))
 
+    # A disposed case carrying a future hearing is the most obvious tell that
+    # dates were invented, so it is a build-time failure (handoff B1).
+    bad = cases[cases.is_final.astype(bool) & cases.next_hearing_date.notna()]
+    if len(bad):
+        raise ContractError("disposed cases carry a next_hearing_date: "
+                            + str(list(bad.cnr)[:3]))
+    derived = cases[cases.next_hearing_date.notna()]
+    if not derived.empty and set(derived.next_hearing_source.dropna()) - {"derived", "real"}:
+        raise ContractError("next_hearing_source must be 'derived' or 'real'")
+
     # demo-critical rows (PRD 50). Without these the flagship cannot fire.
     if FLAGSHIP_CNR not in set(cases.cnr):
         raise ContractError("flagship case absent: " + FLAGSHIP_CNR)
@@ -65,7 +76,8 @@ def run():
     pb = parcels[parcels.parcel_id == "P-B01"].iloc[0]
     lo = pd.Timestamp(fl.filing_date)
     hi = pd.Timestamp(fl.next_hearing_date) if fl.next_hearing_date else pd.Timestamp("2026-08-20")
-    sales = [e for e in (pb.land_events or [])
+    events = list(pb.land_events) if pb.land_events is not None else []
+    sales = [e for e in events
              if e.get("type") == "sale" and lo <= pd.Timestamp(e["date"]) <= hi]
     if not sales:
         raise ContractError("no sale event inside the flagship pendency window - "
@@ -83,6 +95,11 @@ def run():
         "disposed_cases": int(cases.is_final.astype(bool).sum()),
         "cases_with_village": int(cases.extracted_village.notna().sum()),
         "cases_with_relation": int(cases.extracted_relation.notna().sum()),
+        "filing_span": [str(cases.filing_date.min()), str(cases.filing_date.max())],
+        "max_pendency_years": round(float(
+            (pd.Timestamp("2026-08-21") - pd.to_datetime(cases.filing_date).min()).days / 365.25), 2),
+        "next_hearing_derived": int(cases.next_hearing_date.notna().sum()),
+        "next_hearing_real": int((cases.next_hearing_source == "real").sum()),
         "flagship_sale_in_window": sales[0]["date"],
         "provenance": sorted(set(cases.source_label) | set(parcels.source_label)),
         "contract": "ok",

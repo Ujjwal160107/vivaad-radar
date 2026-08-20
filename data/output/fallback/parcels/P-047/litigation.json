@@ -1,7 +1,7 @@
 {
  "parcel_id": "P-047",
  "status": "AMBER",
- "confidence": 0.9392,
+ "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": true,
  "links": [
@@ -11,13 +11,13 @@
    "court": "Allahabad High Court",
    "case_type": "mutation_revenue_record",
    "case_status": "disposed",
-   "confidence": 0.9392,
+   "confidence": 0.9882,
    "band": "HIGH",
    "link_status": "AMBER",
    "reason": "high confidence but case is disposed",
    "evidence": {
     "survey_match": "exact",
-    "name_similarity": 0.833,
+    "name_similarity": 1.0,
     "father_name_similarity": null,
     "village_match": true,
     "taluk_match": false,
@@ -37,6 +37,7 @@
    "filing_date": "2025-08-11",
    "order_date": "2025-08-22",
    "next_hearing": null,
+   "next_hearing_source": null,
    "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cishclko/orders_2025_202100007852025_1.pdf"
   }
  ]

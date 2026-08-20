@@ -5,8 +5,10 @@ fails, the backend middleware serves these files at the same URLs and the
 frontend never knows. Tier 3 flagship payloads are written separately so the
 demo renders with no DB and no network at all.
 
-Filenames are flat and URL-derived so the middleware can map a request path to
-a file with one replace.
+Filenames mirror the request path, in two shapes the middleware handles:
+per-resource routes nest (`/parcels/P-B01/litigation` ->
+`parcels/P-B01/litigation.json`, `/cases/{cnr}` -> `cases/{cnr}.json`) while
+dashboard routes are flat (`/dashboard/heatmap` -> `dashboard_heatmap.json`).
 """
 import json
 import os
@@ -49,7 +51,8 @@ def litigation_payload(con, pid):
         SELECT l.case_id, l.confidence_score, l.confidence_band, l.identifier_match,
                l.evidence, l.status AS link_status, l.reason,
                c.case_no, c.court, c.status AS case_status, c.filing_date,
-               c.order_date, c.next_hearing_date, c.case_type, c.raw_text_ref
+               c.order_date, c.next_hearing_date, c.next_hearing_source,
+               c.case_type, c.raw_text_ref
         FROM ParcelCaseLink l JOIN CourtCase c ON c.id = l.case_id
         WHERE l.parcel_id = ? ORDER BY l.confidence_score DESC""", (pid,))
     for l in links:
@@ -65,6 +68,7 @@ def litigation_payload(con, pid):
             "link_status": l["link_status"], "reason": l["reason"],
             "evidence": l["evidence"], "filing_date": l["filing_date"],
             "order_date": l["order_date"], "next_hearing": l["next_hearing_date"],
+            "next_hearing_source": l["next_hearing_source"],
             "raw_text_ref": l["raw_text_ref"],
         } for l in links],
     }

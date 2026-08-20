@@ -1,54 +1,58 @@
 {
  "id": "P-123",
- "survey_no": "2200/2",
+ "survey_no": "1574",
  "khasra_no": null,
  "khata_no": null,
- "village": "Kasba Sultanpur",
- "village_canon": "kasba sultanpur",
- "taluk": "Jagdishpur",
+ "village": "Panchayat",
+ "village_canon": "panchayat",
+ "taluk": "Chanda",
  "district": "Sultanpur",
- "area": "0.55",
+ "area": "3.4",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14029266359282,
-     26.2772869473498
+     82.00302572075755,
+     26.27112947083387
     ],
     [
-     82.14234414717599,
-     26.2772869473498
+     82.0064131127849,
+     26.27112947083387
     ],
     [
-     82.14244672135514,
-     26.278969163888
+     82.00658248238626,
+     26.273907132296298
     ],
     [
-     82.14029266359282,
-     26.27913328257465
+     82.00302572075755,
+     26.274178123658487
     ],
     [
-     82.14029266359282,
-     26.2772869473498
+     82.00302572075755,
+     26.27112947083387
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2021-07-02",
+   "date": "2013-01-15",
+   "type": "sale"
+  },
+  {
+   "date": "2019-05-23",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0037",
+ "owner_ref": "PR-0044",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rajesh  Maurya",
-  "father_name": "Jagdish"
+  "name": "Ram  Newal",
+  "father_name": "Hari Prasad"
  }
 }

@@ -1,58 +1,49 @@
 {
  "id": "P-100",
- "survey_no": "2274",
+ "survey_no": "2061",
  "khasra_no": null,
  "khata_no": null,
- "village": "Sabha",
- "village_canon": "sabha",
- "taluk": "Kadipur",
+ "village": "Kutta",
+ "village_canon": "kutta",
+ "taluk": "Baronsa",
  "district": "Sultanpur",
- "area": "2.17",
+ "area": "2.43",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09605870827559,
-     26.209921392721956
+     82.10713026146917,
+     26.278333179794146
     ],
     [
-     82.10134367921108,
-     26.209921392721956
+     82.1097381285591,
+     26.278333179794146
     ],
     [
-     82.10160792775787,
-     26.214255068889063
+     82.1098685219136,
+     26.280471630807895
     ],
     [
-     82.09605870827559,
-     26.214677866563903
+     82.10713026146917,
+     26.280680260175092
     ],
     [
-     82.09605870827559,
-     26.209921392721956
+     82.10713026146917,
+     26.278333179794146
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2013-02-24",
-   "type": "sale"
-  },
-  {
-   "date": "2015-03-15",
-   "type": "mutation"
-  }
- ],
- "owner_ref": "PR-0042",
+ "land_events": [],
+ "owner_ref": "PR-0039",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Nanhe Lal",
+  "name": "Shyamdhar Dubey",
   "father_name": "Ali Bux"
  }
 }

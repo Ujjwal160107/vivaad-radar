@@ -7,52 +7,48 @@
  "village_canon": "kisni",
  "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "2.21",
+ "area": "1.31",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.07561336545568,
-     26.184282124125158
+     82.03919968539691,
+     26.219643894520626
     ],
     [
-     82.0774464366398,
-     26.184282124125158
+     82.04080324095646,
+     26.219643894520626
     ],
     [
-     82.077538090199,
-     26.185785242496134
+     82.04088341873444,
+     26.220958810079463
     ],
     [
-     82.07561336545568,
-     26.18593188819086
+     82.03919968539691,
+     26.221087094524226
     ],
     [
-     82.07561336545568,
-     26.184282124125158
+     82.03919968539691,
+     26.219643894520626
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2021-04-09",
-   "type": "mutation"
-  },
-  {
-   "date": "2022-02-19",
+   "date": "2023-04-22",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0009",
+ "owner_ref": "PR-0006",
  "status": "AMBER",
- "confidence": 0.8413,
+ "confidence": 0.8287,
  "note": "Possible connection - verification recommended",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
   "name": "S. Mohammad Rehaan",
-  "father_name": "Bhola"
+  "father_name": "Shyam Lal"
  }
 }

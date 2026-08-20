@@ -1,54 +1,54 @@
 {
  "id": "P-099",
- "survey_no": "1061",
+ "survey_no": "1113",
  "khasra_no": null,
  "khata_no": null,
- "village": "Saidapur Bhau",
- "village_canon": "saidapur bhau",
- "taluk": "Baronsa",
+ "village": "Muraini",
+ "village_canon": "tato muraini",
+ "taluk": "Meeranpur",
  "district": "Sultanpur",
- "area": "3.78",
+ "area": "0.8",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.98680683532932,
-     26.306289071863873
+     82.11607994160782,
+     26.309670419013074
     ],
     [
-     81.99013894035288,
-     26.306289071863873
+     82.11884024113476,
+     26.309670419013074
     ],
     [
-     81.99030554560406,
-     26.309021397983198
+     82.11897825611112,
+     26.31193386462517
     ],
     [
-     81.98680683532932,
-     26.30928796638508
+     82.11607994160782,
+     26.312154688587324
     ],
     [
-     81.98680683532932,
-     26.306289071863873
+     82.11607994160782,
+     26.309670419013074
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2016-04-06",
+   "date": "2021-09-02",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0037",
+ "owner_ref": "PR-0038",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rajesh  Maurya",
-  "father_name": "Jagdish"
+  "name": "Sarita  Devi",
+  "father_name": "Sita Ram"
  }
 }

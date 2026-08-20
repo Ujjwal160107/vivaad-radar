@@ -1,9 +1,9 @@
 {
  "parcel_id": "P-033",
  "status": "AMBER",
- "confidence": 0.8629,
- "note": "Possible connection - verification recommended; closed litigation history on record",
- "closed_history": true,
+ "confidence": 0.7817,
+ "note": "Possible connection - verification recommended",
+ "closed_history": false,
  "links": [
   {
    "case_id": "UPHC020095572024",
@@ -11,14 +11,14 @@
    "court": "Allahabad High Court",
    "case_type": "sale_deed_transfer",
    "case_status": "disposed",
-   "confidence": 0.8629,
-   "band": "HIGH",
+   "confidence": 0.7817,
+   "band": "MEDIUM",
    "link_status": "AMBER",
-   "reason": "high confidence but case is disposed",
+   "reason": "possible connection, verification recommended",
    "evidence": {
     "survey_match": "exact",
-    "name_similarity": 1.0,
-    "father_name_similarity": 0.286,
+    "name_similarity": 0.667,
+    "father_name_similarity": 0.3,
     "village_match": true,
     "taluk_match": false,
     "case_type_relevance": 0.7,
@@ -36,6 +36,7 @@
    "filing_date": "2024-02-10",
    "order_date": "2024-02-23",
    "next_hearing": null,
+   "next_hearing_source": null,
    "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100001602024_2.pdf"
   },
   {
@@ -44,13 +45,13 @@
    "court": "Allahabad High Court",
    "case_type": "tenancy",
    "case_status": "disposed",
-   "confidence": 0.7347,
+   "confidence": 0.7507,
    "band": "MEDIUM",
    "link_status": "AMBER",
    "reason": "possible connection, verification recommended",
    "evidence": {
     "survey_match": "exact",
-    "name_similarity": 0.258,
+    "name_similarity": 0.312,
     "father_name_similarity": null,
     "village_match": true,
     "taluk_match": false,
@@ -70,6 +71,7 @@
    "filing_date": "2024-02-17",
    "order_date": "2024-02-23",
    "next_hearing": null,
+   "next_hearing_source": null,
    "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100001902024_2.pdf"
   }
  ]

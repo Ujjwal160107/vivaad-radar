@@ -1,54 +1,58 @@
 {
  "id": "P-088",
- "survey_no": "2049",
+ "survey_no": "1068/3",
  "khasra_no": null,
  "khata_no": null,
- "village": "Lakhipur",
- "village_canon": "lakhipur",
- "taluk": "Jagdishpur",
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "4.98",
+ "area": "2.8",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.99601350779832,
-     26.315427770684114
+     82.0370161590027,
+     26.26023777939127
     ],
     [
-     81.99821776942346,
-     26.315427770684114
+     82.04177605633848,
+     26.26023777939127
     ],
     [
-     81.99832798250472,
-     26.317235265216723
+     82.04201405120527,
+     26.264140895206605
     ],
     [
-     81.99601350779832,
-     26.317411606146734
+     82.0370161590027,
+     26.26452168699347
     ],
     [
-     81.99601350779832,
-     26.315427770684114
+     82.0370161590027,
+     26.26023777939127
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2013-04-12",
+   "date": "2012-11-11",
+   "type": "mutation"
+  },
+  {
+   "date": "2022-11-27",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0033",
+ "owner_ref": "PR-0031",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Santu  Prasad",
-  "father_name": "Sita Ram"
+  "name": "Vijay Bahadur",
+  "father_name": "Neemar"
  }
 }

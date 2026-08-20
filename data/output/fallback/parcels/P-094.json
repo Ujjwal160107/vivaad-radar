@@ -1,49 +1,54 @@
 {
  "id": "P-094",
- "survey_no": "1349",
+ "survey_no": "1375/4",
  "khasra_no": null,
  "khata_no": null,
- "village": "Sekhauli",
- "village_canon": "sekhauli",
- "taluk": "Amethi",
+ "village": "Ghatampur",
+ "village_canon": "ghatampur",
+ "taluk": "Barosa",
  "district": "Sultanpur",
- "area": "2.11",
+ "area": "0.58",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.06877686390618,
-     26.19961886707597
+     82.13596383705426,
+     26.32146999438326
     ],
     [
-     82.07044385939727,
-     26.19961886707597
+     82.13987596443613,
+     26.32146999438326
     ],
     [
-     82.07052720917183,
-     26.200985803378664
+     82.14007157080523,
+     26.324677938836395
     ],
     [
-     82.06877686390618,
-     26.20111916301795
+     82.13596383705426,
+     26.324990909026948
     ],
     [
-     82.06877686390618,
-     26.19961886707597
+     82.13596383705426,
+     26.32146999438326
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0039",
+ "land_events": [
+  {
+   "date": "2014-02-22",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0035",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Vijay Bahadur",
-  "father_name": "Jagdish"
+  "name": "Phoolchand",
+  "father_name": "Dukhi"
  }
 }

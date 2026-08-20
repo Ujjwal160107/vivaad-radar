@@ -1,58 +1,58 @@
 {
  "id": "P-129",
- "survey_no": "669/1",
+ "survey_no": "951",
  "khasra_no": null,
  "khata_no": null,
- "village": "Ramaipur",
- "village_canon": "ramaipur",
- "taluk": "Amethi",
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Chanda",
  "district": "Sultanpur",
- "area": "1.47",
+ "area": "0.66",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.11017951210607,
-     26.320984047092267
+     82.11004681527717,
+     26.181481813445558
     ],
     [
-     82.11348746719408,
-     26.320984047092267
+     82.11225619390513,
+     26.181481813445558
     ],
     [
-     82.11365286494848,
-     26.32369657026444
+     82.11236666283652,
+     26.183293503920478
     ],
     [
-     82.11017951210607,
-     26.323961206671477
+     82.11004681527717,
+     26.183470254210715
     ],
     [
-     82.11017951210607,
-     26.320984047092267
+     82.11004681527717,
+     26.181481813445558
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2016-08-11",
-   "type": "mutation"
+   "date": "2015-03-04",
+   "type": "sale"
   },
   {
-   "date": "2021-06-15",
-   "type": "sale"
+   "date": "2017-12-21",
+   "type": "mutation"
   }
  ],
- "owner_ref": "PR-0050",
+ "owner_ref": "PR-0017",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Shyamdhar  Dubey",
-  "father_name": "Sita Ram"
+  "name": "S. Devi",
+  "father_name": "Bhola"
  }
 }

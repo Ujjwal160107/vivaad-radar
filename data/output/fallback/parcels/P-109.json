@@ -1,49 +1,54 @@
 {
  "id": "P-109",
- "survey_no": "752",
+ "survey_no": "330",
  "khasra_no": null,
  "khata_no": null,
- "village": "Kutta",
- "village_canon": "kutta",
- "taluk": "Lambhua",
+ "village": "Madanpur Paniyar",
+ "village_canon": "madanpur paniyar",
+ "taluk": "Chanda",
  "district": "Sultanpur",
- "area": "4.4",
+ "area": "3.69",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.99821433464255,
-     26.319971877745193
+     82.16134946665494,
+     26.277019532855913
     ],
     [
-     82.00250321533247,
-     26.319971877745193
+     82.16483110440693,
+     26.277019532855913
     ],
     [
-     82.00271765936697,
-     26.323488759910923
+     82.16500518629454,
+     26.279874475812548
     ],
     [
-     81.99821433464255,
-     26.323831870366114
+     82.16134946665494,
+     26.28015300683271
     ],
     [
-     81.99821433464255,
-     26.319971877745193
+     82.16134946665494,
+     26.277019532855913
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0038",
+ "land_events": [
+  {
+   "date": "2013-10-21",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0044",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Anil Kumar Singh",
-  "father_name": "Bansraj"
+  "name": "Ram  Newal",
+  "father_name": "Hari Prasad"
  }
 }

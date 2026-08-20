@@ -3,45 +3,40 @@
  "survey_no": "495",
  "khasra_no": null,
  "khata_no": "495",
- "village": "Belhari",
- "village_canon": "belhari",
- "taluk": "Lambhuwa",
+ "village": "Malapur Jagdishpur",
+ "village_canon": "malapur jagdishpur",
+ "taluk": "Amethi",
  "district": "Sultanpur",
- "area": "1.7",
+ "area": "2.68",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.14283388822354,
-     26.23604959429498
+     82.08463688041418,
+     26.23056670803531
     ],
     [
-     82.14706330073678,
-     26.23604959429498
+     82.08831683950574,
+     26.23056670803531
     ],
     [
-     82.14727477136243,
-     26.239517712555838
+     82.0885008374603,
+     26.233584274490383
     ],
     [
-     82.14283388822354,
-     26.239856065556896
+     82.08463688041418,
+     26.233878671217706
     ],
     [
-     82.14283388822354,
-     26.23604959429498
+     82.08463688041418,
+     26.23056670803531
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2020-12-14",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0005",
+ "land_events": [],
+ "owner_ref": "PR-0004",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -49,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Rampati",
-  "father_name": "Chhotey Lal"
+  "father_name": "Neemar"
  }
 }

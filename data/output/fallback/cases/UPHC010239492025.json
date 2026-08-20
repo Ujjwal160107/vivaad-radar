@@ -9,6 +9,7 @@
  "next_hearing_date": null,
  "raw_text_ref": "data/pdf/year=2025/court=9_13/bench=cisdb_16012018/orders_2025_202100002222025_4.pdf",
  "source_label": "real",
+ "next_hearing_source": null,
  "parties": [
   {
    "role": "petitioner",
@@ -44,7 +45,7 @@
   },
   {
    "parcel_id": "P-004",
-   "confidence_score": 0.9345,
+   "confidence_score": 0.9765,
    "status": "AMBER"
   },
   {
@@ -63,17 +64,17 @@
    "status": "AMBER"
   },
   {
+   "parcel_id": "P-064",
+   "confidence_score": 0.7882,
+   "status": "AMBER"
+  },
+  {
    "parcel_id": "P-065",
    "confidence_score": 0.7882,
    "status": "AMBER"
   },
   {
    "parcel_id": "P-062",
-   "confidence_score": 0.7462,
-   "status": "AMBER"
-  },
-  {
-   "parcel_id": "P-064",
    "confidence_score": 0.7462,
    "status": "AMBER"
   }

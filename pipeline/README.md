@@ -55,20 +55,41 @@ GET /cases/UPHC020611812025    ->  data/output/fallback/cases/UPHC020611812025.j
 | Cases / parcels | 38 real cases (8 active) / 135 synthetic parcels |
 | Links surfaced | 84 (48 HIGH, 36 MEDIUM) from 1,674 scored pairs |
 | Parcel status | 12 RED · 62 AMBER · 61 GREEN |
+| Sale during pendency | 8 of 12 RED parcels (PRD 52 evidence) |
 | Flagship | **P-B01 = RED @ 0.9105**, P-A01 = GREEN |
+| Tests | 13 pipeline golden + 33 backend, all green |
+
+## Corpus facts worth quoting accurately
+
+Numbers for slides and the demo script. These come from `s1_report.json`, so
+they stay honest as the data changes.
+
+| | |
+|---|---|
+| Filing dates span | 2024-01-17 to 2025-12-10 |
+| **Longest pendency** | **~2.6 years** |
+| Cases with a real next-hearing date | **0 of 38** (all displayed ones are derived) |
+| Cases stating a patronymic | 6 of 38 |
+
+The PRD's illustrative "filed 2019, pending 6 years" is a worked example, not a
+fact about this corpus. **Any slide or script must say ~2.6 years**, which is
+the real maximum here. A judge who checks a filing date will find 2024, and an
+inflated claim is the cheapest possible credibility loss.
 
 ## Two deliberate deviations, both flagged
 
 1. **Absent features are redistributed, not scored zero.** Only 6 of 38 cases
    state a patronymic. Scoring the missing 0.15 as 0 would depress every case
-   that simply did not write "s/o" — punishing a data artefact as if it were
+   that simply did not write "s/o" - punishing a data artefact as if it were
    evidence. The weight is renormalised over the features that exist; the
    per-pair evidence records `weights_used` and `features_absent`.
-2. **`next_hearing_date` is null, not invented.** The source corpus does not
-   carry it, and fabricating a court date into a file labelled provenance
-   `real` would be dishonest. For active cases the pendency window is
-   filed → present, and the flagship sale (2025-12-13) sits inside it, so the
-   §51 step-4 timeline beat works without a fabricated hearing date.
+2. **Next-hearing dates are derived, and say so.** No case in the corpus has
+   one (0 of 38), but PRD 37, 16 screen 5, 50 and 55 all display one. So the
+   pipeline derives it for **active cases only**, anchored on the later of the
+   order date or today plus a varied 3-14 week listing gap, and stamps
+   `next_hearing_source = 'derived'`. Disposed cases never get one. Three
+   golden tests enforce this, because an unlabelled fabricated court date is
+   the easiest thing for a judge to check and the most expensive thing to lose.
 
 ## Why the linkage is not circular
 

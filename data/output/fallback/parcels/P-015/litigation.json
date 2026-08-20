@@ -1,7 +1,7 @@
 {
  "parcel_id": "P-015",
  "status": "AMBER",
- "confidence": 0.8365,
+ "confidence": 0.8277,
  "note": "Possible connection - verification recommended",
  "closed_history": false,
  "links": [
@@ -11,14 +11,14 @@
    "court": "Allahabad High Court",
    "case_type": "acquisition_compensation",
    "case_status": "disposed",
-   "confidence": 0.8365,
+   "confidence": 0.8277,
    "band": "MEDIUM",
    "link_status": "AMBER",
    "reason": "possible connection, verification recommended",
    "evidence": {
     "survey_match": "exact",
-    "name_similarity": 1.0,
-    "father_name_similarity": 0.176,
+    "name_similarity": 0.938,
+    "father_name_similarity": 0.222,
     "village_match": true,
     "taluk_match": false,
     "case_type_relevance": 0.6,
@@ -36,6 +36,7 @@
    "filing_date": "2024-05-23",
    "order_date": "2024-05-25",
    "next_hearing": null,
+   "next_hearing_source": null,
    "raw_text_ref": "data/pdf/year=2024/court=9_13/bench=cishclko/orders_2024_202100005632024_1.pdf"
   }
  ]

@@ -1,49 +1,54 @@
 {
  "id": "P-093",
- "survey_no": "1870",
+ "survey_no": "1679/4",
  "khasra_no": null,
  "khata_no": null,
- "village": "Kisni",
- "village_canon": "kisni",
- "taluk": "Jagdishpur",
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Miranpur",
  "district": "Sultanpur",
- "area": "1.19",
+ "area": "3.03",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.11516538021837,
-     26.28924133745848
+     82.1443661527172,
+     26.307050815851635
     ],
     [
-     82.11731272409256,
-     26.28924133745848
+     82.14913111027825,
+     26.307050815851635
     ],
     [
-     82.11742009128626,
-     26.291002159435315
+     82.14936935815629,
+     26.310958081051695
     ],
     [
-     82.11516538021837,
-     26.29117394694525
+     82.1443661527172,
+     26.311339277656575
     ],
     [
-     82.11516538021837,
-     26.28924133745848
+     82.1443661527172,
+     26.307050815851635
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0038",
+ "land_events": [
+  {
+   "date": "2015-08-07",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0031",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Anil Kumar Singh",
-  "father_name": "Bansraj"
+  "name": "Vijay Bahadur",
+  "father_name": "Neemar"
  }
 }

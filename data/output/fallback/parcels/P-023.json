@@ -7,52 +7,52 @@
  "village_canon": "kisni",
  "taluk": "Jagdishpur",
  "district": "Sultanpur",
- "area": "4.34",
+ "area": "3.7",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.12094520801344,
-     26.235837396304607
+     82.13257908638103,
+     26.317631050750627
     ],
     [
-     82.12559335740772,
-     26.235837396304607
+     82.13798972575964,
+     26.317631050750627
     ],
     [
-     82.12582576487745,
-     26.239648878807927
+     82.13826025772856,
+     26.322067775041084
     ],
     [
-     82.12094520801344,
-     26.24002073075947
+     82.13257908638103,
+     26.32250062619137
     ],
     [
-     82.12094520801344,
-     26.235837396304607
+     82.13257908638103,
+     26.317631050750627
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2014-09-22",
-   "type": "sale"
+   "date": "2014-12-19",
+   "type": "mutation"
   },
   {
-   "date": "2019-12-13",
+   "date": "2018-04-26",
    "type": "mutation"
   }
  ],
- "owner_ref": "PR-0008",
+ "owner_ref": "PR-0007",
  "status": "AMBER",
- "confidence": 0.8517,
- "note": "Possible connection - verification recommended; closed litigation history on record",
- "closed_history": 1,
+ "confidence": 0.8443,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
   "name": "Saiyed Mohammad Rehaan",
-  "father_name": "Jagdish"
+  "father_name": "Ali Bux"
  }
 }

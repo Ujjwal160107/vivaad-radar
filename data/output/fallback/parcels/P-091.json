@@ -1,49 +1,54 @@
 {
  "id": "P-091",
- "survey_no": "537",
+ "survey_no": "1059",
  "khasra_no": null,
  "khata_no": null,
- "village": "Belhari",
- "village_canon": "belhari",
- "taluk": "Lambhuwa",
+ "village": "Kisni",
+ "village_canon": "kisni",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "4.44",
+ "area": "3.02",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.1346756018297,
-     26.333032889513
+     82.14232109408645,
+     26.318028276867675
     ],
     [
-     82.13878054319554,
-     26.333032889513
+     82.1452663439223,
+     26.318028276867675
     ],
     [
-     82.13898579026383,
-     26.33639894143299
+     82.1454136064141,
+     26.32044338173307
     ],
     [
-     82.1346756018297,
-     26.336727336742257
+     82.14232109408645,
+     26.32067900171994
     ],
     [
-     82.1346756018297,
-     26.333032889513
+     82.14232109408645,
+     26.318028276867675
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0036",
+ "land_events": [
+  {
+   "date": "2016-06-14",
+   "type": "mutation"
+  }
+ ],
+ "owner_ref": "PR-0034",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Phoolchand",
-  "father_name": "Bhola"
+  "name": "A. Kumar Singh",
+  "father_name": "Chhotey Lal"
  }
 }

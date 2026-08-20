@@ -5,50 +5,54 @@
  "khata_no": "495/2",
  "village": "Milkipur",
  "village_canon": "milkipur",
- "taluk": "Chanda",
+ "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "0.72",
+ "area": "2.07",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.0688976678514,
-     26.247896176155674
+     82.04208776954789,
+     26.26294249614289
     ],
     [
-     82.07172008661057,
-     26.247896176155674
+     82.0444554780039,
+     26.26294249614289
     ],
     [
-     82.07186120754854,
-     26.250210559538193
+     82.04457386342669,
+     26.264884017076813
     ],
     [
-     82.0688976678514,
-     26.250436353038925
+     82.04208776954789,
+     26.265073433753294
     ],
     [
-     82.0688976678514,
-     26.247896176155674
+     82.04208776954789,
+     26.26294249614289
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2019-06-19",
+   "date": "2012-10-25",
    "type": "mutation"
+  },
+  {
+   "date": "2017-03-07",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0006",
+ "owner_ref": "PR-0004",
  "status": "AMBER",
- "confidence": 0.6643,
+ "confidence": 0.8,
  "note": "Possible connection - verification recommended",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Rampa Ti",
-  "father_name": "Ram Autar"
+  "name": "Rampati",
+  "father_name": "Neemar"
  }
 }

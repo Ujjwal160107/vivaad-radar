@@ -7,43 +7,48 @@
  "village_canon": "ghatampur",
  "taluk": "Amethi",
  "district": "Sultanpur",
- "area": "3.74",
+ "area": "5.12",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.053530010065,
-     26.307763075724523
+     82.10874255664544,
+     26.333465792276204
     ],
     [
-     82.05872432457042,
-     26.307763075724523
+     82.11152864975809,
+     26.333465792276204
     ],
     [
-     82.05898404029568,
-     26.312022413618962
+     82.11166795441372,
+     26.335750388628576
     ],
     [
-     82.053530010065,
-     26.312437958779395
+     82.10874255664544,
+     26.33597327607759
     ],
     [
-     82.053530010065,
-     26.307763075724523
+     82.10874255664544,
+     26.333465792276204
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0017",
+ "land_events": [
+  {
+   "date": "2025-10-01",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0015",
  "status": "RED",
- "confidence": 0.9672,
+ "confidence": 0.9882,
  "note": "High-confidence litigation connection found",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "J. Bahadur Singh",
+  "name": "Jai Bahadur Singh",
   "father_name": "Jagdish"
  }
 }

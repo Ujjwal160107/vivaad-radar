@@ -7,43 +7,56 @@
  "village_canon": "ballipur",
  "taluk": "Barausa",
  "district": "Sultanpur",
- "area": "5.01",
+ "area": "2.07",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.10146384887803,
-     26.18740875991513
+     82.08588135222939,
+     26.332819371443808
     ],
     [
-     82.10588116063154,
-     26.18740875991513
+     82.08982549784317,
+     26.332819371443808
     ],
     [
-     82.10610202621922,
-     26.19103095555301
+     82.09002270512386,
+     26.3360535708471
     ],
     [
-     82.10146384887803,
-     26.19138434049329
+     82.08588135222939,
+     26.3363691024962
     ],
     [
-     82.10146384887803,
-     26.18740875991513
+     82.08588135222939,
+     26.332819371443808
     ]
    ]
   ]
  },
- "land_events": [],
- "owner_ref": "PR-0014",
+ "land_events": [
+  {
+   "date": "2012-06-10",
+   "type": "sale"
+  },
+  {
+   "date": "2017-08-13",
+   "type": "mutation"
+  },
+  {
+   "date": "2024-02-19",
+   "type": "sale"
+  }
+ ],
+ "owner_ref": "PR-0012",
  "status": "AMBER",
- "confidence": 0.8629,
- "note": "Possible connection - verification recommended; closed litigation history on record",
- "closed_history": 1,
+ "confidence": 0.7817,
+ "note": "Possible connection - verification recommended",
+ "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "Kamlesh  Kumar",
-  "father_name": "Dukhi"
+  "name": "Kamle Sh Kumar",
+  "father_name": "Chhotey Lal"
  }
 }

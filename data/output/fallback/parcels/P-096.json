@@ -1,49 +1,49 @@
 {
  "id": "P-096",
- "survey_no": "880",
+ "survey_no": "1856",
  "khasra_no": null,
  "khata_no": null,
- "village": "Ghatampur",
- "village_canon": "ghatampur",
- "taluk": "Chanda",
+ "village": "Judapatti",
+ "village_canon": "judapatti",
+ "taluk": "Lambhuwa",
  "district": "Sultanpur",
- "area": "2.67",
+ "area": "1.87",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.09194837028552,
-     26.201008254965696
+     82.0878101016547,
+     26.244887622078153
     ],
     [
-     82.09514541211267,
-     26.201008254965696
+     82.08970649641375,
+     26.244887622078153
     ],
     [
-     82.09530526420403,
-     26.203629829263964
+     82.0898013161517,
+     26.246442665780574
     ],
     [
-     82.09194837028552,
-     26.203885592610135
+     82.0878101016547,
+     26.246594377361298
     ],
     [
-     82.09194837028552,
-     26.201008254965696
+     82.0878101016547,
+     26.244887622078153
     ]
    ]
   ]
  },
  "land_events": [],
- "owner_ref": "PR-0041",
+ "owner_ref": "PR-0032",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
  "closed_history": 0,
  "source_label": "synthetic",
  "owner": {
-  "name": "R. Maurya",
-  "father_name": "Hari Prasad"
+  "name": "Nanhe  Lal",
+  "father_name": "Bansraj"
  }
 }

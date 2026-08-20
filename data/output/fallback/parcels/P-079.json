@@ -3,49 +3,40 @@
  "survey_no": "3561",
  "khasra_no": null,
  "khata_no": null,
- "village": "Ballipur",
- "village_canon": "ballipur",
- "taluk": "Chanda",
+ "village": "Kaithawan",
+ "village_canon": "kaithawan",
+ "taluk": "Lambhua",
  "district": "Sultanpur",
- "area": "2.4",
+ "area": "0.75",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.13467708837281,
-     26.266203981887585
+     82.14964411245212,
+     26.318969820899227
     ],
     [
-     82.1364044333193,
-     26.266203981887585
+     82.15440641854563,
+     26.318969820899227
     ],
     [
-     82.13649080056662,
-     26.2676204047437
+     82.15464453385032,
+     26.32287491189591
     ],
     [
-     82.13467708837281,
-     26.26775859233942
+     82.14964411245212,
+     26.323255896383387
     ],
     [
-     82.13467708837281,
-     26.266203981887585
+     82.14964411245212,
+     26.318969820899227
     ]
    ]
   ]
  },
- "land_events": [
-  {
-   "date": "2012-05-20",
-   "type": "mutation"
-  },
-  {
-   "date": "2019-07-01",
-   "type": "sale"
-  }
- ],
- "owner_ref": "PR-0004",
+ "land_events": [],
+ "owner_ref": "PR-0003",
  "status": "GREEN",
  "confidence": 0.0,
  "note": "No matching active litigation found in available records",
@@ -53,6 +44,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Doman",
-  "father_name": "Hari Prasad"
+  "father_name": "Chhotey Lal"
  }
 }

@@ -7,41 +7,41 @@
  "village_canon": "judapatti",
  "taluk": "Lambhuwa",
  "district": "Sultanpur",
- "area": "5.08",
+ "area": "2.15",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     82.03548273694544,
-     26.255076386665625
+     82.14929309839127,
+     26.18980216738969
     ],
     [
-     82.04076520208203,
-     26.255076386665625
+     82.15364787394678,
+     26.18980216738969
     ],
     [
-     82.04102932533887,
-     26.25940800807763
+     82.15386561272456,
+     26.19337308334521
     ],
     [
-     82.03548273694544,
-     26.25983060528856
+     82.14929309839127,
+     26.19372146538965
     ],
     [
-     82.03548273694544,
-     26.255076386665625
+     82.14929309839127,
+     26.18980216738969
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2014-07-23",
+   "date": "2017-04-01",
    "type": "sale"
   }
  ],
- "owner_ref": "PR-0016",
+ "owner_ref": "PR-0014",
  "status": "AMBER",
  "confidence": 0.9882,
  "note": "Possible connection - verification recommended; closed litigation history on record",
@@ -49,6 +49,6 @@
  "source_label": "synthetic",
  "owner": {
   "name": "Kasim",
-  "father_name": "Hari Prasad"
+  "father_name": "Dukhi"
  }
 }

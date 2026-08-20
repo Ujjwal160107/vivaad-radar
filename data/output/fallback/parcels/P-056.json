@@ -7,48 +7,48 @@
  "village_canon": "kaithawan",
  "taluk": "Kadipur",
  "district": "Sultanpur",
- "area": "4.75",
+ "area": "5.45",
  "geometry": {
   "type": "Polygon",
   "coordinates": [
    [
     [
-     81.99187932823824,
-     26.269194914661213
+     82.155238574634,
+     26.220048396351736
     ],
     [
-     81.9957514586621,
-     26.269194914661213
+     82.16029918465992,
+     26.220048396351736
     ],
     [
-     81.99594506518329,
-     26.272370061608772
+     82.16055221516122,
+     26.22419809657299
     ],
     [
-     81.99187932823824,
-     26.27267983204268
+     82.155238574634,
+     26.224602945375064
     ],
     [
-     81.99187932823824,
-     26.269194914661213
+     82.155238574634,
+     26.220048396351736
     ]
    ]
   ]
  },
  "land_events": [
   {
-   "date": "2017-02-18",
-   "type": "mutation"
+   "date": "2025-04-13",
+   "type": "sale"
   }
  ],
- "owner_ref": "PR-0029",
+ "owner_ref": "PR-0026",
  "status": "AMBER",
- "confidence": 0.9076,
+ "confidence": 1.0,
  "note": "Possible connection - verification recommended; closed litigation history on record",
  "closed_history": 1,
  "source_label": "synthetic",
  "owner": {
-  "name": "Shafq Atullah Khan",
-  "father_name": "Chhotey Lal"
+  "name": "Shafqatullah  Khan",
+  "father_name": "Munna"
  }
 }
