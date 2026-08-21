@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF3E0;
+    color: #0A0A0A;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* 100px Geometric Grid Canvas matching the design screenshot */
+.bg-grid-100 {
+  background-color: #FAF3E0;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+/* Focus styles: strict 2px high contrast */
+input:focus, button:focus {
+  outline: none;
+}
+
+/* Custom scrollbar for raw records & log panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF3E0;
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: #0A0A0A;
+}
