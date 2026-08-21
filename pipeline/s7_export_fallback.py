@@ -137,6 +137,29 @@ def run():
     _write("dashboard_heatmap.json",
            {"villages": sorted(agg.values(), key=lambda x: -x["density"])})
 
+    map_features = []
+    for row in _rows(con, "SELECT id, survey_no, village, village_canon, status, "
+                          "confidence, geometry FROM Parcel"):
+        try:
+            geom = json.loads(row["geometry"]) if row["geometry"] else None
+        except (TypeError, ValueError):
+            geom = None
+        if not geom:
+            continue
+        map_features.append({
+            "type": "Feature",
+            "geometry": geom,
+            "properties": {
+                "id": row["id"],
+                "survey_no": row["survey_no"],
+                "village": row["village"],
+                "village_canon": row["village_canon"] or "unknown",
+                "status": row["status"] or "GREEN",
+                "confidence": row["confidence"],
+            },
+        })
+    _write("dashboard_map.json", {"type": "FeatureCollection", "features": map_features})
+
     _write("watchlist.json", {"items": []})
 
     # tier 3 - the flagship pair, bundled into the frontend
@@ -149,7 +172,7 @@ def run():
     })
     con.close()
 
-    report("s7", {"files_written": n + 5, "parcels": len(parcels),
+    report("s7", {"files_written": n + 6, "parcels": len(parcels),
                   "cases": len(cases), "status_counts": counts,
                   "villages_in_heatmap": len(agg), "dir": FALLBACK})
 

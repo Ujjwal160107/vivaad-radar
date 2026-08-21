@@ -26,7 +26,10 @@ def seed(conn) -> None:
              json.dumps([{"event_type": "mutation", "date": "2023-06-10", "note": "Routine mutation"}]),
              "PR-001", "GREEN", 0.0, None, 0, "synthetic"),
             ("P-B01", "1365-1", "1365-1", "KH-153", "Madanpur Panyar", "madanpur paniyar",
-             "Sadar", "Sultanpur", "1 bigha", None,
+             "Sadar", "Sultanpur", "1 bigha",
+             json.dumps({"type": "Polygon", "coordinates": [[
+                 [82.07, 26.26], [82.08, 26.26], [82.08, 26.27], [82.07, 26.27], [82.07, 26.26]
+             ]]}),
              json.dumps([{"event_type": "sale", "date": "2025-11-05", "note": "Sale registered during pendency"}]),
              "PR-002", "RED", 0.9105, "Sale registered during pendency", 0, "synthetic"),
             ("P-C01", "142/3", None, "KH-142", "Kurwar", "kurwar", "Sadar", "Sultanpur",

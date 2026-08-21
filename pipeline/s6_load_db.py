@@ -143,6 +143,11 @@ def run():
                      ("derived", "pipeline s4/s5 scored links and status", now,
                       "data/intermediate/parcel_status.json"),
                      ("mocked", "watchlist notifications", now, "n/a")])
+    con.execute(
+        "INSERT INTO Watchlist (user_ref, parcel_id, subscribed_at, has_update)"
+        " VALUES ('demo-user', 'P-B01', ?, 1)",
+        (now[:10],),
+    )
     con.commit()
 
     counts = {t: con.execute("SELECT COUNT(*) FROM " + t).fetchone()[0]

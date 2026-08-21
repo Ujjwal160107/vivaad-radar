@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AppFooter } from '../components/AppFooter';
 
 interface SearchProps {
   onSearch: (surveyNo: string, village: string) => void;
@@ -95,53 +96,31 @@ export const Search: React.FC<SearchProps> = ({ onSearch, onOpenDashboard, onOpe
 
           <button
             type="button"
-            onClick={() => handleQuickPick('88', 'Baraunsa')}
+            onClick={() => handleQuickPick('418', 'Madanpur Paniyar')}
             className="border border-black/40 hover:border-black bg-paper-light hover:bg-white px-3 py-1.5 text-black transition-colors flex items-center gap-2 flex-shrink-0"
           >
             <span className="w-2 h-2 rounded-full bg-radar-green"></span>
-            <span>88 (Baraunsa)</span>
+            <span>418 (Madanpur Paniyar)</span>
             <span className="text-[10px] text-ink-muted uppercase font-semibold">[Clean GREEN]</span>
           </button>
 
           <button
             type="button"
-            onClick={() => handleQuickPick('142/3', 'Kurwar')}
+            onClick={() => handleQuickPick('622', 'Sonari')}
             className="border border-black/40 hover:border-black bg-paper-light hover:bg-white px-3 py-1.5 text-black transition-colors flex items-center gap-2 flex-shrink-0"
           >
             <span className="w-2 h-2 rounded-full bg-radar-amber"></span>
-            <span>142/3 (Kurwar)</span>
-            <span className="text-[10px] text-ink-muted uppercase font-semibold">[Decoy AMBER]</span>
+            <span>622 (Sonari)</span>
+            <span className="text-[10px] text-ink-muted uppercase font-semibold">[Disposed AMBER]</span>
           </button>
         </div>
       </div>
 
-      {/* Footer Navigation Bar */}
-      <footer className="w-full flex flex-wrap items-center justify-between border-t border-black/20 pt-6 mt-12 text-xs font-mono text-ink-muted max-w-6xl mx-auto">
-        <div className="flex items-center gap-6">
-          <span>Section 52 TPA Lis Pendens Resolver</span>
-          <span className="hidden md:inline text-black/30">•</span>
-          <span className="hidden md:inline">eCourts × Bhoomi Cadastral Linkage</span>
-        </div>
-
-        <div className="flex items-center gap-6 mt-3 sm:mt-0">
-          {onOpenDashboard && (
-            <button
-              onClick={onOpenDashboard}
-              className="hover:text-black underline underline-offset-4 cursor-pointer"
-            >
-              Officer Heatmap
-            </button>
-          )}
-          {onOpenWatchlist && (
-            <button
-              onClick={onOpenWatchlist}
-              className="hover:text-black underline underline-offset-4 cursor-pointer"
-            >
-              Watchlist
-            </button>
-          )}
-        </div>
-      </footer>
+      <AppFooter
+        onOpenDashboard={onOpenDashboard}
+        onOpenWatchlist={onOpenWatchlist}
+        active="search"
+      />
     </div>
   );
 };

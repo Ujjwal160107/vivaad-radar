@@ -6,124 +6,135 @@ import {
   DashboardOverview,
   VillageDensity,
   WatchlistItem,
+  ParcelMapResponse,
 } from '../types/api';
 
 import {
   FLAGSHIP_RED_PARCEL,
-  FLAGSHIP_RED_LITIGATION,
   FLAGSHIP_GREEN_PARCEL,
-  FLAGSHIP_GREEN_LITIGATION,
-  FLAGSHIP_CASE_DETAIL,
+  FLAGSHIP_AMBER_PARCEL,
   FALLBACK_OVERVIEW,
   FALLBACK_HEATMAP,
+  FALLBACK_MAP,
+  PARCEL_FALLBACKS,
+  LITIGATION_FALLBACKS,
+  CASE_FALLBACKS,
 } from './fallbackData';
 
 const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
-const isDemoTier3 = (): boolean => {
+export const isDemoMode = (): boolean => {
   if (typeof window !== 'undefined') {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('demo') === '1';
+    return new URLSearchParams(window.location.search).get('demo') === '1';
   }
   return false;
 };
 
-async function fetchWithFallback<T>(url: string, fallbackValue: T, options?: RequestInit): Promise<T> {
-  if (isDemoTier3()) {
-    return fallbackValue;
+async function fetchJson<T>(url: string, fallback?: T): Promise<T> {
+  if (isDemoMode()) {
+    if (fallback !== undefined) return fallback;
+    throw new Error(`No demo payload for ${url}`);
   }
   try {
-    const res = await fetch(`${BASE_URL}${url}`, options);
-    if (!res.ok) {
+    const res = await fetch(`${BASE_URL}${url}`);
+    if (res.ok) return await res.json();
+    if (fallback !== undefined) {
       console.warn(`API returned ${res.status} for ${url}, using fallback.`);
-      return fallbackValue;
+      return fallback;
     }
-    return await res.json();
+    throw new Error(`API ${res.status} for ${url}`);
   } catch (err) {
-    console.warn(`Fetch failed for ${url}, switching to fallback tier.`, err);
-    return fallbackValue;
+    if (fallback !== undefined) {
+      console.warn(`Fetch failed for ${url}, switching to fallback tier.`, err);
+      return fallback;
+    }
+    throw err;
   }
+}
+
+function asSearchHit(p: ParcelDetail): SearchResultParcel {
+  return {
+    id: p.id,
+    survey_no: p.survey_no,
+    khasra_no: p.khasra_no,
+    khata_no: p.khata_no,
+    village: p.village,
+    village_canon: p.village_canon,
+    taluk: p.taluk,
+    status: p.status,
+    confidence: p.confidence,
+  };
+}
+
+function keySurvey(value: string | null | undefined): string {
+  return (value || '').trim().toLowerCase().replace(/-/g, '/').replace(/\s+/g, '');
+}
+
+function keyPlace(value: string | null | undefined): string {
+  return (value || '').trim().toLowerCase();
+}
+
+function matchesQuery(hit: SearchResultParcel, surveyNo: string, village: string): boolean {
+  const wantSurvey = keySurvey(surveyNo);
+  const wantVillage = keyPlace(village);
+  const surveyOk =
+    !wantSurvey ||
+    [hit.survey_no, hit.khasra_no, hit.khata_no].some((value) => {
+      const have = keySurvey(value);
+      return have && (have === wantSurvey || have.includes(wantSurvey) || wantSurvey.includes(have));
+    });
+  const villageOk =
+    !wantVillage ||
+    keyPlace(hit.village).includes(wantVillage) ||
+    keyPlace(hit.village_canon).includes(wantVillage) ||
+    wantVillage.includes(keyPlace(hit.village_canon));
+  return surveyOk && villageOk;
 }
 
 export const api = {
   async searchParcels(surveyNo: string, village: string): Promise<{ parcels: SearchResultParcel[] }> {
     const cleanSurvey = surveyNo.trim();
     const cleanVillage = village.trim();
-
-    const fallbackResults: SearchResultParcel[] = [];
-    if (cleanSurvey.includes('1365') || cleanVillage.toLowerCase().includes('madan')) {
-      fallbackResults.push({
-        id: FLAGSHIP_RED_PARCEL.id,
-        survey_no: FLAGSHIP_RED_PARCEL.survey_no,
-        khasra_no: FLAGSHIP_RED_PARCEL.khasra_no,
-        khata_no: FLAGSHIP_RED_PARCEL.khata_no,
-        village: FLAGSHIP_RED_PARCEL.village,
-        village_canon: FLAGSHIP_RED_PARCEL.village_canon,
-        taluk: FLAGSHIP_RED_PARCEL.taluk,
-        status: FLAGSHIP_RED_PARCEL.status,
-        confidence: FLAGSHIP_RED_PARCEL.confidence,
-      });
-    }
-    if (cleanSurvey.includes('88') || cleanVillage.toLowerCase().includes('baraunsa')) {
-      fallbackResults.push({
-        id: FLAGSHIP_GREEN_PARCEL.id,
-        survey_no: FLAGSHIP_GREEN_PARCEL.survey_no,
-        khasra_no: FLAGSHIP_GREEN_PARCEL.khasra_no,
-        khata_no: FLAGSHIP_GREEN_PARCEL.khata_no,
-        village: FLAGSHIP_GREEN_PARCEL.village,
-        village_canon: FLAGSHIP_GREEN_PARCEL.village_canon,
-        taluk: FLAGSHIP_GREEN_PARCEL.taluk,
-        status: FLAGSHIP_GREEN_PARCEL.status,
-        confidence: FLAGSHIP_GREEN_PARCEL.confidence,
-      });
-    }
+    const bundled = [FLAGSHIP_RED_PARCEL, FLAGSHIP_GREEN_PARCEL, FLAGSHIP_AMBER_PARCEL]
+      .map(asSearchHit)
+      .filter((hit) => matchesQuery(hit, cleanSurvey, cleanVillage));
 
     const query = new URLSearchParams();
     if (cleanSurvey) query.append('survey_no', cleanSurvey);
     if (cleanVillage) query.append('village', cleanVillage);
 
-    return fetchWithFallback<{ parcels: SearchResultParcel[] }>(
+    return fetchJson<{ parcels: SearchResultParcel[] }>(
       `/parcels/search?${query.toString()}`,
-      { parcels: fallbackResults.length > 0 ? fallbackResults : [
-        {
-          id: FLAGSHIP_RED_PARCEL.id,
-          survey_no: FLAGSHIP_RED_PARCEL.survey_no,
-          khasra_no: FLAGSHIP_RED_PARCEL.khasra_no,
-          khata_no: FLAGSHIP_RED_PARCEL.khata_no,
-          village: FLAGSHIP_RED_PARCEL.village,
-          village_canon: FLAGSHIP_RED_PARCEL.village_canon,
-          taluk: FLAGSHIP_RED_PARCEL.taluk,
-          status: FLAGSHIP_RED_PARCEL.status,
-          confidence: FLAGSHIP_RED_PARCEL.confidence,
-        }
-      ]}
+      { parcels: bundled },
     );
   },
 
   async getParcel(id: string): Promise<ParcelDetail> {
-    const fallback = id === 'P-A01' ? FLAGSHIP_GREEN_PARCEL : FLAGSHIP_RED_PARCEL;
-    return fetchWithFallback<ParcelDetail>(`/parcels/${id}`, fallback);
+    return fetchJson<ParcelDetail>(`/parcels/${id}`, PARCEL_FALLBACKS[id]);
   },
 
   async getLitigation(id: string): Promise<LitigationResponse> {
-    const fallback = id === 'P-A01' ? FLAGSHIP_GREEN_LITIGATION : FLAGSHIP_RED_LITIGATION;
-    return fetchWithFallback<LitigationResponse>(`/parcels/${id}/litigation`, fallback);
+    return fetchJson<LitigationResponse>(`/parcels/${id}/litigation`, LITIGATION_FALLBACKS[id]);
   },
 
   async getCase(id: string): Promise<CaseDetail> {
-    return fetchWithFallback<CaseDetail>(`/cases/${id}`, FLAGSHIP_CASE_DETAIL);
+    return fetchJson<CaseDetail>(`/cases/${id}`, CASE_FALLBACKS[id]);
   },
 
   async getOverview(): Promise<DashboardOverview> {
-    return fetchWithFallback<DashboardOverview>('/dashboard/overview', FALLBACK_OVERVIEW);
+    return fetchJson<DashboardOverview>('/dashboard/overview', FALLBACK_OVERVIEW);
   },
 
   async getHeatmap(): Promise<{ villages: VillageDensity[] }> {
-    return fetchWithFallback<{ villages: VillageDensity[] }>('/dashboard/heatmap', FALLBACK_HEATMAP);
+    return fetchJson<{ villages: VillageDensity[] }>('/dashboard/heatmap', FALLBACK_HEATMAP);
+  },
+
+  async getMap(): Promise<ParcelMapResponse> {
+    return fetchJson<ParcelMapResponse>('/dashboard/map', FALLBACK_MAP);
   },
 
   async getWatchlist(): Promise<{ items: WatchlistItem[] }> {
-    return fetchWithFallback<{ items: WatchlistItem[] }>('/watchlist', {
+    return fetchJson<{ items: WatchlistItem[] }>('/watchlist', {
       items: [
         {
           id: 1,

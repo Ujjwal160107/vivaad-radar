@@ -44,11 +44,18 @@ export interface ParcelDetail {
 }
 
 export interface EvidenceDetail {
-  survey_match?: 'exact' | 'normalized' | 'none';
+  survey_match?: 'exact' | 'normalized' | 'subdivision' | 'none';
   village_match?: boolean;
   name_similarity?: number;
   father_name_similarity?: number;
-  case_type_relevance?: 'high' | 'medium' | 'low';
+  weights_used?: {
+    identifier?: number;
+    name?: number;
+    father_name?: number;
+    village?: number;
+    case_type?: number;
+  };
+  case_type_relevance?: 'high' | 'medium' | 'low' | number;
   [key: string]: any;
 }
 
@@ -142,4 +149,27 @@ export interface WatchlistItem {
   village: string;
   subscribed_at: string;
   has_update: boolean;
+}
+
+export interface MapParcelProperties {
+  id: string;
+  survey_no: string;
+  village: string;
+  village_canon: string;
+  status: StatusBand;
+  confidence: number | null;
+}
+
+export interface ParcelMapFeature {
+  type: 'Feature';
+  geometry: {
+    type: string;
+    coordinates: number[][][] | number[][][][];
+  };
+  properties: MapParcelProperties;
+}
+
+export interface ParcelMapResponse {
+  type: 'FeatureCollection';
+  features: ParcelMapFeature[];
 }

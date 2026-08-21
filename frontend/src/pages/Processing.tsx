@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 interface ProcessingProps {
   surveyNo: string;
   village: string;
+  ready: boolean;
   onComplete: () => void;
 }
 
@@ -21,17 +22,20 @@ const STEP_SEQUENCE: StepConfig[] = [
   { label: "scoring evidence", startPercent: 94, endPercent: 100, delayMs: 600 },
 ];
 
-export const Processing: React.FC<ProcessingProps> = ({ onComplete }) => {
+export const Processing: React.FC<ProcessingProps> = ({ surveyNo, village, ready, onComplete }) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [currentPercent, setCurrentPercent] = useState(14);
+  const [animationDone, setAnimationDone] = useState(false);
 
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout>;
     let subTickId: ReturnType<typeof setTimeout>;
+    let cancelled = false;
 
     const runStep = (index: number) => {
+      if (cancelled) return;
       if (index >= STEP_SEQUENCE.length) {
-        setTimeout(onComplete, 400);
+        setAnimationDone(true);
         return;
       }
 
@@ -39,9 +43,8 @@ export const Processing: React.FC<ProcessingProps> = ({ onComplete }) => {
       setCurrentStepIndex(index);
       setCurrentPercent(step.startPercent);
 
-      // Natural randomized cadence
       subTickId = setTimeout(() => {
-        setCurrentPercent(step.endPercent);
+        if (!cancelled) setCurrentPercent(step.endPercent);
       }, Math.max(step.delayMs * 0.45, 250));
 
       timeoutId = setTimeout(() => {
@@ -52,19 +55,25 @@ export const Processing: React.FC<ProcessingProps> = ({ onComplete }) => {
     runStep(0);
 
     return () => {
+      cancelled = true;
       clearTimeout(timeoutId);
       clearTimeout(subTickId);
     };
-  }, [onComplete]);
+  }, []);
+
+  useEffect(() => {
+    if (!animationDone || !ready) return;
+    const hold = setTimeout(onComplete, 400);
+    return () => clearTimeout(hold);
+  }, [animationDone, ready, onComplete]);
 
   const currentStep = STEP_SEQUENCE[currentStepIndex] || STEP_SEQUENCE[0];
   const previousStep = currentStepIndex > 0 ? STEP_SEQUENCE[currentStepIndex - 1] : null;
+  const holding = animationDone && !ready;
 
   return (
     <div className="w-full px-8 sm:px-16 md:px-20 pt-16 sm:pt-24 max-w-6xl mx-auto flex flex-col items-start">
-      {/* Top half alignment */}
       <div className="w-full">
-        {/* Previous Step Indicator (Grey Italic Serif) */}
         <div className="min-h-[40px] flex items-end">
           {previousStep ? (
             <span className="font-serif italic text-neutral-400 text-2xl sm:text-3xl font-normal tracking-wide transition-opacity duration-300">
@@ -75,28 +84,28 @@ export const Processing: React.FC<ProcessingProps> = ({ onComplete }) => {
           )}
         </div>
 
-        {/* Current Active Step Headline (Bold Italic Libre Baskerville) */}
         <h2 className="font-serif italic font-bold text-4xl sm:text-5xl md:text-6xl text-black tracking-tight mt-1 mb-8">
-          {currentStep.label}
+          {holding ? 'waiting on the index' : currentStep.label}
         </h2>
 
-        {/* 2px Solid Black Neubrutalist Progress Bar */}
         <div className="w-full border-2 border-black bg-white h-14 sm:h-16 relative flex items-center shadow-none">
-          {/* Black Progress Fill */}
           <div
             className="bg-black h-full flex items-center pl-5 transition-all duration-300 ease-out overflow-hidden"
-            style={{ width: `${currentPercent}%` }}
+            style={{ width: `${holding ? 100 : currentPercent}%` }}
           >
             <span className="font-mono text-sm sm:text-base text-white tracking-widest whitespace-nowrap select-none font-medium">
-              {currentPercent}% done...
+              {holding ? 'index still answering...' : `${currentPercent}% done...`}
             </span>
           </div>
         </div>
 
-        {/* Clean Status Note */}
         <div className="mt-4 flex items-center justify-between text-xs sm:text-sm font-mono text-ink-muted">
-          <span>Cross-referencing revenue records and court orders...</span>
-          <span>STAGE {currentStepIndex + 1} OF 5</span>
+          <span>
+            {holding
+              ? 'Animation complete — holding until court and land records return.'
+              : `Cross-referencing ${surveyNo || 'survey'} · ${village || 'Sultanpur'} against court orders...`}
+          </span>
+          <span>STAGE {Math.min(currentStepIndex + 1, 5)} OF 5</span>
         </div>
       </div>
     </div>

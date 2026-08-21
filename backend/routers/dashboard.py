@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from backend.db import get_conn
+import json
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
@@ -49,3 +50,34 @@ def heatmap():
     for a in agg.values():
         a["density"] = round((a["RED"] * 2 + a["AMBER"]) / (a["parcels"] * 2), 3)
     return {"villages": sorted(agg.values(), key=lambda x: -x["density"])}
+
+
+@router.get("/map")
+def parcel_map():
+    """GeoJSON FeatureCollection of parcel polygons for the officer map."""
+    conn = get_conn()
+    rows = conn.execute(
+        "SELECT id, survey_no, village, village_canon, status, confidence, geometry "
+        "FROM Parcel"
+    ).fetchall()
+    features = []
+    for r in rows:
+        try:
+            geom = json.loads(r["geometry"]) if r["geometry"] else None
+        except (TypeError, ValueError):
+            geom = None
+        if not geom or not isinstance(geom, dict) or not geom.get("coordinates"):
+            continue
+        features.append({
+            "type": "Feature",
+            "geometry": geom,
+            "properties": {
+                "id": r["id"],
+                "survey_no": r["survey_no"],
+                "village": r["village"],
+                "village_canon": r["village_canon"] or "unknown",
+                "status": _bucket(r["status"]),
+                "confidence": r["confidence"],
+            },
+        })
+    return {"type": "FeatureCollection", "features": features}

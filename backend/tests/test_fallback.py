@@ -62,6 +62,7 @@ def test_all_endpoints_smoke(client):
         ("/cases/UPHC020611812025", 200),
         ("/dashboard/overview", 200),
         ("/dashboard/heatmap", 200),
+        ("/dashboard/map", 200),
         ("/watchlist", 200),
     ]
     for path, expected in checks:

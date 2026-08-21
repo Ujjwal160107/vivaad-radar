@@ -18,3 +18,14 @@ def test_heatmap_villages_sorted_by_density(client):
     assert by_canon["madanpur paniyar"]["RED"] == 1
     assert by_canon["madanpur paniyar"]["density"] == 1.0
     assert by_canon["baraunsa"]["GREEN"] == 1
+
+
+def test_map_geojson_includes_flagship(client):
+    body = client.get("/dashboard/map").json()
+    assert body["type"] == "FeatureCollection"
+    assert isinstance(body["features"], list)
+    ids = {f["properties"]["id"] for f in body["features"]}
+    assert "P-B01" in ids
+    flag = next(f for f in body["features"] if f["properties"]["id"] == "P-B01")
+    assert flag["geometry"]["type"] == "Polygon"
+    assert flag["properties"]["status"] == "RED"
